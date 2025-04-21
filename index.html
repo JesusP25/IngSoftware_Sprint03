@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Blog - Ingeniería de software</title>
+  <link rel="stylesheet" href="asset/css/bootstrap-5.3.3/css/bootstrap.min.css">    
+  <link rel="stylesheet" href="asset/css/fontawesome-6/css/all.min.css">
+  <link rel="stylesheet" href="asset/css/index.css">
+</head>
+<body>
+<!-- Botón flotante de cambio de tema -->
+<button class="theme-toggle-btn" onclick="toggleTheme()">
+  <i class="fa-solid fa-moon"></i>
+</button>
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg py-3">
+  <div class="container">
+    <a class="navbar-brand" href="#"><strong>INGENIERÍA DE SOFTWARE</strong></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <i class="fas fa-bars"></i>
+    </button>    
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav align-items-center">
+        <li class="nav-item"><a class="nav-link active" href="#">Inicio</a></li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Proyecto</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Inicio de proyecto</a></li>
+              <li><a class="dropdown-item" href="#">Sprint 1</a></li>
+              <li><a class="dropdown-item" href="#">Sprint 2</a></li>
+              <li><a class="dropdown-item" href="#">Sprint 3</a></li>
+            </ul>
+          </li>
+        <li class="nav-item"><a class="nav-link" href="#">Propuesta</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO SECTION -->
+<section class="hero-section mb-5" id="heroSection">
+  <div class="hero-overlay"></div>
+  <div class="container d-flex align-items-center h-100">
+    <div class="hero-content">
+      <h6 class="mb-3">Untels: <span class="highlight-orange">Ingeniería de Sistemas</span></h6>
+      <h1 class="display-5 fw-bold">DESARROLLO UN SISTEMA DE TRAMITE DOCUMENTARIO<br class="d-none d-md-block"></h1>
+      <p class="text-orange-script mt-3">TACIDH – PERÚ</p>
+      <a href="#" class="btn btn-outline-orange mt-4">ver proyecto</a>
+      <p class="info-text">El proyecto busca desarrollar un sistema de gestión documental para el Tribunal Arbitral de la Corte Interamericana de los Derechos Humanos - Perú. Este sistema tiene como objetivo mejorar la eficiencia operativa al automatizar y centralizar procesos actualmente manuales. Facilitará el registro, consulta y seguimiento de documentos vinculados a los procesos arbitrales, promoviendo la transparencia y agilidad en la gestión de expedientes.</p>
+    </div>
+
+    <!-- Overlay Icons -->
+    <div class="overlay-content">
+      <div class="d-flex align-items-center"><div class="circle-icon">+</div><span>Product Owner</span></div>
+      <div class="d-flex align-items-center"><div class="circle-icon">+</div><span>Scrum Master</span></div>
+      <div class="d-flex align-items-center"><div class="circle-icon">+</div><span>Desarrolladores</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="py-5 text-center section-blog">
+    <div class="container">
+      <!-- Encabezado de sección -->
+      <div class="text-center mb-5">
+        <div class="d-flex justify-content-center align-items-center gap-2 text-primary fw-semibold small mb-2">
+          <i class="fa-solid fa-toggle-on"></i>
+          <span>BLOG Y NOTICIAS</span>
+        </div>
+        <h2 class="fw-bold fw-blog">Blogs del Proyecto</h2>
+      </div>
+      <div class="row g-4">
+        <!-- Card 1 -->
+        <div class="col-md-4">
+          <div class="blog-card bg-white">
+            <div class="position-relative">
+              <img src="asset/img/scrum-software-min.jpg" class="img-fluid" alt="Blog Image">
+              <div class="blog-date">10<br><span>Dec</span></div>
+            </div>
+            <div class="blog-content">
+              <div class="d-flex justify-content-between blog-meta mb-2">
+                <div><i class="fa-solid fa-user"></i> Admin</div>
+                <div><i class="fa-regular fa-comments"></i> 0 Comments</div>
+              </div>
+              <div class="blog-title">Inicio del Proyecto de la Mesa de Partes Virtual</div>
+              <a href="#" class="read-more">Leer más <i class="fa-solid fa-arrow-right-long"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-md-4">
+          <div class="blog-card bg-white">
+            <div class="position-relative">
+              <img src="asset/img/planificacion.jpg" class="img-fluid" alt="Blog Image">
+              <div class="blog-date">12<br><span>Dec</span></div>
+            </div>
+            <div class="blog-content">
+              <div class="d-flex justify-content-between blog-meta mb-2">
+                <div><i class="fa-solid fa-user"></i> Admin</div>
+                <div><i class="fa-regular fa-comments"></i> 0 Comments</div>
+              </div>
+              <div class="blog-title">Sprint 1: Planificación y Diseño del MVP</div>
+              <a href="#" class="read-more">Leer más <i class="fa-solid fa-arrow-right-long"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-md-4">
+          <div class="blog-card bg-white">
+            <div class="position-relative">
+              <img src="asset/img/programacion-codigos-computadora.webp" class="img-fluid" alt="Blog Image">
+              <div class="blog-date">15<br><span>Dec</span></div>
+            </div>
+            <div class="blog-content">
+              <div class="d-flex justify-content-between blog-meta mb-2">
+                <div><i class="fa-solid fa-user"></i> Admin</div>
+                <div><i class="fa-regular fa-comments"></i> 0 Comments</div>
+              </div>
+              <div class="blog-title">Sprint 2: Desarrollo de Funcionalidades Principales</div>
+              <a href="#" class="read-more">Leer más <i class="fa-solid fa-arrow-right-long"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="mt-5 col-md-4">
+          <div class="blog-card bg-white">
+            <div class="position-relative">
+              <img src="asset/img/pruebas_finales.png" class="img-fluid" alt="Blog Image">
+              <div class="blog-date">15<br><span>Dec</span></div>
+            </div>
+            <div class="blog-content">
+              <div class="d-flex justify-content-between blog-meta mb-2">
+                <div><i class="fa-solid fa-user"></i> Admin</div>
+                <div><i class="fa-regular fa-comments"></i> 0 Comments</div>
+              </div>
+              <div class="blog-title">Sprint 3: Pruebas y Ajustes Finales</div>
+              <a href="#" class="read-more">Leer más <i class="fa-solid fa-arrow-right-long"></i></a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="py-5 text-center section-blog mt-5">
+    <div class="container">
+      <!-- Encabezado de sección -->
+      <div class="text-center mb-5">
+        <div class="d-flex justify-content-center align-items-center gap-2 text-primary fw-semibold small mb-2">
+          <i class="fa-solid fa-toggle-on"></i>
+          <span>EQUIPO & STAFF</span>
+        </div>
+        <h2 class="fw-bold fw-blog">Equipo de Trabajo</h2>
+      </div>
+  
+      <div class="row g-4">
+        <!-- Tarjeta de integrante -->
+        <div class="col-md-4">
+          <div class="staff-card position-relative text-start text-white rounded-4 overflow-hidden">
+            <img src="asset/img/integrante01.jpg" class="img-fluid w-100 h-100 object-fit-cover" alt="Integrante">
+            <div class="overlay p-4 d-flex flex-column justify-content-end h-100">
+              <small class="text-primary">Product Owner</small>
+              <h5 class="fw-bold m-0">Pablo Pascual, Pedro Javier</h5>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="staff-card position-relative text-start text-white rounded-4 overflow-hidden">
+            <img src="asset/img/integrante.jpg" class="img-fluid w-100 h-100 object-fit-cover" alt="Integrante">
+            <div class="overlay p-4 d-flex flex-column justify-content-end h-100">
+              <small class="text-primary">Scrum Master</small>
+              <h5 class="fw-bold m-0">Paye Juarez, Jesús Baltazar</h5>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="staff-card position-relative text-start text-white rounded-4 overflow-hidden">
+            <img src="asset/img/integrante.jpg" class="img-fluid w-100 h-100 object-fit-cover" alt="Integrante">
+            <div class="overlay p-4 d-flex flex-column justify-content-end h-100">
+              <small class="text-primary">Desarrollador</small>
+              <h5 class="fw-bold m-0">Barrios Quispe, Jeampier Jhoel</h5>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="staff-card position-relative text-start text-white rounded-4 overflow-hidden">
+            <img src="asset/img/integrante.jpg" class="img-fluid w-100 h-100 object-fit-cover" alt="Integrante">
+            <div class="overlay p-4 d-flex flex-column justify-content-end h-100">
+              <small class="text-primary">Desarrollador</small>
+              <h5 class="fw-bold m-0">Huerta Vasquez, Jimmy Alexander</h5>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="staff-card position-relative text-start text-white rounded-4 overflow-hidden">
+            <img src="asset/img/integrante.jpg" class="img-fluid w-100 h-100 object-fit-cover" alt="Integrante">
+            <div class="overlay p-4 d-flex flex-column justify-content-end h-100">
+              <small class="text-primary">Desarrollador</small>
+              <h5 class="fw-bold m-0">Velez de Villa Huacachi, Manuel Silverio</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-dark text-white py-5 mt-5" id="mainFooter">
+    <div class="container">
+      <div class="row gy-4">
+        <div class="col-md-4">
+          <h5 class="fw-bold mb-3">Ingeniería de Software</h5>
+          <p class="text-white-50">
+            Proyecto que busca desarrollar un sistema de gestión documental como parte de una mesa de partes virtual. La idea es facilitar el ingreso, registro, consulta y seguimiento de documentos vinculados a procesos arbitrales.
+          </p>
+          <form class="d-flex flex-column flex-sm-row">
+            <input type="email" class="form-control me-sm-2 mb-2 mb-sm-0 rounded-pill px-3" placeholder="Ingresa tu correo electrónico">
+            <button class="btn btn-primary rounded-pill px-4 fw-bold" type="submit">ENVIAR</button>
+          </form>
+        </div>
+        <div class="col-md-2">
+          <h6 class="fw-bold mb-3">Enlaces Rápidos</h6>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-white-50 text-decoration-none d-block mb-1">Integrantes</a></li>
+            <li><a href="#" class="text-white-50 text-decoration-none d-block mb-1">Consultoría</a></li>
+            <li><a href="#" class="text-white-50 text-decoration-none d-block mb-1">Blog</a></li>
+            <li><a href="#" class="text-white-50 text-decoration-none d-block">Estudios de Caso</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h6 class="fw-bold mb-3">Proyecto</h6>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-white-50 text-decoration-none d-block mb-1">Inicio de proyecto</a></li>
+            <li><a href="#" class="text-white-50 text-decoration-none d-block mb-1">Sprint 1</a></li>
+            <li><a href="#" class="text-white-50 text-decoration-none d-block mb-1">Sprint 2</a></li>
+            <li><a href="#" class="text-white-50 text-decoration-none d-block">Sprint 3</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h6 class="fw-bold mb-3">Contáctanos</h6>
+          <p class="text-white-50 mb-1">Comunícate con uno de nuestros consultores deL proyecto</p>
+          <a href="mailto:hi@design.studio.com" class="fw-bold text-white text-decoration-underline">2113110142@untels.edu.pe</a>
+        </div>
+      </div>
+
+      <hr class="border-secondary my-4">
+
+      <div class="text-center text-white-50">
+        <small>&copy; 2025 - Todos los derechos reservados.</small>
+        <br>
+      </div>
+    </div>
+  </footer>
+  <script>
+    function toggleTheme() {
+      document.body.classList.toggle('dark-mode');
+      const icon = document.querySelector('.theme-toggle-btn i');
+      icon.classList.toggle('fa-moon');
+      icon.classList.toggle('fa-sun');
+    }
+  </script>
+  <script>
+    window.addEventListener('scroll', function () {
+      const navbar = document.querySelector('.navbar');
+      if (window.scrollY > 50) {
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
+      }
+    });
+  </script>
+  
+<script src="asset/js/index.js"></script>
+<!-- Bootstrap JS -->
+<script src="asset/css/bootstrap-5.3.3/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
