@@ -15,4 +15,10 @@ body.dark-mode footer {
   body.dark-mode .read-more {
     color: var(--orange);
   }
+  body.dark-mode input, 
+  body.dark-mode .form-control{
+    background-color: #212529;
+    color: #e0e0e0;
+    border-color: #e0e0e0;
+  }
   

@@ -135,13 +135,6 @@ body.dark-mode .text-white-50 {
   color: #b0b0b0 !important;
 }
 
-body.dark-mode input,
-body.dark-mode .form-control {
-  background-color: #212529;
-  color: #e0e0e0;
-  border-color: #e0e0e0 ;
-}
-
 body.dark-mode .btn-warning {
   background-color: #f97316;
   border: none;

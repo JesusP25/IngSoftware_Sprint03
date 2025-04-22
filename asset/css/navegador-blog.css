@@ -26,6 +26,10 @@
     margin-right: 20px;
     transition: color 0.3s ease;
   }
+
+  body.dark-mode .navbar-nav .nav-link{
+    color: var(--white);
+  }
   
   .nav-link.active {
     color: var(--orange) !important;
@@ -33,6 +37,9 @@
   
   .navbar-brand strong {
     color: var(--text-dark);
+  }
+  body.dark-mode .navbar-brand strong{
+    color: var(--white);
   }
   
   /* Botón hamburguesa */
