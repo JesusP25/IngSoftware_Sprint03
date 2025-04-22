@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <!-- Estilos externos -->
+  <link rel="stylesheet" href="../asset/css/bootstrap-5.3.3/css/bootstrap.min.css">    
+  <link rel="stylesheet" href="../asset/css/fontawesome-6/css/all.min.css">
+  <link rel="stylesheet" href="../asset/css/navegador-blog.css">
+  <link rel="stylesheet" href="../asset/css/footer.css">
+  <link rel="stylesheet" href="../asset/css/btnTema.css">
+  <link rel="stylesheet" href="../asset/css/inicio.css">
+</head>
+<body>
+
+  <!-- Botón flotante de cambio de tema -->
+  <button class="theme-toggle-btn" onclick="toggleTheme()">
+    <i class="fa-solid fa-moon"></i>
+  </button>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg py-3">
+    <div class="container">
+      <a class="navbar-brand" href="#"><strong>INGENIERÍA DE SOFTWARE</strong></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <i class="fas fa-bars"></i>
+      </button>    
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav align-items-center">
+          <li class="nav-item"><a class="nav-link active" href="../index.html">Inicio</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Proyecto</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Inicio de proyecto</a></li>
+              <li><a class="dropdown-item" href="#">Sprint 1</a></li>
+              <li><a class="dropdown-item" href="#">Sprint 2</a></li>
+              <li><a class="dropdown-item" href="#">Sprint 3</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#">Propuesta</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- CONTENIDO PRINCIPAL -->
+  <section class="container my-5">
+    <div class="row pt-5">
+      
+      <!-- Contenido principal del blog -->
+      <div class="col-lg-8">
+        <section class="position-relative blog-header">
+          <div class="container py-5">
+            <!-- Breadcrumb -->
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb small text-muted mb-2">
+                <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
+                <li class="breadcrumb-item"><a href="#">Pages</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Inicio</li>
+              </ol>
+            </nav>
+        
+            <!-- Blog Title -->
+            <h1 class="fw-bold">INICIO DE PROYECTO</h1>
+          </div>
+        </section>        
+
+        <div class="blog-post" id="blog-Crear">
+          <div class="contenedor-img">
+            <img src="../asset/img/inicioProyecto/visionScrum.webp" alt="Blog Post" class="img-fluid rounded mb-4 img-contenido-blog">
+          </div>
+          <div class="d-flex align-items-center mb-2 text-muted small">
+            <span class="me-3">Software</span>
+            <span>15 Abril. 2025</span>
+          </div>
+          <div class="row">
+            <div class="col-md-4">
+              <h3 class="fw-bold">1. Crear la visión del proyecto</h3>
+            </div>
+            <div class="col-md-8">
+              <p class="text-secondary">
+                Inicio de un proyecto para crear una mesa de partes virtual que optimice la gestión de documentos arbitrales, 
+                usando metodología ágil Scrum para automatizar procesos y mejorar la eficiencia del tribunal.
+              </p>
+            </div>
+          </div>
+          <div class="mt-3">
+            <a href="blog.html" class="text-decoration-none text-primary fw-semibold">
+              Ver más del blog <i class="fas fa-arrow-right ms-2"></i>
+            </a>
+          </div>
+          
+        </div>
+
+        <div class="blog-post mt-5" id="blog-identificar">
+          <div class="contenedor-img">
+            <img src="../asset/img/inicioProyecto/identificarScrum.jpg" alt="Blog Post" class="img-fluid rounded mb-4 img-contenido-blog">
+          </div>
+          <div class="d-flex align-items-center mb-2 text-muted small">
+            <span class="me-3">Software</span>
+            <span>15 Abril. 2025</span>
+          </div>
+          <div class="row">
+            <div class="col-md-4">
+              <h3 class="fw-bold">2. Identificar al Scrum Master Y Stakehlder(s)</h3>
+            </div>
+            <div class="col-md-8">
+              <p class="text-secondary">
+                Identificar al Scrum Master y a los Stakeholders es clave en proyectos ágiles: el primero guía al equipo y elimina 
+                obstáculos, mientras los segundos aportan visión y retroalimentación para asegurar un producto alineado con las necesidades del negocio.
+              </p>
+            </div>
+          </div>
+          <div class="mt-3">
+            <a href="blog.html" class="text-decoration-none text-primary fw-semibold">
+              Ver más del blog <i class="fas fa-arrow-right ms-2"></i>
+            </a>
+          </div>          
+        </div>
+
+        <div class="blog-post mt-5" id="blog-formar">
+          <div class="contenedor-img">
+            <img src="../asset/img/inicioProyecto/formarEquipo.jpg" alt="Blog Post" class="img-fluid rounded mb-4 img-contenido-blog">
+          </div>
+          <div class="d-flex align-items-center mb-2 text-muted small">
+            <span class="me-3">Software</span>
+            <span>15 Abril. 2025</span>
+          </div>
+          <div class="row">
+            <div class="col-md-4">
+              <h3 class="fw-bold">3. Formar el Equipo Scrum</h3>
+            </div>
+            <div class="col-md-8">
+              <p class="text-secondary">
+                La formación del equipo Scrum es crucial para proyectos ágiles, ya que define roles clave que permiten una comunicación fluida, 
+                autogestión y entrega continua de valor al cliente.
+              </p>
+            </div>
+          </div>
+          <div class="mt-3">
+            <a href="blog.html" class="text-decoration-none text-primary fw-semibold">
+              Ver más del blog <i class="fas fa-arrow-right ms-2"></i>
+            </a>
+          </div>          
+        </div>
+
+        <div class="blog-post mt-5" id="blog-epicas">
+          <div class="contenedor-img">
+            <img src="../asset/img/inicioProyecto/EpicasScrum.jpg" alt="Blog Post" class="img-fluid rounded mb-4 img-contenido-blog">
+          </div>
+          <div class="d-flex align-items-center mb-2 text-muted small">
+            <span class="me-3">Software</span>
+            <span>15 Abril. 2025</span>
+          </div>
+          <div class="row">
+            <div class="col-md-4">
+              <h3 class="fw-bold">4. Desarrollar Épica(s)</h3>
+            </div>
+            <div class="col-md-8">
+              <p class="text-secondary">
+                El desarrollo de épicas permite definir funcionalidades clave a alto nivel, guiando la creación de historias de usuario. En este proyecto, 
+                se basaron en los objetivos de TACIDH Perú para planificar funcionalidades alineadas con sus necesidades estratégicas.
+              </p>
+            </div>
+          </div>
+          <div class="mt-3">
+            <a href="blog.html" class="text-decoration-none text-primary fw-semibold">
+              Ver más del blog <i class="fas fa-arrow-right ms-2"></i>
+            </a>
+          </div>          
+        </div>
+
+        <div class="blog-post mt-5" id="blog-backlog">
+          <div class="contenedor-img">
+            <img src="../asset/img/inicioProyecto/procutoBacklog.webp" alt="Blog Post" class="img-fluid rounded mb-4 img-contenido-blog">
+          </div>
+          <div class="d-flex align-items-center mb-2 text-muted small">
+            <span class="me-3">Software</span>
+            <span>15 Abril. 2025</span>
+          </div>
+          <div class="row">
+            <div class="col-md-4">
+              <h3 class="fw-bold">5. Crear backlog priorizado del producto</h3>
+            </div>
+            <div class="col-md-8">
+              <p class="text-secondary">
+                La creación del backlog es clave en proyectos Scrum, ya que define y prioriza las funcionalidades del sistema según las necesidades del negocio. 
+                Para el sistema de trámite documentario TACIDH Perú, el backlog guiará el desarrollo enfocado en los requisitos más urgentes.
+              </p>
+            </div>
+          </div>
+          <div class="mt-3">
+            <a href="blog.html" class="text-decoration-none text-primary fw-semibold">
+              Ver más del blog <i class="fas fa-arrow-right ms-2"></i>
+            </a>
+          </div>          
+        </div>
+
+        <div class="blog-post mt-5 mb-lg-5">
+          <div class="contenedor-img" id="blog-planificacion">
+            <img src="../asset/img/inicioProyecto/lanzamientoScrum.jpg" alt="Blog Post" class="img-fluid rounded mb-4 img-contenido-blog">
+          </div>
+          <div class="d-flex align-items-center mb-2 text-muted small">
+            <span class="me-3">Software</span>
+            <span>15 Abril. 2025</span>
+          </div>
+          <div class="row">
+            <div class="col-md-4">
+              <h3 class="fw-bold">6. Realizar la planificación del lanzamiento</h3>
+            </div>
+            <div class="col-md-8">
+              <p class="text-secondary">
+                La planificación del lanzamiento en Scrum es fundamental para organizar la entrega de funcionalidades del sistema. 
+                En el proyecto de la Mesa de Partes Virtual (MPV) para TACIDH Perú, este proceso permite al equipo alinear expectativas con los 
+                stakeholders, definir prioridades y establecer un cronograma claro. Además, facilita la adaptación a cambios y garantiza una implementación 
+                progresiva y efectiva del sistema en el entorno arbitral.
+              </p>
+            </div>
+          </div>
+          <div class="mt-3">
+            <a href="blog.html" class="text-decoration-none text-primary fw-semibold">
+              Ver más del blog <i class="fas fa-arrow-right ms-2"></i>
+            </a>
+          </div>          
+        </div>
+
+        
+      </div>
+
+      <!-- Barra lateral fija (sticky) -->
+      <div class="col-lg-4 mt-md-5">
+        <aside class="sidebar-sticky p-4 rounded-3 shadow-sm dark-bg">
+          <!-- Índice -->
+          <div class="mb-4">
+            <h6 class="fw-bold dark-text">
+              <i class="fas fa-circle me-2 txt-sidebar"></i>Índice
+            </h6>
+            <ul class="list-unstyled ms-4">
+              <li><a href="#blog-Crear" class="sidebar-link">1. Crear la visión del proyecto</a></li>
+              <li><a href="#blog-identificar" class="sidebar-link">2. Identificar al Scrum Master y Stakeholder(s)</a></li>
+              <li><a href="#blog-formar" class="sidebar-link">3. Formar el Equipo Scrum</a></li>
+              <li><a href="#blog-epicas" class="sidebar-link">4. Desarrollar Épica(s)</a></li>
+              <li><a href="#blog-backlog" class="sidebar-link">5. Crear backlog priorizado del producto</a></li>
+              <li><a href="#blog-planificacion" class="sidebar-link">6. Planificación del lanzamiento</a></li>
+            </ul>
+          </div>
+      
+          <hr>
+      
+          <!-- Entradas recientes -->
+          <div>
+            <h6 class="fw-bold dark-text mb-3">
+              <i class="fas fa-circle me-2 txt-sidebar"></i>Entradas recientes
+            </h6>
+            <ul class="list-unstyled ms-4">
+              <li><a href="#" class="sidebar-link">- Inicio de Proyecto</a></li>
+              <li><a href="#" class="sidebar-link">- Sprint 1</a></li>
+              <li><a href="#" class="sidebar-link">- Sprint 2</a></li>
+              <li><a href="#" class="sidebar-link">- Sprint 3</a></li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+      
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-dark text-white py-5 mt-5" id="mainFooter">
+    <div class="container">
+      <div class="row gy-4">
+        <div class="col-md-4">
+          <h5 class="fw-bold mb-3">Ingeniería de Software</h5>
+          <p class="text-white-50">
+            Proyecto que busca desarrollar un sistema de gestión documental como parte de una mesa de partes virtual. La idea es facilitar el ingreso, registro, consulta y seguimiento de documentos vinculados a procesos arbitrales.
+          </p>
+          <form class="d-flex flex-column flex-sm-row">
+            <input type="email" class="form-control me-sm-2 mb-2 mb-sm-0 rounded-pill px-3" placeholder="Ingresa tu correo electrónico">
+            <button class="btn btn-primary rounded-pill px-4 fw-bold" type="submit">ENVIAR</button>
+          </form>
+        </div>
+        <div class="col-md-2">
+          <h6 class="fw-bold mb-3">Enlaces Rápidos</h6>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-white-50 text-decoration-none d-block mb-1">Integrantes</a></li>
+            <li><a href="#" class="text-white-50 text-decoration-none d-block mb-1">Consultoría</a></li>
+            <li><a href="#" class="text-white-50 text-decoration-none d-block mb-1">Blog</a></li>
+            <li><a href="#" class="text-white-50 text-decoration-none d-block">Estudios de Caso</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h6 class="fw-bold mb-3">Proyecto</h6>
+          <ul class="list-unstyled">
+            <li><a href="inicio.html" class="text-white-50 text-decoration-none d-block mb-1">Inicio de proyecto</a></li>
+            <li><a href="#" class="text-white-50 text-decoration-none d-block mb-1">Sprint 1</a></li>
+            <li><a href="#" class="text-white-50 text-decoration-none d-block mb-1">Sprint 2</a></li>
+            <li><a href="#" class="text-white-50 text-decoration-none d-block">Sprint 3</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h6 class="fw-bold mb-3">Contáctanos</h6>
+          <p class="text-white-50 mb-1">Comunícate con uno de nuestros consultores del proyecto</p>
+          <a href="mailto:hi@design.studio.com" class="fw-bold text-white text-decoration-underline">2113110142@untels.edu.pe</a>
+        </div>
+      </div>
+
+      <hr class="border-secondary my-4">
+
+      <div class="text-center text-white-50">
+        <small>&copy; 2025 - Todos los derechos reservados.</small><br>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../asset/js/modo-oscuro.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="../asset/css/bootstrap-5.3.3/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

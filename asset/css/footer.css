@@ -1,0 +1,18 @@
+/* Footer dark mode styling */
+body.dark-mode footer {
+    background-color: var(--dark) !important;
+    box-shadow: 5px 10px 20px rgba(255, 255, 255, 0.25);
+  }
+  
+  /* Asegura contraste adecuado del texto en modo oscuro */
+  body.dark-mode .blog-title,
+  body.dark-mode h2,
+  body.dark-mode h5 {
+    color: var(--white);
+  }
+  
+  body.dark-mode .blog-meta,
+  body.dark-mode .read-more {
+    color: var(--orange);
+  }
+  

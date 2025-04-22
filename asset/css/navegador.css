@@ -1,0 +1,94 @@
+/* Variables */
+:root {
+    --orange: #f97316;
+    --orange-hover: #fb923c;
+    --dark: #212529;
+    --text-dark: #0f0d1d;
+    --white: #ffffff;
+  }
+  
+  /* Navbar base */
+  .navbar {
+    background-color: transparent !important;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+  
+  .navbar-nav .nav-link {
+    color: var(--white);
+    margin-right: 20px;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-link.active {
+    color: var(--orange) !important;
+  }
+  
+  .navbar-brand strong {
+    color: var(--white);
+  }
+  
+  /* Botón hamburguesa */
+  .navbar-toggler {
+    border: none;
+    background: transparent;
+    font-size: 1.5rem;
+    color: var(--white);
+    transition: color 0.3s ease;
+  }
+  
+  /* Cuando el navbar tiene scroll */
+  .navbar.scrolled {
+    background-color: var(--white) !important;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  .navbar.scrolled .navbar-brand {
+    color: var(--text-dark);
+  }
+  
+  .navbar.scrolled .nav-link {
+    color: black !important;
+  }
+  
+  .navbar.scrolled .nav-link.active {
+    color: var(--orange) !important;
+  }
+  
+  .navbar.scrolled .navbar-toggler,
+  .navbar.scrolled .navbar-brand strong {
+    color: var(--dark);
+  }
+  
+  /* Modo oscuro: navbar */
+  body.dark-mode .navbar.scrolled {
+    background-color: var(--dark) !important;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  body.dark-mode .navbar.scrolled .navbar-brand,
+  body.dark-mode .navbar.scrolled .nav-link,
+  body.dark-mode .navbar.scrolled .navbar-toggler,
+  body.dark-mode .navbar.scrolled .navbar-brand strong {
+    color: var(--white) !important;
+  }
+  
+  /* Modo claro con scroll */
+  body:not(.dark-mode) .navbar.scrolled {
+    background-color: var(--white) !important;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  body:not(.dark-mode) .navbar.scrolled .navbar-brand,
+  body:not(.dark-mode) .navbar.scrolled .nav-link {
+    color: var(--dark) !important;
+  }
+  
+  body:not(.dark-mode) .navbar.scrolled .nav-link.active {
+    color: var(--orange) !important;
+  }
+  
+  

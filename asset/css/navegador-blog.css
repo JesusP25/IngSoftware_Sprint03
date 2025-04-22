@@ -1,0 +1,48 @@
+/* Variables */
+:root {
+    --orange: #f97316;
+    --orange-hover: #fb923c;
+    --dark: #212529;
+    --text-dark: #0f0d1d;
+    --white: #ffffff;
+  }
+  
+  /* Navbar base */
+  .navbar {
+    background-color: var(--white) ;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  }
+
+  body.dark-mode .navbar{
+    background-color: var(--dark);
+  }
+  
+  .navbar-nav .nav-link {
+    color: var(--text-dark);
+    margin-right: 20px;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-link.active {
+    color: var(--orange) !important;
+  }
+  
+  .navbar-brand strong {
+    color: var(--text-dark);
+  }
+  
+  /* Botón hamburguesa */
+  .navbar-toggler {
+    border: none;
+    background: transparent;
+    font-size: 1.5rem;
+    color: var(--white);
+    transition: color 0.3s ease;
+  }
+  
+  
+  

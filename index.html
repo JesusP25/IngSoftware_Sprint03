@@ -1,12 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Blog - Ingeniería de software</title>
   <link rel="stylesheet" href="asset/css/bootstrap-5.3.3/css/bootstrap.min.css">    
   <link rel="stylesheet" href="asset/css/fontawesome-6/css/all.min.css">
+  <link rel="stylesheet" href="asset/css/navegador.css">
+  <link rel="stylesheet" href="asset/css/footer.css">
   <link rel="stylesheet" href="asset/css/index.css">
+  <link rel="stylesheet" href="asset/css/btnTema.css">
 </head>
 <body>
 <!-- Botón flotante de cambio de tema -->
@@ -31,7 +34,7 @@
               <li><a class="dropdown-item" href="#">Sprint 2</a></li>
               <li><a class="dropdown-item" href="#">Sprint 3</a></li>
             </ul>
-          </li>
+        </li>
         <li class="nav-item"><a class="nav-link" href="#">Propuesta</a></li>
         <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
       </ul>
@@ -84,7 +87,7 @@
                 <div><i class="fa-regular fa-comments"></i> 0 Comments</div>
               </div>
               <div class="blog-title">Inicio del Proyecto de la Mesa de Partes Virtual</div>
-              <a href="#" class="read-more">Leer más <i class="fa-solid fa-arrow-right-long"></i></a>
+              <a href="Blog/inicio.html" class="read-more">Leer más <i class="fa-solid fa-arrow-right-long"></i></a>
             </div>
           </div>
         </div>
@@ -259,25 +262,8 @@
       </div>
     </div>
   </footer>
-  <script>
-    function toggleTheme() {
-      document.body.classList.toggle('dark-mode');
-      const icon = document.querySelector('.theme-toggle-btn i');
-      icon.classList.toggle('fa-moon');
-      icon.classList.toggle('fa-sun');
-    }
-  </script>
-  <script>
-    window.addEventListener('scroll', function () {
-      const navbar = document.querySelector('.navbar');
-      if (window.scrollY > 50) {
-        navbar.classList.add('scrolled');
-      } else {
-        navbar.classList.remove('scrolled');
-      }
-    });
-  </script>
   
+<script src="asset/js/modo-oscuro.js"></script>
 <script src="asset/js/index.js"></script>
 <!-- Bootstrap JS -->
 <script src="asset/css/bootstrap-5.3.3/js/bootstrap.bundle.min.js"></script>
