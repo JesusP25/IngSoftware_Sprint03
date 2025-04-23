@@ -15,13 +15,32 @@ html {
   scroll-padding-top: 80px;
 }
 
-a {
-  text-decoration: none;
-  color: #f97316;
+body.dark-mode .breadcrumb-item a{
+  color: #e0e0e0;
+}
+body.dark-mode .breadcrumb-item.active{
+  color: #b0b0b0;
+}
+.img-wrapper {
+  overflow: hidden; /* Esto asegura que el zoom no se desborde */
+  border-radius: 0.5rem; /* Opcional: mantiene esquinas redondeadas */
 }
 
-a:hover {
-  text-decoration: underline;
+.img-contenido-blog {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: grayscale(100%);
+  transform: scale(1);
+  transition: transform 0.4s ease, filter 0.4s ease;
+}
+
+.img-contenido-blog:hover {
+  filter: grayscale(0%);
+  transform: scale(1.1); /* Zoom interno */
+}
+body.dark-mode .text-muted{
+  color: #b0b0b0 !important;
 }
 
 /* Breadcrumb */
@@ -36,22 +55,26 @@ a:hover {
   position: sticky;
   top: 100px;
   background-color: #fff;
-  border: 1px solid #ddd;
+  border: solid 1px #444;
   border-radius: 0.75rem;
   padding: 1rem;
+}
+.txt-sidebar{
+  color: #f97316;
 }
 
 body.dark-mode .sidebar-sticky {
   background-color: #212529;
-  border-color: #333;
+  border-color: #444;
 }
 
 .sidebar-link {
   display: block;
-  font-size: 0.9rem;
-  color: #6c757d;
-  padding: 0.4rem 0;
-  transition: all 0.3s ease;
+    font-size: 0.875rem;
+    color: #6c757d;
+    text-decoration: none;
+    padding: 0.25rem 0;
+    transition: color 0.3s ease;
 }
 
 .sidebar-link:hover {
@@ -132,3 +155,42 @@ body.dark-mode .sidebar-link:hover {
       transform: none !important;
   }
 }
+
+.sidebar-sticky {
+  scrollbar-width: thin;         /* Firefox */
+  scrollbar-color: #888 #f0f0f0; /* Firefox */
+}
+
+.sidebar-sticky::-webkit-scrollbar {
+  width: 8px;
+}
+
+.sidebar-sticky::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 10px;
+}
+
+.sidebar-sticky::-webkit-scrollbar-track {
+  background: #f0f0f0;
+}
+     /* Estilo general para filas */
+     .tabla-personalizada td {
+      padding: 0.75rem;
+      border-bottom: 1px solid; /* línea divisoria */
+      transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+    }
+    
+    /* Modo claro */
+    body:not(.dark-mode) .tabla-personalizada td {
+      background-color: #f8f9fa;
+      color: #212529;
+      border-color: #999; /* línea gris clara */
+    }
+    
+    /* Modo oscuro */
+    body.dark-mode .tabla-personalizada td {
+      background-color: #212529;
+      color: #e4e4e4;
+      border-color: #444; /* línea oscura */
+    }
+    
