@@ -108,118 +108,6 @@
                             <li>Huerta Vasquez Jimmy Alexander</li>
                             <li>Barrios Quispe Jeampier Jhoel</li>
                         </ul>
-                        <section id="Lista-Tareas">
-                            <h3 class="fw-bold mt-4">Lista-Tareas</h3>
-                            <p>
-                                El sprint tendrá una duración de 3 semanas
-                            </p>
-                            <ol>
-                                <li>
-                                    <strong>Historia 1:</strong> Como usuario del sistema, quiero poder buscar un
-                                    trámite archivado ingresando su número de expediente para visualizar su información
-                                    detallada de manera rápida y organizada.
-                                    <ul>
-                                        <li><strong>Tarea 1.1:</strong> Diseñar el formulario de búsqueda con campo para
-                                            número de expediente y botón “Buscar”.</li>
-                                        <li><strong>Tarea 1.2:</strong> Validar el formato del número de expediente
-                                            antes de realizar la búsqueda.</li>
-                                        <li><strong>Tarea 1.3:</strong> Implementar la lógica frontend para enviar el
-                                            número al backend mediante una solicitud HTTP.</li>
-                                        <li><strong>Tarea 1.4:</strong> Configurar el endpoint en el backend que reciba
-                                            el número de expediente y devuelva los datos del trámite archivado.</li>
-                                        <li><strong>Tarea 1.5:</strong> Mostrar los resultados en una tabla paginada con
-                                            formato legible.</li>
-                                        <li><strong>Tarea 1.6:</strong> Manejar mensajes de error si no se encuentra el
-                                            expediente o si hay problemas de conexión.</li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <strong>Historia 3:</strong> Como usuario del sistema, quiero consultar trámites
-                                    derivados utilizando el mismo formulario de búsqueda para gestionar eficazmente los
-                                    diferentes tipos de trámites desde un solo lugar.
-                                    <ul>
-                                        <li><strong>Tarea 2.1:</strong> Reutilizar el formulario de búsqueda ya
-                                            existente para incluir la opción de buscar trámites derivados.</li>
-                                        <li><strong>Tarea 2.2:</strong> Implementar en el backend la lógica que
-                                            identifique y devuelva trámites derivados según los criterios definidos.
-                                        </li>
-                                        <li><strong>Tarea 2.3:</strong> Ajustar la respuesta del backend para que
-                                            distinga trámites derivados de otros tipos.</li>
-                                        <li><strong>Tarea 2.4:</strong> Mostrar los trámites derivados en una tabla
-                                            paginada con columnas relevantes.</li>
-                                        <li><strong>Tarea 2.5:</strong> Agregar mensajes informativos si no se
-                                            encuentran trámites derivados con el número ingresado.</li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <strong>Historia 6:</strong> Como usuario del sistema, quiero visualizar el
-                                    seguimiento completo de un trámite con todos sus pasos registrados para entender su
-                                    estado actual de manera clara.
-                                    <ul>
-                                        <li><strong>Tarea 3.1:</strong> Diseñar la sección de “Seguimiento” con una
-                                            tabla que detalle cada paso del trámite.</li>
-                                        <li><strong>Tarea 3.2:</strong> Definir y estructurar los campos necesarios:
-                                            código, tipo de documento, asunto, fecha de registro e historial de trámite.
-                                        </li>
-                                        <li><strong>Tarea 3.3:</strong> Crear el endpoint del backend para consultar el
-                                            historial completo de un trámite por su ID o código.</li>
-                                        <li><strong>Tarea 3.4:</strong> Implementar la lógica frontend para consumir el
-                                            historial del trámite y mostrarlo ordenadamente.</li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <strong>Historia 11:</strong> Como usuario administrativo, quiero buscar, editar y
-                                    eliminar remitentes desde un listado, para así mantener actualizada la base de datos
-                                    de contactos.
-                                    <ul>
-                                        <li><strong>Tarea 4.1:</strong> Diseñar el listado de remitentes con una
-                                            interfaz amigable y botones visibles para editar y eliminar.</li>
-                                        <li><strong>Tarea 4.2:</strong> Implementar filtros por nombre, celular e ID con
-                                            campos de búsqueda dinámicos.</li>
-                                        <li><strong>Tarea 4.3:</strong> Configurar el backend para responder a búsquedas
-                                            filtradas y devolver los datos adecuados.</li>
-                                        <li><strong>Tarea 4.4:</strong> Configurar la funcionalidad de eliminación con
-                                            confirmación previa antes de borrar un remitente.</li>
-                                        <li><strong>Tarea 4.5:</strong> Mostrar mensajes de validación si hay campos
-                                            vacíos o datos mal ingresados.</li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <strong>Historia 12:</strong> Como usuario administrador, quiero gestionar la lista
-                                    de administradores con funciones de edición y eliminación para mantener el control y
-                                    la seguridad del sistema.
-                                    <ul>
-                                        <li><strong>Tarea 5.1:</strong> Diseñar el listado de administradores en una
-                                            tabla clara con opciones de editar y eliminar.</li>
-                                        <li><strong>Tarea 5.2:</strong> Implementar una alerta de confirmación antes de
-                                            eliminar un administrador.</li>
-                                        <li><strong>Tarea 5.3:</strong> Asegurar que todos los cambios se reflejen en la
-                                            tabla.</li>
-                                        <li><strong>Tarea 5.4:</strong> Validar permisos para que solo usuarios
-                                            autorizados puedan editar o eliminar administradores.</li>
-                                    </ul>
-                                </li>
-                            </ol>
-                        </section>
-
-
-                        <!--Herramienta-->
-                        <h2 class="fw-bold mt-5 border-bottom pb-2" id="Herramientas">Herramientas</h2>
-
-                        <!-- 3.1 Reunión del Sprint -->
-                        <section id="ReunionSprint">
-                            <h3 class="fw-bold mt-4">Reunión del Sprint</h3>
-                            <p>En esta reunión, el equipo Scrum, junto con el Product Owner, define qué historias de
-                                usuario o elementos del backlog se priorizan y se comprometen a completarlas dentro del
-                                sprint. El equipo también desglosa estas historias en tareas más pequeñas, asigna
-                                responsabilidades y estima el esfuerzo necesario.</p>
-                            <div class="contenedor-img my-3">
-                                <img src="../../asset/img/img_sprint1/reunionsprintBacklog.jpg"
-                                    alt="Imagen de reunión de sprint" class="img-fluid rounded" />
-                            </div>
-                        </section>
-
-                        <h2 class="fw-bold mt-0 border-bottom pb-2" id="Salidas">Salidas</h2>
                         <!-- 2.1.4 Sprint Backlog -->
                         <section id="SprintBacklog">
                             <h3 class="fw-bold mt-4">Effort Estimated Task List</h3>
@@ -343,6 +231,255 @@
                                 </tbody>
                             </table>
                         </section>
+
+                        <section id="DuracionSprint">
+                            <h3 class="fw-bold mt-4">Duración del Sprint</h3>
+                            <p>
+                                El sprint tendrá una duración de 3 semanas.
+                            </p>
+                            <table class="table table-bordered mt-3">
+                                <thead>
+                                    <tr>
+                                        <th>Lunes</th>
+                                        <th>Martes</th>
+                                        <th>Miércoles</th>
+                                        <th>Jueves</th>
+                                        <th>Viernes</th>
+                                        <th>Sábado</th>
+                                        <th>Domingo</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>31/03</td>
+                                        <td>01/04</td>
+                                        <td>02/04</td>
+                                        <td>03/04</td>
+                                        <td>04/04</td>
+                                        <td>05/04</td>
+                                        <td>06/04</td>
+                                    </tr>
+                                    <tr>
+                                        <td>07/04</td>
+                                        <td>08/04</td>
+                                        <td>09/04</td>
+                                        <td>10/04</td>
+                                        <td>11/04</td>
+                                        <td>12/04</td>
+                                        <td>13/04</td>
+                                    </tr>
+                                    <tr>
+                                        <td>14/04</td>
+                                        <td>15/04</td>
+                                        <td>16/04</td>
+                                        <td>17/04</td>
+                                        <td>18/04</td>
+                                        <td>19/04</td>
+                                        <td>20/04</td>
+                                    </tr>
+                                    <tr>
+                                        <td>21/04</td>
+                                        <td>22/04</td>
+                                        <td>23/04</td>
+                                        <td>24/04</td>
+                                        <td>25/04</td>
+                                        <td>26/04</td>
+                                        <td>27/04</td>
+                                    </tr>
+                                    <tr>
+                                        <td>28/04</td>
+                                        <td>29/04</td>
+                                        <td>30/04</td>
+                                        <td>01/05</td>
+                                        <td>02/05</td>
+                                        <td>03/05</td>
+                                        <td>04/05</td>
+                                    </tr>
+                                    <tr>
+                                        <td>05/05</td>
+                                        <td>06/05</td>
+                                        <td>07/05</td>
+                                        <td>08/05</td>
+                                        <td>09/05</td>
+                                        <td>10/05</td>
+                                        <td>11/05</td>
+                                    </tr>
+                                    <tr>
+                                        <td>12/05</td>
+                                        <td>13/05</td>
+                                        <td>14/05</td>
+                                        <td>15/05</td>
+                                        <td>16/05</td>
+                                        <td>17/05</td>
+                                        <td></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </section>
+                        <!--Herramienta-->
+                        <h2 class="fw-bold mt-5 border-bottom pb-2" id="Herramientas">Herramientas</h2>
+
+                        <!-- 3.1 Reunión del Sprint -->
+                        <section id="ReunionSprint">
+                            <h3 class="fw-bold mt-4">Reunión del Sprint</h3>
+                            <p>En esta reunión, el equipo Scrum, junto con el Product Owner, define qué historias de
+                                usuario o elementos del backlog se priorizan y se comprometen a completarlas dentro del
+                                sprint. El equipo también desglosa estas historias en tareas más pequeñas, asigna
+                                responsabilidades y estima el esfuerzo necesario.</p>
+                            <div class="contenedor-img my-3">
+                                <img src="../../asset/img/img_sprint1/reunionsprintBacklog.jpg"
+                                    alt="Imagen de reunión de sprint" class="img-fluid rounded" />
+                            </div>
+                        </section>
+
+                        <h2 class="fw-bold mt-0 border-bottom pb-2" id="Salidas"> Salidas</h2>
+
+                        <section id="Sprint-Backlog">
+                            <h3 class="fw-bold mt-4">Sprint Backlog</h3>
+                            <table class="table table-bordered mt-3">
+                                <thead>
+                                    <tr>
+                                        <th>Historia</th>
+                                        <th>Tarea</th>
+                                        <th>Esfuerzo</th>
+                                        <th>Responsable</th>
+                                        <th>Prioridad</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Historia 1</td>
+                                        <td>Tarea 1.1: Diseñar el formulario de búsqueda de trámites archivados.</td>
+                                        <td>3</td>
+                                        <td>Manuel - Jimmy - Jeampiere</td>
+                                        <td>Alta</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Historia 1</td>
+                                        <td>Tarea 1.2: Conectar el formulario con el backend para realizar la búsqueda
+                                            por número de expediente.</td>
+                                        <td>5</td>
+                                        <td>Manuel</td>
+                                        <td>Alta</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Historia 1</td>
+                                        <td>Tarea 1.3: Implementar la visualización de los resultados en una tabla
+                                            paginada.</td>
+                                        <td>5</td>
+                                        <td>Manuel</td>
+                                        <td>Alta</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Historia 2</td>
+                                        <td>Tarea 2.1: Agregar botón "Limpiar campos" al formulario.</td>
+                                        <td>1</td>
+                                        <td>Manuel</td>
+                                        <td>Media</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Historia 2</td>
+                                        <td>Tarea 2.2: Programar funcionalidad para limpiar todos los inputs al hacer
+                                            clic.</td>
+                                        <td>2</td>
+                                        <td>Manuel</td>
+                                        <td>Media</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Historia 2</td>
+                                        <td>Tarea 2.3: Validar que el formulario quede completamente vacío al limpiar.
+                                        </td>
+                                        <td>2</td>
+                                        <td>Manuel</td>
+                                        <td>Media</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Historia 3</td>
+                                        <td>Tarea 3.1: Implementar validaciones de campos requeridos en el formulario.
+                                        </td>
+                                        <td>3</td>
+                                        <td>Jimmy (backend)</td>
+                                        <td>Alta</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Historia 3</td>
+                                        <td>Tarea 3.2: Validar que la fecha de inicio no sea mayor que la fecha final.
+                                        </td>
+                                        <td>3</td>
+                                        <td>Jimmy</td>
+                                        <td>Alta</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Historia 3</td>
+                                        <td>Tarea 3.3: Configurar alertas visuales (mensajes de error) con estilos
+                                            accesibles y comprensibles.</td>
+                                        <td>3</td>
+                                        <td>Jimmy</td>
+                                        <td>Media</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Historia 4</td>
+                                        <td>Tarea 4.1: Adaptar el formulario de búsqueda para que también funcione con
+                                            trámites derivados.</td>
+                                        <td>3</td>
+                                        <td>Manuel</td>
+                                        <td>Alta</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Historia 4</td>
+                                        <td>Tarea 4.2: Implementar el backend para filtrar y mostrar trámites derivados.
+                                        </td>
+                                        <td>5</td>
+                                        <td>Manuel</td>
+                                        <td>Alta</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Historia 4</td>
+                                        <td>Tarea 4.3: Validar que los resultados se presenten con paginación.</td>
+                                        <td>3</td>
+                                        <td>Manuel</td>
+                                        <td>Alta</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Historia 5</td>
+                                        <td>Tarea 5.1: Diseñar un formulario de búsqueda de remitentes con campos para
+                                            nombre, celular e ID.</td>
+                                        <td>3</td>
+                                        <td>Jeampier (QA)</td>
+                                        <td>Alta</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Historia 5</td>
+                                        <td>Tarea 5.2: Implementar búsqueda en base de datos usando los tres criterios.
+                                        </td>
+                                        <td>5</td>
+                                        <td>Jeampier</td>
+                                        <td>Alta</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Historia 5</td>
+                                        <td>Tarea 5.3: Mostrar resultados en una tabla con opciones de edición o
+                                            eliminación.</td>
+                                        <td>5</td>
+                                        <td>Jeampier</td>
+                                        <td>Alta</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </section>
+
+
+                        <section id="Sprint-Burndown">
+                            <h3 class="fw-bold mt-4">Sprint Burndown Chart</h3>
+                            <div class="contenedor-img">
+                                <img src="../../asset/img/img_sprint1/Sprint burndown chart.jpg" alt="Sprint Burndown Chart"
+                                    class="img-fluid rounded mb-4 img-contenido-blog">
+                            </div>
+                        </section>
+
+
+
+
                     </article>
                 </div>
             </div>
@@ -370,7 +507,13 @@
                                             <li><a href="#ProductOwner" class="sidebar-link">2.1.1 Scrum Master</a></li>
                                             <li><a href="#EquipoDesarrollo" class="sidebar-link">2.1.3 Equipo de
                                                     desarrollo</a></li>
-                                            <li><a href="#Lista-Tareas" class="sidebar-link">2.1.5 Lista de tareas</a></li>
+                                            <li><a href="#SprintBacklog" class="sidebar-link">2.1.4 Effort Estimated
+                                                    Task List</a></li>
+                                            <li><a href="#DuracionSprint" class="sidebar-link">2.1.5 Duración del
+                                                    Sprint</a></li>
+
+
+
                                     </li>
 
                                 </ul>
@@ -388,8 +531,11 @@
                         <li>
                             <a href="#Salidas" class="sidebar-link">4. Salidas</a>
                             <ul class="list-unstyled ms-3">
-                                <li><a href="#SprintBacklog" class="sidebar-link">4.1 Effort Estimated
-                                        Task List</a>
+                                <li><a href="#Sprint-Backlog" class="sidebar-link">4.1 Sprint Backlog
+                                    </a></li>
+                                <li><a href="#Sprint-Burndown" class="sidebar-link">4.1.1  Sprint Burndown Chart
+                                    </a></li>
+                               
                             </ul>
                         </li>
                         </ul>
