@@ -1,0 +1,695 @@
+<h1>dailyStandup.html</h1>
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DemostrarSprint</title>
+    <!-- Estilos externos -->
+    <link rel="stylesheet" href="../../asset/css/bootstrap-5.3.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../asset/css/fontawesome-6/css/all.min.css">
+    <link rel="stylesheet" href="../../asset/css/vision.css">
+    <link rel="stylesheet" href="../../asset/css/btnTema.css">
+    <link rel="stylesheet" href="../../asset/css/navegador-blog.css">
+    <link rel="stylesheet" href="../../asset/css/footer.css">
+</head>
+
+<body>
+    <!-- Botón flotante de cambio de tema -->
+    <button class="theme-toggle-btn" onclick="toggleTheme()">
+        <i class="fa-solid fa-moon"></i>
+    </button>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg py-3">
+        <div class="container">
+            <a class="navbar-brand" href="../../index.html"><strong>INGENIERÍA DE SOFTWARE</strong></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav align-items-center">
+                    <li class="nav-item"><a class="nav-link active" href="../../index.html">Inicio</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button"
+                            data-bs-toggle="dropdown">Proyecto</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="../inicio.html">Inicio de proyecto</a></li>
+                            <li><a class="dropdown-item" href="../sprint_1.html">Sprint 1</a></li>
+                            <li><a class="dropdown-item" href="../sprint_2.html">Sprint 2</a></li>
+                            <li><a class="dropdown-item" href="#">Sprint 3</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="vision.html#Propuesta">Propuesta</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#mainFooter">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <section class="container my-5">
+        <div class="row pt-5">
+            <!-- Contenido principal del blog -->
+            <div class="col-lg-8">
+                <section class="position-relative blog-header" id="crearVision">
+                    <div class="container py-5">
+                        <!-- Breadcrumb -->
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb small text-muted mb-2">
+                                <li class="breadcrumb-item"><a href="../../index.html">Home</a></li>
+                                <li class="breadcrumb-item"><a href="../../index.html#InicioProyecto">Pages</a></li>
+                                <li class="breadcrumb-item"><a href="../inicio.html#blog-Crear">Inicio Proyecto</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Demostrar y validar el sprint
+                                </li>
+                            </ol>
+                        </nav>
+
+                        <!-- Blog Title -->
+                        <h1 class="fw-bold display-5" id="DemostrarSprint">Demostrar y validar el sprint</h1>
+                    </div>
+                </section>
+
+                <div class="blog-post">
+                    <div class="contenedor-img">
+                        <img src="../../asset/img/img_sprint1/v16.jpg" alt="Visión del proyecto Scrum"
+                            class="img-fluid rounded mb-4 img-contenido-blog">
+                    </div>
+                    <hr>
+
+                    <div class="d-flex align-items-center mb-4 text-muted small">
+                        <span class="me-3"><i class="fas fa-tag me-1"></i>Gestión de Software</span>
+                        <span><i class="far fa-calendar-alt me-1"></i>27 de abril, 2025</span>
+                    </div>
+
+                    <article class="blog-contenido">
+                        <p>
+                            Es el proceso continuo de revisar, detallar y reordenar las historias del Product Backlog.
+                            Se dividen tareas grandes y se ajustan prioridades. Esto asegura que el equipo siempre tenga
+                            historias bien definidas y listas para futuros sprints.
+
+                        </p>
+
+                        <h2 class="fw-bold mt-5 border-bottom pb-2" id="Entradas">Entradas</h2>
+
+                        <h3 class="fw-bold mt-4" id="EquipoPrincipalScrum">Equipo principal de Scrum</h3>
+                        <h4 class="fw-semibold mt-4" id="ProductOwner">Product Owner</h4>
+                        <p>
+                            <i class="fas fa-circle me-2 txt-sidebar"></i>Pablo Pascual, Pedro Javier
+                        </p>
+
+                        <h4 class="fw-semibold mt-4" id="ScrumMaster">Scrum master</h4>
+                        <p>
+                            <i class="fas fa-circle me-2 txt-sidebar"></i>Paye Juarez, Jesús Baltazar
+                        </p>
+                        <h4 class="fw-semibold mt-4" id="EquipoDesarrollo">Equipo de desarrollo:</h4>
+                        <ul>
+                            <li>Velez de Villa Huacachi Manuel Silverio</li>
+                            <li>Huerta Vasquez Jimmy Alexander</li>
+                            <li>Barrios Quispe Jeampier Jhoel</li>
+                        </ul>
+                        <!-- Entregables Sprint -->
+                        <section id="Entregables">
+                            <h3 class="fw-bold mt-4">Entregables del Sprint</h3>
+                            <table class="table table-bordered mt-3">
+                                <thead>
+                                    <tr>
+                                        <th>Historia de Usuario</th>
+                                        <th>Entregables</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Historia de Usuario 1: Trámites Archivados</td>
+                                        <td>
+                                            <ul>
+                                                <li>Como usuario del sistema, quiero poder buscar un trámite archivado
+                                                    ingresando su número de expediente para visualizar su información
+                                                    detallada de manera rápida y organizada.</li>
+                                                <li>Funcionalidad de búsqueda por número de expediente.</li>
+                                                <li>Tabla de resultados con campos clave del trámite.</li>
+                                                <li>Mensajes de retroalimentación en caso de error.</li>
+                                                <li>Interfaz optimizada para escritorio y dispositivos móviles.</li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Historia de Usuario 2: Trámites Derivados</td>
+                                        <td>
+                                            <ul>
+                                                <li>Como usuario del sistema, quiero consultar trámites derivados
+                                                    utilizando el mismo formulario de búsqueda para gestionar
+                                                    eficazmente los diferentes tipos de trámites desde un solo lugar.
+                                                </li>
+                                                <li>Módulo de búsqueda de trámites derivados con campos reutilizables.
+                                                </li>
+                                                <li>Tabla detallada de resultados.</li>
+                                                <li>Compatibilidad responsive.</li>
+                                                <li>Mensajes en caso de búsqueda vacía o error.</li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Historia de Usuario 3: Seguimiento de Trámite</td>
+                                        <td>
+                                            <ul>
+                                                <li>Como usuario del sistema, quiero visualizar el seguimiento completo
+                                                    de un trámite con todos sus pasos registrados y estado actual de
+                                                    manera clara.</li>
+                                                <li>Tabla de historial del trámite con columnas: fecha, acción, y área.
+                                                </li>
+                                                <li>Ordenamiento cronológico automático.</li>
+                                                <li>Diseño adaptable a pantalla móvil.</li>
+                                                <li>Componente de mensaje vacío.</li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Historia de Usuario 4: Listado de remitentes</td>
+                                        <td>
+                                            <ul>
+                                                <li>Como usuario administrativo, quiero buscar, editar y eliminar
+                                                    remitentes desde un listado con filtros personalizados para mantener
+                                                    actualizada la base de datos de contactos.</li>
+                                                <li>Se puede buscar remitentes por nombre, celular o ID.</li>
+                                                <li>Cada remitente tiene opciones de “Editar” y “Eliminar”.</li>
+                                                <li>Las ediciones se guardan correctamente y se reflejan en el listado.
+                                                </li>
+                                                <li>Se pide confirmación antes de eliminar un remitente.</li>
+                                                <li>El listado es ordenado, responsivo y muestra datos clave (nombre,
+                                                    celular, correo).</li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Historia de Usuario 5: Gestión de administradores</td>
+                                        <td>
+                                            <ul>
+                                                <li>Como usuario administrador, quiero gestionar la lista de
+                                                    administradores
+                                                    con funciones de edición y eliminación para mantener la seguridad
+                                                    del
+                                                    sistema.</li>
+                                                <li>Se presenta un listado de todos los administradores del sistema con
+                                                    sus datos relevantes.</li>
+                                                <li>Cada administrador puede ser editado con validación de campos
+                                                    obligatorios.</li>
+                                                <li>Las modificaciones se reflejan de inmediato en el listado.</li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </section>
+                        <!-- 2.1.4 Sprint Backlog -->
+                        <section id="SprintBacklog">
+                            <h3 class="fw-bold mt-4">Sprint Backlog</h3>
+                            <p>El Sprint Backlog es la lista de tareas que se han comprometido para el sprint. El equipo
+                                selecciona las tareas del Product Backlog y las convierte en tareas más pequeñas para su
+                                ejecución.</p>
+
+                            <!-- Tabla de tareas -->
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th>Historia</th>
+                                        <th>Tarea</th>
+                                        <th>Esfuerzo</th>
+                                        <th>Responsable</th>
+                                        <th>Prioridad</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td style="white-space: nowrap;">Historia 1</td>
+                                        <td>Tarea 1.1: Diseñar el formulario de búsqueda de trámites archivados.</td>
+                                        <td>3</td>
+                                        <td>Manuel - Jimmy - Jeampiere</td>
+                                        <td>Alta</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="white-space: nowrap;">Historia 1</td>
+                                        <td>Tarea 1.2: Conectar el formulario con el backend para realizar la búsqueda
+                                            por número de expediente.</td>
+                                        <td>5</td>
+                                        <td>Manuel</td>
+                                        <td>Alta</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="white-space: nowrap;">Historia 1</td>
+                                        <td>Tarea 1.3: Implementar la visualización de los resultados en una tabla
+                                            paginada.</td>
+                                        <td>5</td>
+                                        <td>Manuel</td>
+                                        <td>Alta</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="white-space: nowrap;">Historia 2</td>
+                                        <td>Tarea 2.1: Agregar botón "Limpiar campos" al formulario.</td>
+                                        <td>1</td>
+                                        <td>Manuel</td>
+                                        <td>Media</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="white-space: nowrap;">Historia 2</td>
+                                        <td>Tarea 2.2: Programar funcionalidad para limpiar todos los inputs al hacer
+                                            clic.</td>
+                                        <td>2</td>
+                                        <td>Manuel</td>
+                                        <td>Media</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="white-space: nowrap;">Historia 2</td>
+                                        <td>Tarea 2.3: Validar que el formulario quede completamente vacío al limpiar
+                                        </td>
+                                        <td>2</td>
+                                        <td>Manuel</td>
+                                        <td>Media</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="white-space: nowrap;">Historia 3</td>
+                                        <td>Tarea 3.1: Implementar validaciones de campos requeridos en el formulario.
+                                        </td>
+                                        <td>3</td>
+                                        <td>Jimmy (backend)</td>
+                                        <td>Alta</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="white-space: nowrap;">Historia 3</td>
+                                        <td>Tarea 3.2: Validar que la fecha de inicio no sea mayor que la fecha final.
+                                        </td>
+                                        <td>3</td>
+                                        <td>Jimmy</td>
+                                        <td>Alta</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Historia 3</td>
+                                        <td>Tarea 3.3: Configurar alertas visuales (mensajes de error) con estilos
+                                            accesibles y comprensibles.</td>
+                                        <td>3</td>
+                                        <td>Jimmy</td>
+                                        <td>Media</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Historia 4</td>
+                                        <td>Tarea 4.1: Adaptar el formulario de búsqueda para que también funcione con
+                                            trámites derivados.</td>
+                                        <td>3</td>
+                                        <td>Manuel</td>
+                                        <td>Alta</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Historia 4</td>
+                                        <td>Tarea 4.2: Implementar el backend para filtrar y mostrar trámites derivados
+                                        </td>
+                                        <td>5</td>
+                                        <td>Manuel</td>
+                                        <td>Alta</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Historia 4</td>
+                                        <td>Tarea 4.3: Validar que los resultados se presenten con paginación.</td>
+                                        <td>3</td>
+                                        <td>Manuel</td>
+                                        <td>Alta</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Historia 5</td>
+                                        <td>Tarea 5.1: Diseñar un formulario de búsqueda de remitentes con campos para
+                                            nombre, celular e ID.</td>
+                                        <td>3</td>
+                                        <td>Jeampier (QA)</td>
+                                        <td>Alta</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Historia 5</td>
+                                        <td>Tarea 5.2: Implementar búsqueda en base de datos usando los tres criterios
+                                        </td>
+                                        <td>5</td>
+                                        <td>Jeampier</td>
+                                        <td>Alta</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Historia 5</td>
+                                        <td>Tarea 5.3: Mostrar resultados en una tabla con opciones de edición o
+                                            eliminación.</td>
+                                        <td>5</td>
+                                        <td>Jeampier</td>
+                                        <td>Alta</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </section>
+
+                        <section id="CriterioDeterminado">
+                            <h3 class="fw-bold mt-4">Criterios determinados</h3>
+
+                            <ul>
+                                <li><strong>Consulta de Trámites Archivados y Derivados:</strong></li>
+                                <ul>
+                                    <li>Búsqueda funcional por número de expediente, fechas y asunto.</li>
+                                    <li>Resultados visibles en tablas bien estructuradas.</li>
+                                    <li>Validaciones completadas para campos vacíos o mal ingresados.</li>
+                                    <li>Mensajes de error claros y funcionalidad responsive implementada.</li>
+                                </ul>
+
+                                <li><strong>Seguimiento de Trámites:</strong></li>
+                                <ul>
+                                    <li>Visualización completa del historial del trámite (con área, fecha y acción).
+                                    </li>
+                                    <li>Diseño ordenado y responsivo.</li>
+                                    <li>Datos cargados de manera rápida y sin errores.</li>
+                                </ul>
+
+                                <li><strong>Gestión de Remitentes:</strong></li>
+                                <ul>
+                                    <li>Listado funcional con filtros por nombre, celular o ID.</li>
+                                    <li>Funcionalidad para editar y eliminar registros con confirmaciones activas.</li>
+                                    <li>Cambios reflejados inmediatamente.</li>
+                                    <li>Pruebas exitosas en dispositivos móviles y escritorio.</li>
+                                </ul>
+
+                                <li><strong>Gestión de Administradores:</strong></li>
+                                <ul>
+                                    <li>Listado de administradores con funciones de edición y eliminación.</li>
+                                    <li>Validación completa de campos al editar.</li>
+                                    <li>Seguridad activa: no se permite eliminar al superadministrador.</li>
+                                    <li>Interfaz usable y consistente.</li>
+                                </ul>
+
+                                <li><strong>Pruebas de Calidad (QA):</strong></li>
+                                <ul>
+                                    <li>Validación de funcionamiento en distintos navegadores y dispositivos.</li>
+                                    <li>Verificación de rendimiento y carga sin errores críticos.</li>
+                                    <li>Validación de todos los módulos del sprint.</li>
+                                </ul>
+
+                                <li><strong>Aprobación de Stakeholders:</strong></li>
+                                <ul>
+                                    <li>Validación del entregable con feedback positivo.</li>
+                                    <li>Ajustes realizados según observaciones del equipo o cliente.</li>
+                                    <li>Los entregables son presentados a los stakeholders clave (institución,
+                                        secretarios técnicos, jueces, etc.) para su validación.</li>
+                                    <li>Se recopila retroalimentación formal sobre la funcionalidad, usabilidad y
+                                        cumplimiento de requisitos.</li>
+                                    <li>Se implementan los ajustes necesarios en base a las observaciones recibidas,
+                                        asegurando que el producto cumpla con las expectativas antes del cierre del
+                                        sprint.</li>
+                                </ul>
+                        </section>
+
+                        <section id="Criterios-Aceptación">
+                            <h3 class="fw-bold mt-4">Criterios de Aceptación</h3>
+
+                            <table class="table table-bordered mt-3">
+                                <thead>
+                                    <tr>
+                                        <th>Historia de Usuario</th>
+                                        <th>Criterios de Aceptación</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Historia de Usuario 1</td>
+                                        <td>
+                                            <ul>
+                                                <li>El usuario puede ingresar un número de expediente y obtener
+                                                    resultados detallados.</li>
+                                                <li>Se muestra una tabla clara con los datos del trámite (tipo, asunto,
+                                                    fecha, etc.).</li>
+                                                <li>Si no se encuentra ningún trámite, se muestra un mensaje
+                                                    informativo.</li>
+                                                <li>El campo de búsqueda debe validar que no esté vacío y que tenga al
+                                                    menos 3 caracteres.</li>
+                                                <li>El diseño es compatible con diferentes dispositivos.</li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Historia de Usuario 2</td>
+                                        <td>
+                                            <ul>
+                                                <li>El formulario de búsqueda funciona igual para trámites derivados y
+                                                    archivados.</li>
+                                                <li>La tabla de resultados muestra tipo, asunto, estado y fecha.</li>
+                                                <li>Se validan los rangos de fechas y los campos ingresados.</li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Historia de Usuario 3</td>
+                                        <td>
+                                            <ul>
+                                                <li>Al seleccionar un trámite, se muestra su historial completo en una
+                                                    tabla con campos como: acción, fecha, área, y observaciones.</li>
+                                                <li>La tabla está ordenada cronológicamente de manera descendente.</li>
+                                                <li>Si no hay historial, se muestra una notificación adecuada (“Este
+                                                    trámite no tiene seguimiento registrado”).</li>
+                                                <li>Interfaz compatible con móviles y escritorio.</li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Historia de Usuario 4</td>
+                                        <td>
+                                            <ul>
+                                                <li>Se pueden buscar remitentes por nombre, celular o ID con filtros
+                                                    visibles.</li>
+                                                <li>Las opciones de editar y eliminar funcionan correctamente.</li>
+                                                <li>La eliminación requiere confirmación.</li>
+                                                <li>Los cambios en la tabla se reflejan inmediatamente.</li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Historia de Usuario 5</td>
+                                        <td>
+                                            <ul>
+                                                <li>El listado muestra los datos relevantes de cada administrador.</li>
+                                                <li>La edición permite modificar nombre, correo y permisos con
+                                                    validación.</li>
+                                                <li>La eliminación pide confirmación.</li>
+                                                <li>Toda la interfaz es accesible y responsiva.</li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </section>
+                        <!--Herramienta-->
+                        <h2 class="fw-bold mt-5 border-bottom pb-2" id="Herramientas">Herramientas</h2>
+
+                        <!-- Reunión -->
+                        <section id="Reunion">
+                            <h3 class="fw-bold mt-4">Reunión de revisión del Sprint</h3>
+                            <div class="contenedor-img">
+                                <img src="../../asset/img/img_sprint1/Reunión de revisión.jpg" alt="Scrum Board"
+                                    class="img-fluid rounded mb-4 img-contenido-blog">
+                            </div>
+                        </section>
+
+                        <!--Proposito -->
+                        <section id="Proposito">
+                            <h3 class="fw-bold mt-4">Propósito</h3>
+                            <p>El propósito de esta reunión es asegurar que se obtenga la aprobación del Product Owner
+                                respecto a los entregables elaborados.</p>
+                        </section>
+
+                        <h2 class="fw-bold mt-5 border-bottom pb-2" id="Salidas">Salidas</h2>
+
+                        <!-- Entregables-aceptados -->
+                        <section id="Entregables-aceptados">
+                            <h3 class="fw-bold mt-4">Entregables aceptados</h3>
+                            <table class="table table-bordered mt-3">
+                                <thead>
+                                    <tr>
+                                        <th>Historia de usuario</th>
+                                        <th>Criterios de aceptación / Entregables</th>
+                                        <th>Aceptada</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Historia de Usuario 1: Trámites Archivados<br>
+                                        </td>
+                                        <td> Como usuario del sistema, quiero poder buscar un trámite archivado
+                                            ingresando su número de expediente para visualizar su información detallada
+                                            de manera rápida y organizada.</td>
+                                        <td>Sí</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Historia de Usuario 2: Trámites Derivados<br>
+
+                                        </td>
+                                        <td>Como usuario del sistema, quiero consultar trámites derivados utilizando el
+                                            mismo formulario de búsqueda para gestionar eficazmente los diferentes tipos
+                                            de trámites desde un solo lugar.</td>
+                                        <td>Sí</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Historia de Usuario 3: Seguimiento de Trámite<br>
+                                        </td>
+                                        <td> Como usuario del sistema, quiero visualizar el seguimiento completo de un
+                                            trámite con todos sus pasos registrados y estado actual de manera clara.
+                                        </td>
+                                        <td>Sí</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Historia de Usuario 4: Listado de remitentes<br>
+                                        </td>
+                                        <td> Como usuario administrativo, quiero buscar, editar y eliminar remitentes
+                                            desde un listado con filtros personalizados para mantener actualizada la
+                                            base de datos de contactos.</td>
+                                        <td>Sí</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Historia de Usuario 5: Gestión de administradores<br>
+                                        </td>
+                                        <td> Como usuario administrador, quiero gestionar la lista de administradores
+                                            con
+                                            funciones de edición y eliminación para mantener la seguridad del sistema.
+                                        </td>
+                                        <td>Sí</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </section>
+                    </article>
+                </div>
+            </div>
+
+
+
+            <!-- Barra lateral fija (sticky) -->
+            <div class="col-lg-4 mt-md-5">
+                <aside class="sidebar-sticky p-4 rounded-3 shadow-sm dark-bg overflow-auto" style="max-height: 70vh;">
+                    <!-- Índice -->
+                    <div class="mb-4">
+                        <h6 class="fw-bold dark-text">
+                            <i class="fas fa-circle me-2 txt-sidebar"></i>Índice
+                        </h6>
+                        <ul class="list-unstyled ms-4">
+                            <li><a href="#DemostrarSprint" class="sidebar-link">1. Demostrar y validar el sprint</a>
+                            </li>
+                            <li>
+                                <a href="#Entradas" class="sidebar-link">2. ENTRADAS</a>
+                                <ul class="list-unstyled ms-3">
+                                    <li>
+                                        <a href="#EquipoPrincipalScrum" class="sidebar-link">2.1 Equipo principal
+                                            Scrum</a>
+                                        <ul class="list-unstyled ms-3">
+                                            <li><a href="#ProductOwner" class="sidebar-link">2.1.1 Scrum Master</a></li>
+                                            <li><a href="#EquipoDesarrollo" class="sidebar-link">2.1.2 Equipo de
+                                                    desarrollo</a>
+                                            </li>
+                                            <li><a href="#Entregables" class="sidebar-link">2.1.3 Entregables del
+                                                    Sprint</a>
+                                            </li>
+                                            <li><a href="#SprintBacklog" class="sidebar-link">2.1.4 Sprint Backlog</a>
+                                            </li>
+                                            <li><a href="#CriterioDeterminado" class="sidebar-link">2.1.5 Criterios
+                                                    determinados</a>
+                                            </li>
+                                            <li><a href="#Criterios-Aceptación" class="sidebar-link">2.1.5 Criterios de
+                                                    Aceptación</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#Herramientas" class="sidebar-link">3. Herramientas</a>
+                                <ul class="list-unstyled ms-3">
+                                    <li><a href="#Reunion" class="sidebar-link">3.1 Reunión de revisión del Sprint</a>
+                                    </li>
+                                    <li><a href="#Proposito" class="sidebar-link">3.1.1 Propósito</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#Salidas" class="sidebar-link">4. Salidas</a>
+                                <ul class="list-unstyled ms-3">
+                                    <li><a href="#Entregables-aceptados" class="sidebar-link">4.1 Entregables
+                                            aceptados</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Entradas recientes -->
+                    <div>
+                        <h6 class="fw-bold dark-text mb-3">
+                            <i class="fas fa-circle me-2 txt-sidebar"></i>Entradas recientes
+                        </h6>
+                        <ul class="list-unstyled ms-4">
+                            <li><a href="../inicio.html" class="sidebar-link">- Inicio de Proyecto</a></li>
+                            <li><a href="../sprint_1.html" class="sidebar-link">- Sprint 1</a></li>
+                            <li><a href="../sprint_2.html" class="sidebar-link">- Sprint 2</a></li>
+                            <li><a href="#" class="sidebar-link">- Sprint 3</a></li>
+                        </ul>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </section>
+    <!-- FOOTER -->
+    <footer class="bg-dark text-white py-5 mt-5" id="mainFooter">
+        <div class="container">
+            <div class="row gy-4">
+                <div class="col-md-4">
+                    <h5 class="fw-bold mb-3">Ingeniería de Software</h5>
+                    <p class="text-white-50">
+                        Proyecto que busca desarrollar un sistema de gestión documental como parte de una mesa de partes
+                        virtual. La idea es facilitar el ingreso, registro, consulta y seguimiento de documentos
+                        vinculados a procesos arbitrales.
+                    </p>
+                    <form class="d-flex flex-column flex-sm-row">
+                        <input type="email" class="form-control me-sm-2 mb-2 mb-sm-0 rounded-pill px-3"
+                            placeholder="Ingresa tu correo electrónico">
+                        <button class="btn btn-primary rounded-pill px-4 fw-bold" type="submit">ENVIAR</button>
+                    </form>
+                </div>
+                <div class="col-md-2">
+                    <h6 class="fw-bold mb-3">Enlaces Rápidos</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="../../index.html#Integrantes"
+                                class="text-white-50 text-decoration-none d-block mb-1">Integrantes</a></li>
+                        <li><a href="#" class="text-white-50 text-decoration-none d-block mb-1">Consultoría</a></li>
+                        <li><a href="../../index.html#Blogs"
+                                class="text-white-50 text-decoration-none d-block mb-1">Blog</a></li>
+                        <li><a href="#" class="text-white-50 text-decoration-none d-block">Estudios de Caso</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h6 class="fw-bold mb-3">Proyecto</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="../inicio.html" class="text-white-50 text-decoration-none d-block mb-1">Inicio de
+                                proyecto</a></li>
+                        <li><a href="../sprint_1.html" class="text-white-50 text-decoration-none d-block mb-1">Sprint
+                                1</a></li>
+                        <li><a href="../sprint_2.html" class="text-white-50 text-decoration-none d-block mb-1">Sprint
+                                2</a></li>
+                        <li><a href="#" class="text-white-50 text-decoration-none d-block">Sprint 3</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h6 class="fw-bold mb-3">Contáctanos</h6>
+                    <p class="text-white-50 mb-1">Comunícate con uno de nuestros consultores del proyecto</p>
+                    <a href="mailto:hi@design.studio.com"
+                        class="fw-bold text-white text-decoration-underline">2113110142@untels.edu.pe</a>
+                </div>
+            </div>
+
+            <hr class="border-secondary my-4">
+
+            <div class="text-center text-white-50">
+                <small>&copy; 2025 - Todos los derechos reservados.</small><br>
+            </div>
+        </div>
+    </footer>
+    <script src="../../asset/js/modo-oscuro.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="../../asset/css/bootstrap-5.3.3/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>F

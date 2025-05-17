@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPRINT 1</title>
+
+    <!-- Estilos externos -->
+    <link rel="stylesheet" href="../asset/css/bootstrap-5.3.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../asset/css/fontawesome-6/css/all.min.css">
+    <link rel="stylesheet" href="../asset/css/navegador-blog.css">
+    <link rel="stylesheet" href="../asset/css/footer.css">
+    <link rel="stylesheet" href="../asset/css/btnTema.css">
+    <link rel="stylesheet" href="../asset/css/inicio.css">
+</head>
+
+<body>
+
+    <!-- Botón flotante de cambio de tema -->
+    <button class="theme-toggle-btn" onclick="toggleTheme()">
+        <i class="fa-solid fa-moon"></i>
+    </button>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg py-3">
+        <div class="container">
+            <a class="navbar-brand" href="#"><strong>INGENIERÍA DE SOFTWARE</strong></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav align-items-center">
+                    <li class="nav-item"><a class="nav-link active" href="../index.html">Inicio</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button"
+                            data-bs-toggle="dropdown">Proyecto</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="inicio.html">Inicio de proyecto</a></li>
+                            <li><a class="dropdown-item" href="../Blog/sprint_1.html">Sprint 1</a></li>
+                            <li><a class="dropdown-item" href="../Blog/sprint_2.html">Sprint 2</a></li>
+                            <li><a class="dropdown-item" href="#">Sprint 3</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="InicioProyecto/vision.html#Propuesta">Propuesta</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#mainFooter">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <section class="container my-5">
+        <div class="row pt-5">
+
+            <!-- Contenido principal del blog -->
+            <div class="col-lg-8">
+                <section class="position-relative blog-header">
+                    <div class="container py-5">
+                        <!-- Breadcrumb -->
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb small text-muted mb-2">
+                                <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
+                                <li class="breadcrumb-item"><a href="../index.html#InicioProyecto">Pages</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">SPRINT 1</li>
+                            </ol>
+                        </nav>
+
+                        <!-- Blog Title -->
+                        <h1 class="fw-bold" id="blog-Crear">SPRINT 1</h1>
+                    </div>
+                </section>
+
+                <div class="blog-post">
+                    <div class="contenedor-img">
+                        <img src="../asset/img/img_sprint1/imgsprint_1.png" alt="Blog Post"
+                            class="img-fluid rounded mb-4 img-contenido-blog">
+                    </div>
+                    <div class="d-flex align-items-center mb-2 text-muted small">
+                        <span class="me-3">Software</span>
+                        <span>15 Abril. 2025</span>
+                    </div>
+
+                </div>
+
+
+
+                <!-- 7. Crear historias de usuario -->
+                <div class="blog-post mt-5" id="blog-crearHistorias">
+                    <div class="d-flex align-items-center mb-2 text-muted small"> </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <h3 class="fw-bold">7. Crear historias de usuario</h3>
+                        </div>
+                        <div class="col-md-8">
+                            <p class="text-secondary">
+                                Se definieron las necesidades del sistema en forma de historias de usuario, como por
+                                ejemplo buscar
+                                trámites archivados o ver el historial de un expediente, con el fin de traducir los
+                                requerimientos
+                                reales del área documentaria de TACIDH.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="mt-3">
+                        <a href="../Blog/sprint_1/historiaUsuario.html"
+                            class="text-decoration-none text-primary fw-semibold">
+                            Ver más del blog <i class="fas fa-arrow-right ms-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 8. Estimar historias de usuario -->
+                <div class="blog-post mt-5" id="blog-estimarHistoria">
+                    <div class="contenedor-img">
+                        <img src="../asset/img/inicioProyecto/estimarUsuario.png" alt="Estimar historias de usuario"
+                            class="img-fluid rounded mb-4 img-contenido-blog">
+                    </div>
+                    <div class="d-flex align-items-center mb-2 text-muted small">
+                        <span class="me-3">Software</span>
+                        <span>27 de abril, 2025</span>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <h3 class="fw-bold">8. Estimar historias de usuario</h3>
+                        </div>
+                        <div class="col-md-8">
+                            <p class="text-secondary">
+                                Cada historia fue evaluada para saber cuánto esfuerzo técnico y tiempo requerirá. Esto
+                                permitió asignar
+                                prioridades y organizar las funcionalidades en función del tiempo disponible en el
+                                Sprint.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="mt-3">
+                        <a href="../Blog/sprint_1/estimarHistoria.html"
+                            class="text-decoration-none text-primary fw-semibold">
+                            Ver más del blog <i class="fas fa-arrow-right ms-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 9. Historias de usuario comprometidas -->
+                <div class="blog-post mt-5" id="blog-historiaComprometidas">
+                    <div class="contenedor-img">
+                        <img src="../asset/img/inicioProyecto/historiasComprometidas.jpg"
+                            alt="Historias de usuario comprometidas" class="img-fluid rounded mb-4 img-contenido-blog">
+                    </div>
+                    <div class="d-flex align-items-center mb-2 text-muted small">
+                        <span class="me-3">Software</span>
+                        <span>27 de abril, 2025</span>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <h3 class="fw-bold">9. Historias de usuario comprometidas</h3>
+                        </div>
+                        <div class="col-md-8">
+                            <p class="text-secondary">
+                                Se seleccionaron las historias más viables para completar en este Sprint, teniendo en
+                                cuenta la
+                                capacidad del equipo. Nos comprometimos con funcionalidades como búsqueda de trámites,
+                                validaciones, y
+                                listado de remitentes.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="mt-3">
+                        <a href="../Blog/sprint_1/historiaComprometidas.html"
+                            class="text-decoration-none text-primary fw-semibold">
+                            Ver más del blog <i class="fas fa-arrow-right ms-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 10. Identificar tareas -->
+                <div class="blog-post mt-5" id="blog-identificarTareas">
+                    <div class="contenedor-img">
+                        <img src="../asset/img/inicioProyecto/identificarTareas.jpg" alt="Identificar tareas"
+                            class="img-fluid rounded mb-4 img-contenido-blog">
+                    </div>
+                    <div class="d-flex align-items-center mb-2 text-muted small">
+                        <span class="me-3">Software</span>
+                        <span>27 de abril, 2025</span>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <h3 class="fw-bold">10. Identificar tareas</h3>
+                        </div>
+                        <div class="col-md-8">
+                            <p class="text-secondary">
+                                Las historias elegidas se desglosaron en tareas específicas como: diseñar formularios,
+                                programar
+                                validaciones, crear tablas de datos, y probar funciones, para facilitar su
+                                implementación.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="mt-3">
+                        <a href="../Blog/sprint_1/identificarTareas.html"
+                            class="text-decoration-none text-primary fw-semibold">
+                            Ver más del blog <i class="fas fa-arrow-right ms-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 11. Estimar tareas -->
+                <div class="blog-post mt-5 mb-lg-5" id="blog-estimarTareas">
+                    <div class="contenedor-img">
+                        <img src="../asset/img/inicioProyecto/estimarTareas.jpg" alt="Estimar tareas"
+                            class="img-fluid rounded mb-4 img-contenido-blog">
+                    </div>
+                    <div class="d-flex align-items-center mb-2 text-muted small">
+                        <span class="me-3">Software</span>
+                        <span>27 de abril, 2025</span>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-4">
+                            <h3 class="fw-bold">11. Estimar tareas</h3>
+                        </div>
+                        <div class="col-md-8">
+                            <p class="text-secondary">
+                                Cada tarea fue estimada en términos de tiempo y dificultad, lo que ayudó a planificar
+                                mejor el trabajo
+                                diario y prever posibles obstáculos en el desarrollo del sistema de trámites.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="mt-3">
+                        <a href="../Blog/sprint_1/estimarTareas.html"
+                            class="text-decoration-none text-primary fw-semibold">
+                            Ver más del blog <i class="fas fa-arrow-right ms-2"></i>
+                        </a>
+                    </div>
+
+                    <div class="contenedor-img">
+                        <img src="../asset/img/inicioProyecto/HistoriaUsuario.png" alt="Crear historias de usuario"
+                            class="img-fluid rounded mb-4 img-contenido-blog">
+                    </div>
+                </div>
+
+
+
+                <!---DEMAS CONTENIDO AQUI -->
+                <!-- 12. Crear el Sprint Backlog -->
+                <section id="blog-sprintBacklog" class="mb-5">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <h3 class="fw-bold">12. Crear el Sprint Backlog</h3>
+                        </div>
+                        <div class="col-md-8">
+                            <p class="text-secondary">
+                                Se organizó una lista concreta con todas las tareas planificadas para el Sprint 2,
+                                incluyendo sus responsables, para guiar el desarrollo del módulo documental y asegurar
+                                un seguimiento efectivo.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Agregar un pequeño espacio entre el enlace y la imagen -->
+                    <div class="mt-3">
+                        <a href="../Blog/sprint_1/sprintBacklog.html"
+                            class="text-decoration-none text-primary fw-semibold">
+                            Ver más del blog <i class="fas fa-arrow-right ms-2"></i>
+                        </a>
+                    </div>
+
+                    <!-- Imagen con un margen superior -->
+                    <div class="contenedor-img mt-4">
+                        <img src="../asset/img/img_sprint1/12.jpg" alt="Sprint Backlog"
+                            class="img-fluid rounded mb-4 img-contenido-blog">
+                    </div>
+                </section>
+
+
+                <!-- 13. Crear entregables -->
+                <section id="blog-entregables" class="mb-5">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <h3 class="fw-bold">13. Crear entregables</h3>
+                        </div>
+                        <div class="col-md-8">
+                            <p class="text-secondary">
+                                Se desarrollaron y ensamblaron las funciones finalizadas, como la búsqueda de trámites y
+                                el historial, para entregarlas en estado funcional y probarlas en el entorno simulado de
+                                TACIDH.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="mt-3">
+                        <a href="../Blog/sprint_1/entregables.html"
+                            class="text-decoration-none text-primary fw-semibold">
+                            Ver más del blog <i class="fas fa-arrow-right ms-2"></i>
+                        </a>
+                    </div>
+                    <!-- Agregar espacio entre el enlace y la imagen -->
+                    <div class="contenedor-img mt-4">
+                        <img src="../asset/img/img_sprint1/v13.jpg" alt="Crear entregables"
+                            class="img-fluid rounded mb-4 img-contenido-blog">
+                    </div>
+                </section>
+
+
+                <!-- 14. Realizar Daily Standup -->
+                <section id="blog-realizarDaily" class="mb-5">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <h3 class="fw-bold">14. Realizar Daily Standup</h3>
+                        </div>
+                        <div class="col-md-8">
+                            <p class="text-secondary">
+                                Se realizaron reuniones breves diarias para que cada integrante comentara qué hizo, qué
+                                hará y si tuvo problemas. Esto ayudó a mantener el avance fluido y resolver bloqueos
+                                rápidamente.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="mt-3">
+                        <a href="../Blog/sprint_1/dailyStandup.html"
+                            class="text-decoration-none text-primary fw-semibold">
+                            Ver más del blog <i class="fas fa-arrow-right ms-2"></i>
+                        </a>
+                    </div>
+                    <!-- Agregar espacio entre el enlace y la imagen -->
+                    <div class="contenedor-img mt-4">
+                        <img src="../asset/img/img_sprint1/v14.jpg" alt="Daily Standup"
+                            class="img-fluid rounded mb-4 img-contenido-blog">
+                    </div>
+                </section>
+
+                <!-- 15. Refinamiento del Backlog Priorizado del Producto -->
+                <section id="blog-refinamiento" class="mb-5">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <h3 class="fw-bold">15. Refinamiento del Backlog Priorizado del Producto</h3>
+                        </div>
+                        <div class="col-md-8">
+                            <p class="text-secondary">
+                                Durante el Sprint, se revisaron y ajustaron historias pendientes, se aclararon
+                                requerimientos nuevos y se reorganizaron prioridades según lo que el equipo podía ir
+                                abordando mejor.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="mt-3">
+                        <a href="../Blog/sprint_1/refinamiento.html"
+                            class="text-decoration-none text-primary fw-semibold">
+                            Ver más del blog <i class="fas fa-arrow-right ms-2"></i>
+                        </a>
+                    </div>
+                    <!-- Agregar espacio entre el enlace y la imagen -->
+                    <div class="contenedor-img mt-4">
+                        <img src="../asset/img/img_sprint1/15.jpg" alt="Refinamiento Backlog"
+                            class="img-fluid rounded mb-4 img-contenido-blog">
+                    </div>
+                </section>
+
+                <!-- 16. Demostrar y validar el sprint -->
+                <section id="blog-desmostrarSprint" class="mb-5">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <h3 class="fw-bold">16. Demostrar y validar el sprint</h3>
+                        </div>
+                        <div class="col-md-8">
+                            <p class="text-secondary">
+                                Se presentaron las funcionalidades completadas al final del Sprint, como la validación
+                                de formularios y las búsquedas, para confirmar que cumplen los objetivos y se ajustan a
+                                las necesidades reales de TACIDH.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="mt-3">
+                        <a href="../Blog/sprint_1/demostrarSprint.html"
+                            class="text-decoration-none text-primary fw-semibold">
+                            Ver más del blog <i class="fas fa-arrow-right ms-2"></i>
+                        </a>
+                    </div>
+                    <!-- Agregar espacio entre el enlace y la imagen -->
+                    <div class="contenedor-img mt-4">
+                        <img src="../asset/img/img_sprint1/v16.jpg" alt="Demostrar Sprint"
+                            class="img-fluid rounded mb-4 img-contenido-blog">
+                    </div>
+                </section>
+
+                <!-- 17. Retrospectiva del sprint -->
+                <section id="blog-retrospectiva" class="mb-5">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <h3 class="fw-bold">17. Retrospectiva del sprint</h3>
+                        </div>
+                        <div class="col-md-8">
+                            <p class="text-secondary">
+                                El equipo evaluó el Sprint finalizado, reflexionando sobre qué funcionó bien, qué se
+                                puede mejorar y cómo optimizar la colaboración y tiempos para el siguiente Sprint.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="mt-3">
+                        <a href="../Blog/sprint_1/retrospectiva.html"
+                            class="text-decoration-none text-primary fw-semibold">
+                            Ver más del blog <i class="fas fa-arrow-right ms-2"></i>
+                        </a>
+                    </div>
+                    <!-- Agregar espacio entre el enlace y la imagen -->
+                    <div class="contenedor-img mt-4">
+                        <img src="../asset/img/img_sprint1/v17.jpg" alt="Retrospectiva"
+                            class="img-fluid rounded mb-4 img-contenido-blog">
+                    </div>
+                </section>
+
+                <!-- 18. Enviar entregables -->
+                <section id="blog-enviarEntregables" class="mb-5">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <h3 class="fw-bold">18. Enviar entregables</h3>
+                        </div>
+                        <div class="col-md-8">
+                            <p class="text-secondary">
+                                Se hizo la entrega formal de las funciones desarrolladas como los formularios de
+                                búsqueda, tablas, validaciones, etc. para pruebas internas y revisión por parte del
+                                Product Owner.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="mt-3">
+                        <a href="../Blog/sprint_1/enviarEntregables.html"
+                            class="text-decoration-none text-primary fw-semibold">
+                            Ver más del blog <i class="fas fa-arrow-right ms-2"></i>
+                        </a>
+                    </div>
+                    <!-- Agregar espacio entre el enlace y la imagen -->
+                    <div class="contenedor-img mt-4">
+                        <img src="../asset/img/img_sprint1/18.png" alt="Enviar entregables"
+                            class="img-fluid rounded mb-4 img-contenido-blog">
+                    </div>
+                </section>
+
+
+            </div>
+            <!-- Barra lateral fija (sticky) -->
+            <div class="col-lg-4 mt-md-5">
+                <aside class="sidebar-sticky p-4 rounded-3 shadow-sm dark-bg overflow-y-scroll"
+                    style="max-height: 70vh;">
+                    <!-- Índice -->
+                    <div class="mb-4">
+                        <h6 class="fw-bold dark-text">
+                            <i class="fas fa-circle me-2 txt-sidebar"></i>Índice
+                        </h6>
+                        <ul class="list-unstyled ms-4">
+                            <li><a href="#blog-crearHistorias" class="sidebar-link">7. Crear historias de usuario</a>
+                            </li>
+                            <li><a href="#blog-estimarHistoria" class="sidebar-link">8. Estimar historias de usuario</a>
+                            </li>
+                            <li><a href="#blog-historiaComprometidas" class="sidebar-link">9. Historias de usuario
+                                    comprometidas</a></li>
+                            <li><a href="#blog-identificarTareas" class="sidebar-link">10. Identificar tareas</a></li>
+                            <li><a href="#blog-estimarTareas" class="sidebar-link">11. Estimar tareas</a></li>
+
+                            <!--Falta terminar-->
+                            <li><a href="#blog-sprintBacklog" class="sidebar-link">12. Crear el Sprint Backlog</a></li>
+                            <li><a href="#blog-entregables" class="sidebar-link">13. Crear entregables</a></li>
+                            <li><a href="#blog-realizarDaily" class="sidebar-link">14. Realizar Daily Standup</a></li>
+                            <li><a href="#blog-refinamiento" class="sidebar-link">15. Refinamiento del Backlog
+                                    Priorizado del Producto</a></li>
+                            <li><a href="#blog-desmostrarSprint" class="sidebar-link">16. Demostrar y validar el
+                                    sprint</a></li>
+                            <li><a href="#blog-retrospectiva" class="sidebar-link">17. Retrospectiva del sprint</a></li>
+                            <li><a href="#blog-enviarEntregables" class="sidebar-link">18. Enviar entregables</a></li>
+                        </ul>
+                    </div>
+
+                    <hr>
+
+                    <!-- Entradas recientes -->
+                    <div>
+                        <h6 class="fw-bold dark-text mb-3">
+                            <i class="fas fa-circle me-2 txt-sidebar"></i>Entradas recientes
+                        </h6>
+                        <ul class="list-unstyled ms-4">
+                            <li><a href="../Blog/inicio.html" class="sidebar-link">- Inicio de Proyecto</a></li>
+                            <li><a href="../Blog/sprint_1.html" class="sidebar-link">- Sprint 1</a></li>
+                            <li><a href="../Blog/sprint_2.html" class="sidebar-link">- Sprint 2</a></li>
+                            <li><a href="#" class="sidebar-link">- Sprint 3</a></li>
+                        </ul>
+                    </div>
+                </aside>
+            </div>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-dark text-white py-5 mt-5" id="mainFooter">
+        <div class="container">
+            <div class="row gy-4">
+                <div class="col-md-4">
+                    <h5 class="fw-bold mb-3">Ingeniería de Software</h5>
+                    <p class="text-white-50">
+                        Proyecto que busca desarrollar un sistema de gestión documental como parte de una mesa de partes
+                        virtual. La
+                        idea es facilitar el ingreso, registro, consulta y seguimiento de documentos vinculados a
+                        procesos
+                        arbitrales.
+                    </p>
+                    <form class="d-flex flex-column flex-sm-row">
+                        <input type="email" class="form-control me-sm-2 mb-2 mb-sm-0 rounded-pill px-3"
+                            placeholder="Ingresa tu correo electrónico">
+                        <button class="btn btn-primary rounded-pill px-4 fw-bold" type="submit">ENVIAR</button>
+                    </form>
+                </div>
+                <div class="col-md-2">
+                    <h6 class="fw-bold mb-3">Enlaces Rápidos</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="../index.html#Integrantes"
+                                class="text-white-50 text-decoration-none d-block mb-1">Integrantes</a></li>
+                        <li><a href="#" class="text-white-50 text-decoration-none d-block mb-1">Consultoría</a></li>
+                        <li><a href="../index.html#Blogs"
+                                class="text-white-50 text-decoration-none d-block mb-1">Blog</a></li>
+                        <li><a href="#" class="text-white-50 text-decoration-none d-block">Estudios de Caso</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h6 class="fw-bold mb-3">Proyecto</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="inicio.html" class="text-white-50 text-decoration-none d-block mb-1">Inicio de
+                                proyecto</a>
+                        </li>
+                        <li><a href="sprint_1.html" class="text-white-50 text-decoration-none d-block mb-1">Sprint 1</a></li>
+                        <li><a href="sprint_2.html" class="text-white-50 text-decoration-none d-block mb-1">Sprint 2</a></li>
+                        <li><a href="#" class="text-white-50 text-decoration-none d-block">Sprint 3</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h6 class="fw-bold mb-3">Contáctanos</h6>
+                    <p class="text-white-50 mb-1">Comunícate con uno de nuestros consultores del proyecto</p>
+                    <a href="mailto:hi@design.studio.com"
+                        class="fw-bold text-white text-decoration-underline">2113110142@untels.edu.pe</a>
+                </div>
+            </div>
+
+            <hr class="border-secondary my-4">
+
+            <div class="text-center text-white-50">
+                <small>&copy; 2025 - Todos los derechos reservados.</small><br>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../asset/js/modo-oscuro.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="../asset/css/bootstrap-5.3.3/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

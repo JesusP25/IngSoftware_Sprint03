@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estimar tareas</title>
+    <!-- Estilos externos -->
+    <link rel="stylesheet" href="../../asset/css/bootstrap-5.3.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../asset/css/fontawesome-6/css/all.min.css">
+    <link rel="stylesheet" href="../../asset/css/vision.css">
+    <link rel="stylesheet" href="../../asset/css/btnTema.css">
+    <link rel="stylesheet" href="../../asset/css/navegador-blog.css">
+    <link rel="stylesheet" href="../../asset/css/footer.css">
+</head>
+
+<body>
+    <!-- Botón flotante de cambio de tema -->
+    <button class="theme-toggle-btn" onclick="toggleTheme()">
+        <i class="fa-solid fa-moon"></i>
+    </button>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg py-3">
+        <div class="container">
+            <a class="navbar-brand" href="../../index.html"><strong>INGENIERÍA DE SOFTWARE</strong></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav align-items-center">
+                    <li class="nav-item"><a class="nav-link active" href="../../index.html">Inicio</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button"
+                            data-bs-toggle="dropdown">Proyecto</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="../inicio.html">Inicio de proyecto</a></li>
+                            <li><a class="dropdown-item" href="../sprint_1.html">Sprint 1</a></li>
+                            <li><a class="dropdown-item" href="../sprint_2.html">Sprint 2</a></li>
+                            <li><a class="dropdown-item" href="#">Sprint 3</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="vision.html#Propuesta">Propuesta</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#mainFooter">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <section class="container my-5">
+        <div class="row pt-5">
+            <!-- Contenido principal del blog -->
+            <div class="col-lg-8">
+                <section class="position-relative blog-header" id="crearVision">
+                    <div class="container py-5">
+                        <!-- Breadcrumb -->
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb small text-muted mb-2">
+                                <li class="breadcrumb-item"><a href="../../index.html">Home</a></li>
+                                <li class="breadcrumb-item"><a href="../../index.html#InicioProyecto">Pages</a></li>
+                                <li class="breadcrumb-item"><a href="../inicio.html#blog-Crear">Inicio Proyecto</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Estimar tareas
+                                </li>
+                            </ol>
+                        </nav>
+
+                        <!-- Blog Title -->
+                        <h1 class="fw-bold display-5" id="EstimarEsfuerzo">Estimar tareas</h1>
+                    </div>
+                </section>
+
+                <div class="blog-post">
+                    <div class="contenedor-img">
+                        <img src="../../asset/img/inicioProyecto/estimarTareas.jpg" alt="Visión del proyecto Scrum"
+                            class="img-fluid rounded mb-4 img-contenido-blog">
+                    </div>
+                    <hr>
+
+                    <div class="d-flex align-items-center mb-4 text-muted small">
+                        <span class="me-3"><i class="fas fa-tag me-1"></i>Gestión de Software</span>
+                        <span><i class="far fa-calendar-alt me-1"></i>27 de abril, 2025</span>
+                    </div>
+
+                    <article class="blog-contenido">
+                        <p>
+                            El comprometer historias de usuario en Scrum es esencial porque asegura que el equipo
+                            trabaje de manera organizada y alineada con los objetivos del negocio, al establecer
+                            expectativas claras sobre lo que se debe entregar durante el sprint. Este compromiso fomenta
+                            la responsabilidad y la rendición de cuentas dentro del equipo, lo que facilita una
+                            planificación realista basada en la capacidad del equipo y evita sobrecargas.
+                        </p>
+
+                        <h2 class="fw-bold mt-5 border-bottom pb-2" id="Entradas">Entradas</h2>
+
+                        <h3 class="fw-bold mt-4" id="EquipoPrincipalScrum">Equipo principal de Scrum</h3>
+                        <h4 class="fw-semibold mt-4" id="ProductOwner">Product Owner</h4>
+                        <p>
+                            <i class="fas fa-circle me-2 txt-sidebar"></i>Pablo Pascual, Pedro Javier
+                        </p>
+
+                        <h4 class="fw-semibold mt-4" id="ScrumMaster">Scrum master</h4>
+                        <p>
+                            <i class="fas fa-circle me-2 txt-sidebar"></i>Paye Juarez, Jesús Baltazar
+                        </p>
+                        <h4 class="fw-semibold mt-4" id="EquipoDesarrollo">Equipo de desarrollo:</h4>
+                        <ul>
+                            <li>Velez de Villa Huacachi Manuel Silverio</li>
+                            <li>Huerta Vasquez Jimmy Alexander</li>
+                            <li>Barrios Quispe Jeampier Jhoel</li>
+                        </ul>
+
+                        <!-- 3.1.2 Lista de tareas -->
+                        <section id="ListaTareas">
+                            <h3 class="fw-bold mt-4">Lista de tareas</h3>
+                            <p>
+                                Presentación o descripción de la lista de tareas que serán estimadas.
+                            </p>
+
+                            <h4 class="fw-semibold mt-4">Historia 1:</h4>
+                            <p>El usuario podrá buscar trámites archivados por número de expediente para encontrar
+                                documentos específicos.</p>
+                            <ul>
+                                <li>Tarea 1.1: Diseñar el formulario de búsqueda de trámites archivados.</li>
+                                <li>Tarea 1.2: Conectar el formulario con el backend para realizar la búsqueda por
+                                    número de expediente.</li>
+                                <li>Tarea 1.3: Implementar la visualización de los resultados en una tabla paginada.
+                                </li>
+                            </ul>
+
+                            <h4 class="fw-semibold mt-4">Historia 2:</h4>
+                            <p>El usuario podrá limpiar todos los campos del formulario para realizar una nueva búsqueda
+                                rápidamente.</p>
+                            <ul>
+                                <li>Tarea 2.1: Agregar botón "Limpiar campos" al formulario.</li>
+                                <li>Tarea 2.2: Programar funcionalidad para limpiar todos los inputs al hacer clic.</li>
+                                <li>Tarea 2.3: Validar que el formulario quede completamente vacío al limpiar.</li>
+                            </ul>
+
+                            <h4 class="fw-semibold mt-4">Historia 3:</h4>
+                            <p>El usuario recibirá mensajes de validación si los campos están vacíos, con fechas
+                                inválidas o menos de 3 caracteres.</p>
+                            <ul>
+                                <li>Tarea 3.1: Implementar validaciones de campos requeridos en el formulario.</li>
+                                <li>Tarea 3.2: Validar que la fecha de inicio no sea mayor que la fecha final.</li>
+                                <li>Tarea 3.3: Configurar alertas visuales (mensajes de error) con estilos accesibles y
+                                    comprensibles.</li>
+                            </ul>
+
+                            <h4 class="fw-semibold mt-4">Historia 4:</h4>
+                            <p>El usuario podrá consultar trámites derivados utilizando los mismos criterios que en los
+                                trámites archivados.</p>
+                            <ul>
+                                <li>Tarea 4.1: Adaptar el formulario de búsqueda para que también funcione con trámites
+                                    derivados.</li>
+                                <li>Tarea 4.2: Implementar el backend para filtrar y mostrar trámites derivados.</li>
+                                <li>Tarea 4.3: Validar que los resultados se presenten con paginación.</li>
+                            </ul>
+
+                            <h4 class="fw-semibold mt-4">Historia 5:</h4>
+                            <p>El usuario podrá buscar remitentes por nombre, celular o ID para ubicar rápidamente su
+                                información.</p>
+                            <ul>
+                                <li>Tarea 5.1: Diseñar un formulario de búsqueda de remitentes con campos para nombre,
+                                    celular e ID.</li>
+                                <li>Tarea 5.2: Implementar búsqueda en base de datos usando los tres criterios.</li>
+                                <li>Tarea 5.3: Mostrar resultados en una tabla con opciones de edición o eliminación.
+                                </li>
+                            </ul>
+                        </section>
+
+                        <h2 class="fw-bold mt-5 border-bottom pb-2" id="Herramientas">Herramientas</h2>
+
+                        <section id="reunion-sprint">
+                            <h3 class="fw-semibold mt-4">Reuniones de planificación de Sprint</h3>
+                            <div class="contenedor-img my-4">
+                                <img src="../../asset/img/img_sprint1/reunionsprint2.0.jpg"
+                                    alt="Imagen de reunión de sprint" class="img-fluid rounded" />
+                            </div>
+                        </section>
+                        <section id="Estimar">
+                            <h3 class="fw-bold mt-4">Estimar Esfuerzo</h3>
+                            <p>
+                                Utilizaremos la técnica Planning Poker para estimar el esfuerzo en cada tarea. La escala
+                                de valores será de Fibonacci (1, 2, 3, 5, 8, 13, 21) para medir el esfuerzo relativo.
+                            </p>
+                        </section>
+
+                        <section id="MetodoEstimacion">
+                            <h3 class="fw-bold mt-4">Métodos de estimación</h3>
+                            <p>
+                                Descripción de los métodos comunes para estimar esfuerzo en el proyecto (ejemplo:
+                                Planning Poker, T-Shirt Sizing, etc).
+                            </p>
+                            <p>Se reúne al equipo para poder votar y discutir las estimaciones.</p>
+                            <p>El Product Owner presenta la historia, historia de usuario 3 y aclara dudas.</p>
+                            <p>Cada desarrollador elige una carta de Fibonacci de forma individual:</p>
+                            <ul>
+                                <li>Manuel: 3 (requiere validación visual en varios campos)</li>
+                                <li>Jimmy: 2 (validaciones básicas en el backend)</li>
+                                <li>Jeampier: 5 (probar muchas combinaciones inválidas)</li>
+                            </ul>
+                            <p>Todos muestran su carta al mismo tiempo.</p>
+                            <p>Discusión: Jeampier explica que requiere muchos casos de prueba; Manuel argumenta que hay
+                                varios tipos de campos que deben validar.</p>
+                            <p>Se repite la votación y todos llegan a un consenso: Story Point = 3</p>
+                        </section>
+                        <h2 class="fw-bold mt-5 border-bottom pb-2" id="Salidas">Salidas</h2>
+
+                        <section id="Effort">
+                            <h3 class="fw-bold mt-4">Effort Estimated Task List</h3>
+                            <p>
+                                Resultados de la estimación del esfuerzo, incluyendo la lista de tareas con sus valores
+                                estimados.
+                            </p>
+                            <div class="table-responsive">
+                                <table class="table table-sm table-bordered align-middle tabla-personalizada">
+                                    <thead>
+                                        <tr>
+                                            <th>Historia</th>
+                                            <th>Tarea</th>
+                                            <th>Esfuerzo</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Historia 1</td>
+                                            <td>Tarea 1.1: Diseñar el formulario de búsqueda de trámites archivados.
+                                            </td>
+                                            <td>3</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Historia 1</td>
+                                            <td>Tarea 1.2: Conectar el formulario con el backend para realizar la
+                                                búsqueda por número de expediente.</td>
+                                            <td>5</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Historia 1</td>
+                                            <td>Tarea 1.3: Implementar la visualización de los resultados en una tabla
+                                                paginada.</td>
+                                            <td>5</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Historia 2</td>
+                                            <td>Tarea 2.1: Agregar botón "Limpiar campos" al formulario.</td>
+                                            <td>1</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Historia 2</td>
+                                            <td>Tarea 2.2: Programar funcionalidad para limpiar todos los inputs al
+                                                hacer clic.</td>
+                                            <td>2</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Historia 2</td>
+                                            <td>Tarea 2.3: Validar que el formulario quede completamente vacío al
+                                                limpiar.</td>
+                                            <td>2</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Historia 3</td>
+                                            <td>Tarea 3.1: Implementar validaciones de campos requeridos en el
+                                                formulario.</td>
+                                            <td>3</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Historia 3</td>
+                                            <td>Tarea 3.2: Validar que la fecha de inicio no sea mayor que la fecha
+                                                final.</td>
+                                            <td>3</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Historia 3</td>
+                                            <td>Tarea 3.3: Configurar alertas visuales (mensajes de error) con estilos
+                                                accesibles y comprensibles.</td>
+                                            <td>3</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Historia 4</td>
+                                            <td>Tarea 4.1: Adaptar el formulario de búsqueda para que también funcione
+                                                con trámites derivados.</td>
+                                            <td>3</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Historia 4</td>
+                                            <td>Tarea 4.2: Implementar el backend para filtrar y mostrar trámites
+                                                derivados.</td>
+                                            <td>5</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Historia 4</td>
+                                            <td>Tarea 4.3: Validar que los resultados se presenten con paginación.</td>
+                                            <td>3</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="white-space: nowrap;">Historia 5</td>
+                                            <td>Tarea 5.1: Diseñar un formulario de búsqueda de remitentes con campos
+                                                para nombre, celular e ID.</td>
+                                            <td>3</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="white-space: nowrap;">Historia 5</td>
+                                            <td>Tarea 5.2: Implementar búsqueda en base de datos usando los tres
+                                                criterios.</td>
+                                            <td>5</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="white-space: nowrap;">Historia 5</td>
+                                            <td>Tarea 5.3: Mostrar resultados en una tabla con opciones de edición o
+                                                eliminación.</td>
+                                            <td>5</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </section>
+
+                    </article>
+                </div>
+            </div>
+
+
+
+            <!-- Barra lateral fija (sticky) -->
+            <div class="col-lg-4 mt-md-5">
+                <aside class="sidebar-sticky p-4 rounded-3 shadow-sm dark-bg overflow-auto" style="max-height: 70vh;">
+                    <!-- Índice -->
+                    <div class="mb-4">
+                        <h6 class="fw-bold dark-text">
+                            <i class="fas fa-circle me-2 txt-sidebar"></i>Índice
+                        </h6>
+                        <ul class="list-unstyled ms-4">
+                            <li><a href="#EstimarEsfuerzo" class="sidebar-link">1. Estimar Esfuerzo
+                                </a></li>
+
+                            <li>
+                                <a href="#Entradas" class="sidebar-link">2. ENTRADAS</a>
+                                <ul class="list-unstyled ms-3">
+                                    <li>
+                                        <a href="#EquipoPrincipalScrum" class="sidebar-link">2.1 Equipo principal
+                                            Scrum</a>
+                                        <ul class="list-unstyled ms-3">
+                                            <li><a href="#ProductOwner" class="sidebar-link">2.1.1 Scrum Master</a></li>
+                                            <li><a href="#EquipoDesarrollo" class="sidebar-link">2.1.3 Equipo de
+                                                    desarrollo</a></li>
+                                            <li><a href="#ListaTareas" class="sidebar-link">2.1.4 Lista de tareas
+                                                </a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                <a href="#Herramientas" class="sidebar-link">3. Herramientas</a>
+                                <ul class="list-unstyled ms-3">
+                                    <li><a href="#reunion-sprint" class="sidebar-link">3.1 Reuniones de planificación de
+                                            Sprint</a></li>
+                                    <li><a href="#Estimar" class="sidebar-link">3.1.1 Estimar Esfuerzo
+                                        </a></li>
+
+                                    <li><a href="#MetodoEstimacion" class="sidebar-link">3.1.2 Métodos de estimación
+                                        </a></li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                <a href="#Salidas" class="sidebar-link">4. Salidas</a>
+                                <ul class="list-unstyled ms-3">
+                                    <li><a href="#Effort" class="sidebar-link">4.1 Effort Estimated Task List</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Entradas recientes -->
+                    <div>
+                        <h6 class="fw-bold dark-text mb-3">
+                            <i class="fas fa-circle me-2 txt-sidebar"></i>Entradas recientes
+                        </h6>
+                        <ul class="list-unstyled ms-4">
+                            <li><a href="../inicio.html" class="sidebar-link">- Inicio de Proyecto</a></li>
+                            <li><a href="../sprint_1.html" class="sidebar-link">- Sprint 1</a></li>
+                            <li><a href="../sprint_2.html" class="sidebar-link">- Sprint 2</a></li>
+                            <li><a href="#" class="sidebar-link">- Sprint 3</a></li>
+                        </ul>
+                    </div>
+                </aside>
+            </div>
+    </section>
+    <!-- FOOTER -->
+    <footer class="bg-dark text-white py-5 mt-5" id="mainFooter">
+        <div class="container">
+            <div class="row gy-4">
+                <div class="col-md-4">
+                    <h5 class="fw-bold mb-3">Ingeniería de Software</h5>
+                    <p class="text-white-50">
+                        Proyecto que busca desarrollar un sistema de gestión documental como parte de una mesa de partes
+                        virtual. La idea es facilitar el ingreso, registro, consulta y seguimiento de documentos
+                        vinculados a procesos arbitrales.
+                    </p>
+                    <form class="d-flex flex-column flex-sm-row">
+                        <input type="email" class="form-control me-sm-2 mb-2 mb-sm-0 rounded-pill px-3"
+                            placeholder="Ingresa tu correo electrónico">
+                        <button class="btn btn-primary rounded-pill px-4 fw-bold" type="submit">ENVIAR</button>
+                    </form>
+                </div>
+                <div class="col-md-2">
+                    <h6 class="fw-bold mb-3">Enlaces Rápidos</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="../../index.html#Integrantes"
+                                class="text-white-50 text-decoration-none d-block mb-1">Integrantes</a></li>
+                        <li><a href="#" class="text-white-50 text-decoration-none d-block mb-1">Consultoría</a></li>
+                        <li><a href="../../index.html#Blogs"
+                                class="text-white-50 text-decoration-none d-block mb-1">Blog</a></li>
+                        <li><a href="#" class="text-white-50 text-decoration-none d-block">Estudios de Caso</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h6 class="fw-bold mb-3">Proyecto</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="../inicio.html" class="text-white-50 text-decoration-none d-block mb-1">Inicio de
+                                proyecto</a></li>
+                        <li><a href="../sprint_1.html" class="text-white-50 text-decoration-none d-block mb-1">Sprint
+                                1</a></li>
+                        <li><a href="../sprint_2.html" class="text-white-50 text-decoration-none d-block mb-1">Sprint
+                                2</a></li>
+                        <li><a href="#" class="text-white-50 text-decoration-none d-block">Sprint 3</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h6 class="fw-bold mb-3">Contáctanos</h6>
+                    <p class="text-white-50 mb-1">Comunícate con uno de nuestros consultores del proyecto</p>
+                    <a href="mailto:hi@design.studio.com"
+                        class="fw-bold text-white text-decoration-underline">2113110142@untels.edu.pe</a>
+                </div>
+            </div>
+
+            <hr class="border-secondary my-4">
+
+            <div class="text-center text-white-50">
+                <small>&copy; 2025 - Todos los derechos reservados.</small><br>
+            </div>
+        </div>
+    </footer>
+    <script src="../../asset/js/modo-oscuro.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="../../asset/css/bootstrap-5.3.3/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
