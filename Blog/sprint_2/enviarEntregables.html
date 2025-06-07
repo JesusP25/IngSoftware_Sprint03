@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enviar entregables</title>
+    <!-- Estilos externos -->
+    <link rel="stylesheet" href="../../asset/css/bootstrap-5.3.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../asset/css/fontawesome-6/css/all.min.css">
+    <link rel="stylesheet" href="../../asset/css/vision.css">
+    <link rel="stylesheet" href="../../asset/css/btnTema.css">
+    <link rel="stylesheet" href="../../asset/css/navegador-blog.css">
+    <link rel="stylesheet" href="../../asset/css/footer.css">
+</head>
+
+<body>
+    <!-- Botón flotante de cambio de tema -->
+    <button class="theme-toggle-btn" onclick="toggleTheme()">
+        <i class="fa-solid fa-moon"></i>
+    </button>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg py-3">
+        <div class="container">
+            <a class="navbar-brand" href="../../index.html"><strong>INGENIERÍA DE SOFTWARE</strong></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav align-items-center">
+                    <li class="nav-item"><a class="nav-link active" href="../../index.html">Inicio</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button"
+                            data-bs-toggle="dropdown">Proyecto</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="../inicio.html">Inicio de proyecto</a></li>
+                            <li><a class="dropdown-item" href="../sprint_1.html">Sprint 1</a></li>
+                            <li><a class="dropdown-item" href="../sprint_2.html">Sprint 2</a></li>
+                            <li><a class="dropdown-item" href="#">Sprint 3</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="vision.html#Propuesta">Propuesta</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#mainFooter">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <section class="container my-5">
+        <div class="row pt-5">
+            <!-- Contenido principal del blog -->
+            <div class="col-lg-8">
+                <section class="position-relative blog-header" id="crearVision">
+                    <div class="container py-5">
+                        <!-- Breadcrumb -->
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb small text-muted mb-2">
+                                <li class="breadcrumb-item"><a href="../../index.html">Home</a></li>
+                                <li class="breadcrumb-item"><a href="../../index.html#InicioProyecto">Pages</a></li>
+                                <li class="breadcrumb-item"><a href="../inicio.html#blog-Crear">Inicio Proyecto</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Enviar entregables
+                                </li>
+                            </ol>
+                        </nav>
+
+                        <!-- Blog Title -->
+                        <h1 class="fw-bold display-5" id="Enviar-entregables">18. Enviar entregables</h1>
+                    </div>
+                </section>
+
+                <div class="blog-post">
+                    <div class="contenedor-img">
+                        <img src="../../asset/img/img_sprint1/18.png" alt="Visión del proyecto Scrum"
+                            class="img-fluid rounded mb-4 img-contenido-blog">
+                    </div>
+                    <hr>
+
+                    <div class="d-flex align-items-center mb-4 text-muted small">
+                        <span class="me-3"><i class="fas fa-tag me-1"></i>Gestión de Software</span>
+                        <span><i class="far fa-calendar-alt me-1"></i>27 de abril, 2025</span>
+                    </div>
+
+                    <article class="blog-contenido">
+                        <p>
+                            Es el paso en el que se entregan formalmente las funcionalidades desarrolladas. Puede
+                            implicar subir el código a un repositorio, actualizar una versión en producción o entregar
+                            una demo funcional. Es el cierre técnico del sprint y habilita la revisión o puesta en
+                            marcha.
+                        </p>
+
+                        <h2 class="fw-bold mt-5 border-bottom pb-2" id="Entradas">ENTRADAS</h2>
+
+                        <section id="product">
+                            <h3 class="fw-bold mt-4">18.1. Product Owner</h3>
+                            <p>
+                                Product Owner: Pedro Javier Pablo Pascual<br>
+                                Encargado de representar los intereses del cliente o usuarios finales.
+                            </p>
+                        </section>
+
+                        <!--STAKEHOLDER-->
+                        <section id="Stalholder">
+                            <h3 class="fw-bold mt-4">18.2. Stakeholders</h3>
+                            <table class="table table-bordered mt-3">
+                                <thead>
+                                    <tr>
+                                        <th>ROL</th>
+                                        <th>NOMBRE</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Propietario</td>
+                                        <td>Institución arbitral independiente, encargados del sistema, desarrolladores
+                                            o la institución que implemente el sistema.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Clientes</td>
+                                        <td>Personas naturales que desean registrar o dar seguimiento a trámites.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Administradores del Sistema</td>
+                                        <td>Personal técnico o administrativo encargado de gestionar usuarios, trámites,
+                                            permisos y soporte técnico del sistema.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Secretarios técnicos</td>
+                                        <td>Encargados de recibir, registrar y distribuir los trámites ingresados.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Remitentes</td>
+                                        <td>Usuarios que envían trámites (pueden ser ciudadanos, abogados,
+                                            representantes de empresas, etc.).</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Destinatarios</td>
+                                        <td>Funcionarios que reciben los trámites derivados (ej. jefes de oficina,
+                                            fiscales, jueces).</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Jueces o Árbitros</td>
+                                        <td>En caso de trámites relacionados con procesos judiciales o arbitrajes, ellos
+                                            revisan o dictan resoluciones sobre los trámites.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Presidente</td>
+                                        <td>Máxima autoridad de la organización; aprueba lineamientos del sistema y
+                                            supervisa resultados.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Auditores</td>
+                                        <td>Evalúan el uso del sistema y la trazabilidad de los trámites para efectos de
+                                            control y cumplimiento normativo.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Equipo de desarrollo</td>
+                                        <td>Encargado de diseñar, construir, probar y mantener el sistema.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Competencia</td>
+                                        <td>Otros centros de arbitraje y negocios de arbitraje.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </section>
+
+                        <!--ENTREGABLES-->
+                        <section id="EntregablesAceptado">
+                            <h3 class="fw-bold mt-4">18.3. Entregables Aceptados</h3>
+                                                        <table class="table table-sm table-bordered align-middle tabla-personalizada">
+
+                                <thead>
+                                    <tr>
+                                        <th>Historia</th>
+                                        <th>Criterios de Aceptación</th>
+                                        <th>Aceptada</th>
+                                        <th>Rechazada</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><strong>Historia&nbsp;1</strong></td>
+                                        <td>
+                                            <ul>
+                                                <li> La barra de trámites debe mostrar los campos en el orden solicitado.</li>
+                                                <li>El estado urgente debe indicar "Sí" o "No". </li>
+                                                <li>Debe mostrarse el n.º de página actual.</li>
+                                            </ul>
+                                        </td>
+                                        <td>Si</td>
+                                        <td>No</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Historia&nbsp;2</strong></td>
+                                        <td>
+                                            <ul>
+                                                <li>El campo de búsqueda debe filtrar por n.º expediente, área o estado..</li>
+                                                <li>Los resultados deben actualizarse al escribir.</li>
+                                            </ul>
+                                        </td>
+                                        <td>Si</td>
+                                        <td>No</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Historia&nbsp;3</strong></td>
+                                        <td>
+                                            <ul>
+                                                <li>El mensaje debe aparecer al cargar la vista.</li>
+                                                <li>Debe reflejar la cantidad real de trámites.</li>
+                                                
+                                            </ul>
+                                        </td>
+                                        <td>Si</td>
+                                        <td>No</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Historia&nbsp;4</strong></td>
+                                        <td>
+                                            <ul>
+                                                <li>Deben mostrarse los campos: n.º expediente, hora, fecha, área origen, estado, destino</li>
+                                                <li>Se debe mostrar la página actual.</li>
+                                            </ul>
+                                        </td>
+                                        <td>Si</td>
+                                        <td>No</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Historia&nbsp;5</strong></td>
+                                        <td>
+                                            <ul>
+                                                <li>El buscador debe permitir filtrar por campos clave.</li>
+                                            </ul>
+                                        </td>
+                                        <td>Si</td>
+                                        <td>No</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td><strong>Historia&nbsp;6</strong></td>
+                                        <td>
+                                            <ul>
+                                                <li> El mensaje se muestra arriba de la lista.</li>
+                                            </ul>
+                                        </td>
+                                        <td>Si</td>
+                                        <td>No</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td><strong>Historia&nbsp;7</strong></td>
+                                        <td>
+                                            <ul>
+                                                <li>La opción "Imprimir" debe estar visible.</li>
+                                                <li>Debe imprimirse con todos los campos de trámites por recibir.</li>
+                                            </ul>
+                                        </td>
+                                        <td>Si</td>
+                                        <td>No</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td><strong>Historia&nbsp;8</strong></td>
+                                        <td>
+                                            <ul>
+                                                <li>Existen campos para filtrar por tipo de documento y por rango de fechas. </li>
+                                                <li>Los resultados de la tabla se actualizan automáticamente con los filtros aplicados.</li>
+                                                <li>Si no se encuentran registros coincidentes, se muestra un mensaje informativo.</li>
+                                            </ul>
+                                        </td>
+                                        <td>Si</td>
+                                        <td>No</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td><strong>Historia&nbsp;9</strong></td>
+                                        <td>
+                                            <ul>
+                                                <li>El formulario debe contener todos los campos indicados.</li>
+                                                <li> El usuario debe poder ingresar datos sin errores.</li>
+                                            </ul>
+                                        </td>
+                                        <td>Si</td>
+                                        <td>No</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td><strong>Historia&nbsp;10</strong></td>
+                                        <td>
+                                            <ul>
+                                                <li>El sistema valida que se completen campos como: N° de expediente, 
+                                                tipo de trámite, siguiente unidad orgánica, asunto y documento. </li>
+                                                <li>Si falta algún campo, se muestra una advertencia clara antes de guardar.</li>
+                                                <li> El formulario no se envía hasta que todos los campos requeridos estén llenos.</li>
+                                            </ul>
+                                        </td>
+                                        <td>Si</td>
+                                        <td>No</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td><strong>Historia&nbsp;11</strong></td>
+                                        <td>
+                                            <ul>
+                                                <li>Tabla con opción de edición/eliminación.</li>
+                                                <li>Campo de búsqueda funcional.</li>
+                                                <li>Indicador de cantidad total.</li>
+                                                <li>Navegación entre páginas.</li>
+                                            </ul>
+                                        </td>
+                                        <td>Si</td>
+                                        <td>No</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td><strong>Historia&nbsp;12</strong></td>
+                                        <td>
+                                            <ul>
+                                                <li>El listado tiene paginación funcional. </li>
+                                                <li>Se muestran botones para ir al inicio, anterior, siguiente y final.</li>
+                                                <li>Los filtros de búsqueda se mantienen al cambiar de página.</li>
+                                            </ul>
+                                        </td>
+                                        <td>Si</td>
+                                        <td>No</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td><strong>Historia&nbsp;13</strong></td>
+                                        <td>
+                                            <ul>
+                                                <li>El listado debe tener acciones claras. </li>
+                                                <li>El buscador debe filtrar por nombre de documento.</li>
+                                            </ul>
+                                        </td>
+                                        <td>Si</td>
+                                        <td>No</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td><strong>Historia&nbsp;14</strong></td>
+                                        <td>
+                                            <ul>
+                                                <li>Existe un campo de búsqueda visible y funcional.</li>
+                                                <li>Al escribir un término, la lista se filtra en tiempo real. </li>
+                                                <li>Si no hay resultados, se muestra un mensaje informativo.</li>
+                                            </ul>
+                                        </td>
+                                        <td>Si</td>
+                                        <td>No</td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </section>
+
+                        <!--Cronograma-->
+                        <section id="Cronograma">
+                            <h3 class="fw-bold mt-4">18.4. Cronograma de planificación del lanzamiento</h3>
+                            <p>
+                                El sprint tendrá una duración de 3 semanas al igual que los sprint anteriores
+                            </p>
+                            <table class="table table-bordered mt-3">
+                                <thead>
+                                    <tr>
+                                        <th>Lunes</th>
+                                        <th>Martes</th>
+                                        <th>Miércoles</th>
+                                        <th>Jueves</th>
+                                        <th>Viernes</th>
+                                        <th>Sábado</th>
+                                        <th>Domingo</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>17/05</td>
+                                        <td>18/05</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>19/05</td>
+                                        <td>20/05</td>
+                                        <td>21/05</td>
+                                        <td>22/05</td>
+                                        <td>23/05</td>
+                                        <td>24/05</td>
+                                        <td>25/05</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>26/05</td>
+                                        <td>27/05</td>
+                                        <td>28/05</td>
+                                        <td>29/05</td>
+                                        <td>30/05</td>
+                                        <td>31/05</td>
+                                        <td>01/06</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>02/06</td>
+                                        <td>03/06</td>
+                                        <td>04/06</td>
+                                        <td>05/06</td>
+                                        <td>06/06</td>
+                                        <td>07/06</td>
+                                        
+                                        <td></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <p>
+                                El lanzamiento de este proyecto se realizará el día 07 de Junio, siendo el 3er lanzamiento, 
+                                siguiendo los días indicados de duración de cada sprint, lo cual se realiza cada 3 semanas.
+                            </p>
+                        </section>
+                        <!--Herramienta-->
+                        <h2 class="fw-bold mt-5 border-bottom pb-2" id="Herramientas">HERRAMIENTAS</h2>
+
+                        <!-- MetodosOrganizacional -->
+                        <section id="MetodosOrganizacional">
+                            <h3 class="fw-bold mt-4">18.5. Métodos de desplazamiento organizacional</h3>
+                            <p>
+                                En el contexto del sistema desarrollado para TACIDH, los métodos de desplazamiento organizacional 
+                                se refieren a la forma en que los documentos y trámites se trasladan internamente entre áreas o 
+                                responsables dentro de la institución, siguiendo un flujo controlado y trazable. Estos métodos 
+                                están directamente vinculados a los procesos de gestión documental.
+                            </p>
+
+                            <p>
+                                Durante el desarrollo del Sprint 3, se aplicaron diversos métodos de desplazamiento organizacional
+                                que permitieron coordinar efectivamente al equipo y garantizar la entrega de valor al finalizar el 
+                                sprint. Estos métodos incluyeron:
+                            </p>
+                            <h4 class="mt-4">Sprint Planning</h4>
+                            
+                            <ul>
+                                <li>Al inicio del sprint, se realizó una planificación colaborativa para definir las historias de usuario
+                                y descomponerlas en tareas técnicas.</li>
+                                <li>Se utilizaron técnicas como Planning Poker para estimar el esfuerzo de cada tarea, sumando un 
+                                    total de 278 puntos de historia.</li>
+                            </ul>
+
+                            <h4 class="mt-4">Definición de Hecho (Definition of Done)</h4>
+                            <p>
+                                Se definió claramente cuándo una historia se consideraría completada:
+                            </p>
+                            <ul>
+                                <li>Funcionalidad implementada correctamente en frontend y backend.</li>
+                                <li>Pruebas manuales y automáticas realizadas por QA (Jeampiere).</li>
+                                <li>Validaciones, mensajes de error y usabilidad verificados.</li>
+                                
+                            </ul>
+
+                            <h4 class="mt-4">Gestión de backlog y tableros visuales (Kanban)</h4>
+                            <p>
+                                Se utilizó una herramienta visual Jira para seguir el progreso de cada tarea.
+                            </p>
+                            <ul>
+                                <li>Columnas: To Do, In Progress, QA Testing, Done.</li>                                
+                            </ul>
+                            <p>Esto ayudó a todos los miembros a ver el estado de cada funcionalidad en tiempo real.</p>
+                            
+
+                            <h4 class="mt-4">Revisión de Sprint (Sprint Review)</h4>
+                            <ul>
+                                <li>Al cierre del sprint se hizo una demostración de las funcionalidades completadas ante el equipo.</li>
+                                <li>Se verificaron los entregables de las 14 historias de usuario.</li>
+                            </ul>
+
+                        </section>
+                        <h2 class="fw-bold mt-5 border-bottom pb-2" id="Salidas">SALIDAS</h2>
+                        <!--Acuerdo-->
+                        <section id="Acuerdo">
+                            <h3 class="fw-bold mt-4">18.6. Working Deliverables Agreement</h3>
+                            <table class="table table-bordered mt-3">
+                                <thead>
+                                    <tr>
+                                        <th>Histroria de usuario</th>
+                                        <th>Entregable Funcional o rol del sistema</th>
+                                        <th>Stakeholder</th>
+                                        <th>Nivel</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Historia de Usuario 1: Visualización de trámites por resolver</td>
+                                        <td>Tabla paginada con campos requeridos y navegación de páginas</td>
+                                        <td>Secretarios Técnicos, Equipo de Desarroll</td>
+                                        <td>Alto</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Historia de Usuario 2: Búsqueda de trámites por resolver</td>
+                                        <td>Campo de búsqueda funcional por número de expediente</td>
+                                        <td>Remitentes, Secretarios Técnicos</td>
+                                        <td>Alto</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Historia de Usuario 3: Mensaje de trámites pendientes por resolver</td>
+                                        <td>Cálculo y visualización de trámites pendientes con mensaje</td>
+                                        <td>Secretarios técnicos, auditores</td>
+                                        <td>Medio</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Historia de Usuario 4: Visualización de trámites por recibir</td>
+                                        <td>Tabla paginada funcional con navegación en múltiples páginas</td>
+                                        <td>Clientes, Destinatarios</td>
+                                        <td>Medio</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Historia de Usuario 5: Búsqueda de trámites por recibir</td>
+                                        <td>Buscador integrado con tabla de resultados</td>
+                                        <td>Remitentes, Clientes</td>
+                                        <td>Alto</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Historia de Usuario 6: Mensaje de trámites por recibir</td>
+                                        <td>Visualización de trámites por recibir con conteo actualizado</td>
+                                        <td>Destinatarios, Secretarios Técnicos</td>
+                                        <td>Medio</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Historia de Usuario 7: Impresión de trámites externos</td>
+                                        <td>Función para imprimir vista de trámites seleccionados</td>
+                                        <td>Secretarios Técnicos, Auditores</td>
+                                        <td>Alto</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Historia de Usuario 8: Filtro para trámites remitentes externos</td>
+                                        <td>Backend con filtros por tipo/fecha y mensajes si no hay resultados</td>
+                                        <td>Auditores, Clientes</td>
+                                        <td>Medio</td>
+                                        
+                                    </tr>
+                                    <tr>
+                                        <td>Historia de Usuario 9: Registro de trámites interno</td>
+                                        <td>Formulario de registro, validación, y creación de endpoint</td>
+                                        <td>Remitentes, Equipo de Desarrollo</td>
+                                        <td>Alto</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Historia de Usuario 10: Validación de campos para trámites interno</td>
+                                        <td>Validación de campos obligatorios en frontend y backend con mensajes claros</td>
+                                        <td>Equipo de Desarrollo, Auditores</td>
+                                        <td>Medio</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Historia de Usuario 11: Administrar lista de áreas</td>
+                                        <td>Tabla de áreas con buscador, botones de edición y eliminación</td>
+                                        <td>Administradores del sistema</td>
+                                        <td>Alto</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Historia de Usuario 12: Navegación en listado de áreas</td>
+                                        <td>Paginador backend y frontend para tabla de áreas con total de páginas</td>
+                                        <td>Administradores del sistema</td>
+                                        <td>Alto</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Historia de Usuario 13: Administrar tipos de documentos</td>
+                                        <td>Tabla de tipos documentales con buscador y acciones de edición/eliminación</td>
+                                        <td>Secretarios Técnicos, Equipo de Desarrollo</td>
+                                        <td>Alto</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Historia de Usuario 14: Implementar búsqueda en tipos de documentos</td>
+                                        <td>Búsqueda combinada por nombre y tipo, con manejo de mensajes</td>
+                                        <td>Clientes, Presidentes</td>
+                                        <td>Medio</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </section>
+                    </article>
+                </div>
+            </div>
+
+            <!-- Barra lateral fija (sticky) -->
+            <div class="col-lg-4 mt-md-5">
+                <aside class="sidebar-sticky p-4 rounded-3 shadow-sm dark-bg overflow-auto" style="max-height: 70vh;">
+                    <!-- Índice -->
+                    <div class="mb-4">
+                        <h6 class="fw-bold dark-text">
+                            <i class="fas fa-circle me-2 txt-sidebar"></i>Índice
+                        </h6>
+                        <ul class="list-unstyled ms-4">
+                            <li><a href="#Enviar-entregables" class="sidebar-link">18. Enviar entregables</a>
+                            </li>
+                            <li>
+                                <a href="#Entradas" class="sidebar-link">ENTRADAS</a>
+                                <ul class="list-unstyled ms-3">
+                                    <li>
+                                        <a href="#product" class="sidebar-link">18.1 Product Owner</a>
+                                        <a href="#Stalholder" class="sidebar-link">18.2. Stakeholder</a>
+                                        <a href="#EntregablesAceptado" class="sidebar-link">18.3. Entregables aceptado</a>
+                                        <a href="#Cronograma" class="sidebar-link">18.4. Cronograma de planificación del lanzamiento </a>
+
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#Herramientas" class="sidebar-link">HERRAMIENTAS</a>
+                                <ul class="list-unstyled ms-3">
+                                    <li><a href="#MetodosOrganizacional" class="sidebar-link">18.5. Metodos de desplazamiento organizacional</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#Salidas" class="sidebar-link">SALIDAS</a>
+                                <ul class="list-unstyled ms-3">
+                                    <li><a href="#Acuerdo" class="sidebar-link">18.6. Acuerdo de entregables funcionales</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Entradas recientes -->
+                    <div>
+                        <h6 class="fw-bold dark-text mb-3">
+                            <i class="fas fa-circle me-2 txt-sidebar"></i>Entradas recientes
+                        </h6>
+                        <ul class="list-unstyled ms-4">
+                            <li><a href="../inicio.html" class="sidebar-link">- Inicio de Proyecto</a></li>
+                            <li><a href="../sprint_1.html" class="sidebar-link">- Sprint 1</a></li>
+                            <li><a href="../sprint_2.html" class="sidebar-link">- Sprint 2</a></li>
+                            <li><a href="#" class="sidebar-link">- Sprint 3</a></li>
+                        </ul>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </section>
+    <!-- FOOTER -->
+    <footer class="bg-dark text-white py-5 mt-5" id="mainFooter">
+        <div class="container">
+            <div class="row gy-4">
+                <div class="col-md-4">
+                    <h5 class="fw-bold mb-3">Ingeniería de Software</h5>
+                    <p class="text-white-50">
+                        Proyecto que busca desarrollar un sistema de gestión documental como parte de una mesa de partes
+                        virtual. La idea es facilitar el ingreso, registro, consulta y seguimiento de documentos
+                        vinculados a procesos arbitrales.
+                    </p>
+                    <form class="d-flex flex-column flex-sm-row">
+                        <input type="email" class="form-control me-sm-2 mb-2 mb-sm-0 rounded-pill px-3"
+                            placeholder="Ingresa tu correo electrónico">
+                        <button class="btn btn-primary rounded-pill px-4 fw-bold" type="submit">ENVIAR</button>
+                    </form>
+                </div>
+                <div class="col-md-2">
+                    <h6 class="fw-bold mb-3">Enlaces Rápidos</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="../../index.html#Integrantes"
+                                class="text-white-50 text-decoration-none d-block mb-1">Integrantes</a></li>
+                        <li><a href="#" class="text-white-50 text-decoration-none d-block mb-1">Consultoría</a></li>
+                        <li><a href="../../index.html#Blogs"
+                                class="text-white-50 text-decoration-none d-block mb-1">Blog</a></li>
+                        <li><a href="#" class="text-white-50 text-decoration-none d-block">Estudios de Caso</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h6 class="fw-bold mb-3">Proyecto</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="../inicio.html" class="text-white-50 text-decoration-none d-block mb-1">Inicio de
+                                proyecto</a></li>
+                        <li><a href="../sprint_1.html" class="text-white-50 text-decoration-none d-block mb-1">Sprint 1</a></li>
+                        <li><a href="../sprint_2.html" class="text-white-50 text-decoration-none d-block mb-1">Sprint 2</a></li>
+                        <li><a href="#" class="text-white-50 text-decoration-none d-block">Sprint 3</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h6 class="fw-bold mb-3">Contáctanos</h6>
+                    <p class="text-white-50 mb-1">Comunícate con uno de nuestros consultores del proyecto</p>
+                    <a href="mailto:hi@design.studio.com"
+                        class="fw-bold text-white text-decoration-underline">2113110142@untels.edu.pe</a>
+                </div>
+            </div>
+
+            <hr class="border-secondary my-4">
+
+            <div class="text-center text-white-50">
+                <small>&copy; 2025 - Todos los derechos reservados.</small><br>
+            </div>
+        </div>
+    </footer>
+    <script src="../../asset/js/modo-oscuro.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="../../asset/css/bootstrap-5.3.3/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>F

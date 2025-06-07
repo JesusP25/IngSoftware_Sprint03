@@ -1,0 +1,1255 @@
+<h1>dailyStandup.html</h1>
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DemostrarSprint</title>
+    <!-- Estilos externos -->
+    <link rel="stylesheet" href="../../asset/css/bootstrap-5.3.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../asset/css/fontawesome-6/css/all.min.css">
+    <link rel="stylesheet" href="../../asset/css/vision.css">
+    <link rel="stylesheet" href="../../asset/css/btnTema.css">
+    <link rel="stylesheet" href="../../asset/css/navegador-blog.css">
+    <link rel="stylesheet" href="../../asset/css/footer.css">
+</head>
+
+<body>
+    <!-- Botón flotante de cambio de tema -->
+    <button class="theme-toggle-btn" onclick="toggleTheme()">
+        <i class="fa-solid fa-moon"></i>
+    </button>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg py-3">
+        <div class="container">
+            <a class="navbar-brand" href="../../index.html"><strong>INGENIERÍA DE SOFTWARE</strong></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav align-items-center">
+                    <li class="nav-item"><a class="nav-link active" href="../../index.html">Inicio</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button"
+                            data-bs-toggle="dropdown">Proyecto</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="../inicio.html">Inicio de proyecto</a></li>
+                            <li><a class="dropdown-item" href="../sprint_1.html">Sprint 1</a></li>
+                            <li><a class="dropdown-item" href="../sprint_2.html">Sprint 2</a></li>
+                            <li><a class="dropdown-item" href="#">Sprint 3</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="vision.html#Propuesta">Propuesta</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#mainFooter">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <section class="container my-5">
+        <div class="row pt-5">
+            <!-- Contenido principal del blog -->
+            <div class="col-lg-8">
+                <section class="position-relative blog-header" id="crearVision">
+                    <div class="container py-5">
+                        <!-- Breadcrumb -->
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb small text-muted mb-2">
+                                <li class="breadcrumb-item"><a href="../../index.html">Home</a></li>
+                                <li class="breadcrumb-item"><a href="../../index.html#InicioProyecto">Pages</a></li>
+                                <li class="breadcrumb-item"><a href="../inicio.html#blog-Crear">Inicio Proyecto</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Demostrar y validar el sprint
+                                </li>
+                            </ol>
+                        </nav>
+
+                        <!-- Blog Title -->
+                        <h1 class="fw-bold display-5" id="DemostrarSprint">16. Demostrar y validar el sprint</h1>
+                    </div>
+                </section>
+
+                <div class="blog-post">
+                    <div class="contenedor-img">
+                        <img src="../../asset/img/img_sprint1/v16.jpg" alt="Visión del proyecto Scrum"
+                            class="img-fluid rounded mb-4 img-contenido-blog">
+                    </div>
+                    <hr>
+
+                    <div class="d-flex align-items-center mb-4 text-muted small">
+                        <span class="me-3"><i class="fas fa-tag me-1"></i>Gestión de Software</span>
+                        <span><i class="far fa-calendar-alt me-1"></i>17 / 05 al 07/ 06 - 2025</span>
+                    </div>
+
+                    <article class="blog-contenido">
+                        <p>
+                            El equipo de desarrollo muestra a las partes interesadas el trabajo finalizado durante el sprint 
+                            y solicita retroalimentación para asegurar que cumpla con las expectativas y que se encuentre 
+                            alineado con la visión del producto
+
+                        </p>
+
+                        <h2 class="fw-bold mt-5 border-bottom pb-2" id="Entradas">ENTRADAS</h2>
+
+                        <h3 class="fw-bold mt-4" id="EquipoPrincipalScrum">16.1. Equipo principal de Scrum</h3>
+                        <h4 class="fw-semibold mt-4" id="ProductOwner">Product Owner</h4>
+                        <p>
+                            <i class="fas fa-circle me-2 txt-sidebar"></i>Pablo Pascual, Pedro Javier
+                        </p>
+
+                        <h4 class="fw-semibold mt-4" id="ScrumMaster">Scrum master</h4>
+                        <p>
+                            <i class="fas fa-circle me-2 txt-sidebar"></i>Paye Juarez, Jesús Baltazar
+                        </p>
+                        <h4 class="fw-semibold mt-4" id="EquipoDesarrollo">Equipo de desarrollo:</h4>
+                        <ul>
+                            <li>Velez de Villa Huacachi Manuel Silverio</li>
+                            <li>Huerta Vasquez Jimmy Alexander</li>
+                            <li>Barrios Quispe Jeampier Jhoel</li>
+                        </ul>
+                        <!-- Entregables Sprint -->
+                        <section id="Entregables">
+                            <h3 class="fw-bold mt-4">16.2. Entregables del Sprint</h3>
+                            <table class="table table-bordered mt-3">
+                                <tbody>
+
+                                    <thead>
+                                    <tr>
+                                        <th>Historia de Usuarios</th>
+                                        <th>Entregables</th>
+                                        
+                                    </tr>
+
+                                    <tr>
+                                        <td>Historia de usuario 01: Visualización de trámites por resolver</td>
+                                        
+                                        <td>
+                                            Como usuario remitente, quiero recibir alertas si dejo campos 
+                                            obligatorios vacíos al registrar un trámite interno, para asegurar que el registro 
+                                            sea correcto y completo.
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td></td>
+                                        <td>1. Tabla con campos: Urgente, N° de expediente, Hora, Fecha, Área de origen,
+                                            Estado, Área de destino.</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td></td>
+                                        <td>2. Componente de paginación con número de página actual.</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td></td>
+                                        <td>3. Visualización de datos en tabla paginada.</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td></td>
+                                        <td>4. Datos obtenidos correctamente desde backend.</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>Historia de usuario 02: Búsqueda de trámites por resolver</td>
+
+                                        <td>
+                                            Como usuario remitente, quiero recibir alertas si dejo campos 
+                                            obligatorios vacíos al registrar un trámite interno, para asegurar que el registro 
+                                            sea correcto y completo.
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td></td>
+                                        <td>1. Campo de búsqueda funcional.2. Resultados filtrados en tabla con base al número de expediente.</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td></td>
+                                        <td>2. Resultados filtrados en tabla con base al número de expediente.</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td></td>
+                                        <td>3.Comportamiento reactivo al escribir o hacer clic en “Buscar”.</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>Historia de usuario 03: Mensaje de trámites pendientes por resolver</td>
+                                        <td>
+                                            Como usuario, quiero ver un mensaje que me indique cuántos trámites tengo por resolver, para tener claridad sobre mi carga de trabajo.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td>1. Lógica para contar trámites pendientes desde backend.</td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td>2. Mensaje en UI: “Usted tiene X expedientes por resolver.”.</td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td>3. Estilo de mensaje visible y destacado en la interfaz.</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>Historia de usuario 04: Visualización de trámites por recibir</td>
+                                        <td>
+                                            Como usuario, quiero visualizar los trámites por recibir con todos los campos indicados, para gestionar las recepciones de documentos.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td>1. Tabla con campos: N° de expediente, Hora, Fecha, Área de origen, Estado, Área de destino.</td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td>2. Implementación de paginación.</td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td>3. Resultados correctamente cargados y ordenados.</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>Historia de usuario 05: Búsqueda de trámites por recibir</td>
+                                        <td>
+                                            Como usuario, quiero tener un buscador funcional en la sección de trámites por recibir, para encontrar rápidamente un trámite específico.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td>1. Campo de búsqueda funcional en interfaz.</td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td>2. Resultados filtrados dinámicamente.</td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td>3. Integración entre componente de búsqueda y tabla de datos.</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>Historia de usuario 06: Mensaje de trámites por recibir</td>
+                                        <td>
+                                            Como usuario, quiero ver un mensaje con la cantidad de trámites que tengo por recibir, para mantenerme informado al momento.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td>1. Backend calcula la cantidad de trámites pendientes por recibir.</td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td>2. Visualización en UI: “Usted tiene X expedientes por recibir.”</td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td>3. Validación de que el conteo es exacto y se actualiza.</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>Historia de usuario 07: Impresión de trámites externos</td>
+                                        <td>
+                                            Como usuario, quiero tener una opción para imprimir trámites de remitentes externos, para generar reportes físicos cuando se requiera.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td>1. Botón de impresión habilitado en interfaz.</td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td>2. Generación de vista o plantilla para impresión.</td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td>3. Pruebas de impresión con diferentes datos.</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>Historia de usuario 08: Filtro para trámites remitentes externos</td>
+                                        <td>
+                                            Como usuario del sistema, quiero aplicar filtros por tipo de documento y fecha de recepción en los trámites remitentes externos, para facilitar la búsqueda de registros específicos y mejorar la gestión documental.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td>1. Backend con lógica para filtrar por tipo y fecha.</td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td>2. Interfaz que muestra mensaje si no hay resultados.</td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td>3. Filtros funcionales y resultados precisos.</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>Historia de usuario 09: Registro de trámites internos</td>
+                                        <td>
+                                            Como usuario, quiero registrar trámites internos con los campos requeridos, para documentar adecuadamente su origen y destino.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td>1. Formulario de registro completo con campos necesarios.</td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td>2. Validaciones frontend activas.</td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td>3. Endpoint en backend para registrar el trámite.</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>Historia de usuario 10: Validación de campos para trámites interno</td>
+                                        <td>
+                                            Como usuario remitente, quiero recibir alertas si dejo campos obligatorios vacíos al registrar un trámite interno, para asegurar que el registro sea correcto y completo.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td>1. Validaciones en frontend con mensajes de error.</td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td>2. Validaciones adicionales en backend.</td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td>3. Campos obligatorios claramente definidos.</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>Historia de usuario 11: Administrar lista de áreas</td>
+                                        <td>
+                                            Como administrador, quiero ver, buscar, editar y eliminar áreas, para gestionar eficientemente la estructura organizacional.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td>1. Tabla de áreas con campos visibles.</td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td>2. Buscador funcional para filtrar por nombre.</td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td>3. Botones de edición y eliminación funcionando.</td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td>4. Contador de total de áreas visible.</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>Historia de usuario 12: Navegación en listado de áreas</td>
+                                        <td>
+                                            Como administrador, quiero navegar entre páginas en el listado de áreas, para revisar todas las áreas registradas sin sobrecargar la vista.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td>1. Lógica de paginado implementada en backend.</td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td>2. Interfaz con paginador y navegación.</td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td>3. Visualización de total de páginas y registros.</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>Historia de usuario 13: Administrar tipos de documentos</td>
+                                        <td>
+                                            Como administrador, quiero buscar, editar y eliminar tipos de documentos, para mantener actualizada la clasificación documental.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td>1. Tabla con listado de tipos documentales.</td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td>2. Botones de editar y eliminar visibles y funcionales.</td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td>3. Componentes estilizados para buena usabilidad.</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>Historia de usuario 14: Implementar búsqueda en tipos de documentos</td>
+                                        <td>
+                                            Como administrador, quiero contar con una barra de búsqueda en la gestión de tipos de documentos, para encontrar rápidamente el documento que necesito editar o eliminar.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td>1. Campo de búsqueda en tabla de tipos documentales.</td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td>2. Lógica backend para filtrar por nombre o tipo.</td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td>3. Mensaje visible si no se encuentran resultados.</td>
+                                    </tr>
+
+
+                                    </thead>
+                              
+                                </tbody>
+                            </table>
+                        </section>
+                        <!-- 2.1.4 Sprint Backlog -->
+                        <section id="SprintBacklog">
+                            <h3 class="fw-bold mt-4">16.3. Sprint Backlog</h3>
+                            <p>El Sprint Backlog es la lista de tareas que se han comprometido para el sprint. El equipo
+                                selecciona las tareas del Product Backlog y las convierte en tareas más pequeñas para su
+                                ejecución.</p>
+
+                            <!-- Tabla de tareas -->
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th>Historia</th>
+                                        <th>Tarea</th>
+                                        <th>Esfuerzo</th>
+                                        <th>Responsable</th>
+                                        <th>Prioridad</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td style="white-space: nowrap;">Historia 1</td>
+                                        <td>Tarea 1.1: Diseñar la tabla con campos requeridos.</td>
+                                        <td>3</td>
+                                        <td>Manuel</td>
+                                        <td>Alta</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="white-space: nowrap;">Historia 1</td>
+                                        <td>Tarea 1.2: Implementar lógica para mostrar datos paginados.</td>
+                                        <td>8</td>
+                                        <td>Jimmy</td>
+                                        <td>Alta</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="white-space: nowrap;">Historia 1</td>
+                                        <td>Tarea 1.3: Agregar indicador de página actual.</td>
+                                        <td>3</td>
+                                        <td>Manuel</td>
+                                        <td>Media</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="white-space: nowrap;">Historia 2</td>
+                                        <td>Tarea 2.1: Implementar campo de búsqueda.</td>
+                                        <td>5</td>
+                                        <td>Manuel</td>
+                                        <td>Alta</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="white-space: nowrap;">Historia 3</td>
+                                        <td>Tarea 3.1: Calcular trámites pendientes.</td>
+                                        <td>3</td>
+                                        <td>Jimmy</td>
+                                        <td>Alta</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="white-space: nowrap;">Historia 3</td>
+                                        <td>Tarea 3.2: Mostrar mensaje con el conteo.</td>
+                                        <td>3</td>
+                                        <td>Manuel</td>
+                                        <td>Media</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="white-space: nowrap;">Historia 4</td>
+                                        <td>Tarea 4.1: Diseñar tabla.</td>
+                                        <td>3</td>
+                                        <td>Manuel</td>
+                                        <td>Alta</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="white-space: nowrap;">Historia 4</td>
+                                        <td>Tarea 4.2: Implementar paginación.</td>
+                                        <td>5</td>
+                                        <td>Jimmy</td>
+                                        <td>Media</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="white-space: nowrap;">Historia 5</td>
+                                        <td>Tarea 5.1: Crear componente de búsqueda.</td>
+                                        <td>5</td>
+                                        <td>Manuel</td>
+                                        <td>Alta</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="white-space: nowrap;">Historia 5</td>
+                                        <td>Tarea 5.2: Integrar con tabla de resultados.</td>
+                                        <td>8</td>
+                                        <td>Manuel</td>
+                                        <td>Alta</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="white-space: nowrap;">Historia 6</td>
+                                        <td>Tarea 6.1: Obtener la cantidad de trámites por recibir.</td>
+                                        <td>5</td>
+                                        <td>Jimmy</td>
+                                        <td>Alta</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="white-space: nowrap;">Historia 6</td>
+                                        <td>Tarea 6.2: Mostrar mensaje con esa cantidad.</td>
+                                        <td>3</td>
+                                        <td>Manuel</td>
+                                        <td>Media</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="white-space: nowrap;">Historia 7</td>
+                                        <td>Tarea 7.1: Agregar botón "Imprimir".</td>
+                                        <td>5</td>
+                                        <td>Manuel</td>
+                                        <td>Alta</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="white-space: nowrap;">Historia 7</td>
+                                        <td>Tarea 7.2: Generar plantilla de impresión.</td>
+                                        <td>5</td>
+                                        <td>Jimmy</td>
+                                        <td>Media</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="white-space: nowrap;">Historia 8</td>
+                                        <td>Tarea 8.1: Implementar lógica de filtrado en backend por tipo y fecha.</td>
+                                        <td>5</td>
+                                        <td>Jimmy</td>
+                                        <td>Alta</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="white-space: nowrap;">Historia 8</td>
+                                        <td>Tarea 8.2: Mostrar mensaje si la búsqueda no arroja resultados.</td>
+                                        <td>3</td>
+                                        <td>Jeampier</td>
+                                        <td>Media</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="white-space: nowrap;">Historia 9</td>
+                                        <td>Tarea 9.1: Diseñar formulario con campos necesarios.</td>
+                                        <td>5</td>
+                                        <td>Manuel</td>
+                                        <td>Media</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="white-space: nowrap;">Historia 9</td>
+                                        <td>Tarea 9.2: Validar datos antes de enviar.</td>
+                                        <td>8</td>
+                                        <td>Jeampier</td>
+                                        <td>Alta</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="white-space: nowrap;">Historia 9</td>
+                                        <td>Tarea 9.3: Crear endpoint de registro de trámites.</td>
+                                        <td>8</td>
+                                        <td>Jimmy</td>
+                                        <td>Alta</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="white-space: nowrap;">Historia 10</td>
+                                        <td>Tarea 10.1: Definir campos obligatorios en el formulario.</td>
+                                        <td>5</td>
+                                        <td>Jeampier</td>
+                                        <td>Media</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="white-space: nowrap;">Historia 10</td>
+                                        <td>Tarea 10.2: Implementar validaciones en frontend (con mensajes de error).</td>
+                                        <td>5</td>
+                                        <td>Jeampier</td>
+                                        <td>Media</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="white-space: nowrap;">Historia 10</td>
+                                        <td>Tarea 10.3: Agregar validación también en backend para seguridad adicional.</td>
+                                        <td>8</td>
+                                        <td>Jimmy</td>
+                                        <td>Alta</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="white-space: nowrap;">Historia 11</td>
+                                        <td>Tarea 11.1: Diseñar tabla de áreas.</td>
+                                        <td>5</td>
+                                        <td>Jeampier</td>
+                                        <td>Alta</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="white-space: nowrap;">Historia 11</td>
+                                        <td>Tarea 11.2: Crear buscador funcional.</td>
+                                        <td>8</td>
+                                        <td>Jeampier</td>
+                                        <td>Alta</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="white-space: nowrap;">Historia 11</td>
+                                        <td>Tarea 11.3: Implementar botones de edición y eliminación.</td>
+                                        <td>3</td>
+                                        <td>Jeampier</td>
+                                        <td>Alta</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="white-space: nowrap;">Historia 11</td>
+                                        <td>Tarea 11.4: Agregar contador de total de áreas.</td>
+                                        <td>5</td>
+                                        <td>Jimmy</td>
+                                        <td>Media</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="white-space: nowrap;">Historia 11</td>
+                                        <td>Tarea 11.5: Habilitar paginación.</td>
+                                        <td>5</td>
+                                        <td>Jeampier</td>
+                                        <td>Media</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="white-space: nowrap;">Historia 12</td>
+                                        <td>Tarea 12.1: Agregar componente de paginación en tabla de áreas.</td>
+                                        <td>5</td>
+                                        <td>Jeampier</td>
+                                        <td>Alta</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="white-space: nowrap;">Historia 12</td>
+                                        <td>Tarea 12.2: Implementar lógica backend de paginado.</td>
+                                        <td>8</td>
+                                        <td>Jimmy</td>
+                                        <td>Alta</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="white-space: nowrap;">Historia 12</td>
+                                        <td>Tarea 12.3: Mostrar cantidad total de páginas y resultados.</td>
+                                        <td>3</td>
+                                        <td>Jimmy</td>
+                                        <td>Media</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="white-space: nowrap;">Historia 13</td>
+                                        <td>Tarea 13.1: Crear tabla de tipos documentales.</td>
+                                        <td>5</td>
+                                        <td>Manuel</td>
+                                        <td>Alta</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="white-space: nowrap;">Historia 13</td>
+                                        <td>Tarea 13.2: Agregar botones de edición y eliminación.</td>
+                                        <td>3</td>
+                                        <td>Manuel</td>
+                                        <td>Alta</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="white-space: nowrap;">Historia 13</td>
+                                        <td>Tarea 13.3: Implementar buscador por nombre.</td>
+                                        <td>5</td>
+                                        <td>Manuel</td>
+                                        <td>Media</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="white-space: nowrap;">Historia 14</td>
+                                        <td>Tarea 14.1: Crear campo de búsqueda en la interfaz.</td>
+                                        <td>5</td>
+                                        <td>Jeampier</td>
+                                        <td>Alta</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="white-space: nowrap;">Historia 14</td>
+                                        <td>Tarea 14.2: Adaptar el backend para realizar consultas por nombre/tipo.</td>
+                                        <td>8</td>
+                                        <td>Jimmy</td>
+                                        <td>Alta</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="white-space: nowrap;">Historia 14</td>
+                                        <td>Tarea 14.3: Manejar el caso de cero resultados con mensaje amigable.</td>
+                                        <td>8</td>
+                                        <td>Jeampier</td>
+                                        <td>Media</td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </section>
+
+                        <section id="CriterioDeterminado">
+                            <h3 class="fw-bold mt-4">16.4. Criterios terminados</h3>
+
+                            <ul>
+                                <li><strong>Épica 1: Trámites por resolver</strong></li>
+                                <ul>
+                                    <li>El sistema muestra una tabla con las columnas: Urgente (Sí/No), N° de expediente, hora, fecha, área de origen, estado y área de destino.</li>
+                                    <li>En la parte superior se visualiza el mensaje: “Usted tiene X expedientes por resolver”.</li>
+                                    <li>El formulario de búsqueda permite filtrar trámites por número de expediente u otros criterios.</li>
+                                    <li>Se visualiza la paginación correctamente con el número de página actual.</li>
+                                    <li>El usuario puede navegar entre páginas sin perder los filtros aplicados.</li>
+                                </ul>
+
+                                <li><strong>Épica 2: Trámites por recibir</strong></li>
+                                <ul>
+                                    <li>La tabla contiene las columnas: N° de expediente, hora, fecha, área de origen, estado y área de destino.</li>
+                                    <li>Se muestra el mensaje “Usted tiene X expedientes por recibir” dinámicamente en la parte superior.</li>
+                                    <li>El buscador filtra correctamente los trámites según lo ingresado.</li>
+                                    <li>Se visualiza el número de página en que se encuentra el usuario.</li>
+                                    <li>Al marcar un trámite como recibido, este se actualiza correctamente en la base de datos.</li>
+                                </ul>
+
+                                <li><strong>Épica 3: Trámites remitentes externos</strong></li>
+                                <ul>
+                                    <li>La vista permite imprimir el listado completo de trámites con los campos necesarios.</li>
+                                    <li>Los campos mostrados coinciden con los de la tabla de “Trámites por recibir”.</li>
+                                    <li>Se incluyen filtros por fecha, tipo de documento y N° de expediente.</li>
+                                    <li>El botón de impresión genera una vista previa limpia y ordenada.</li>
+                                    <li>Si no hay datos que coincidan con los filtros, se muestra un mensaje adecuado.</li>
+                                </ul>
+
+                                <li><strong>Épica 4: Trámites remitentes internos</strong></li>
+                                <ul>
+                                    <li>El formulario contiene los campos: Fecha de registro, hora de registro, tipo de trámite, N° de expediente, siguiente unidad orgánica de destino, documento (múltiples archivos), asunto, folio, remitente y observaciones.</li>
+                                    <li>Todos los campos obligatorios deben completarse antes de poder guardar el trámite.</li>
+                                    <li>Se validan los tipos y tamaños de archivos en el campo de documentos.</li>
+                                    <li>Se muestra un mensaje de éxito una vez que el trámite ha sido registrado.</li>
+                                    <li>Las observaciones se registran correctamente y pueden ser visualizadas posteriormente.</li>
+                                </ul>
+
+                                <li><strong>Épica 5: Gestión de áreas</strong></li>
+                                <ul>
+                                    <li>La tabla muestra correctamente todas las áreas registradas.</li>
+                                    <li>Las acciones de editar y eliminar están disponibles junto a cada área.</li>
+                                    <li>El buscador filtra resultados en tiempo real por nombre de área.</li>
+                                    <li>El sistema muestra un contador con la cantidad total de áreas.</li>
+                                    <li>Los botones “Siguiente” y “Anterior” funcionan correctamente en la navegación por páginas.</li>
+                                    <li>Se muestra una alerta de confirmación al intentar eliminar un área.</li>
+                                </ul>
+
+                                <li><strong>Épica 6: Gestión de tipo de documentos</strong></li>
+                                <ul>
+                                    <li>La lista de documentos permite editar o eliminar cada tipo desde acciones específicas.</li>
+                                    <li>El buscador filtra correctamente por nombre del documento.</li>
+                                    <li>Solo usuarios con permisos adecuados pueden modificar o eliminar un tipo de documento.</li>
+                                    <li>Se muestran mensajes de confirmación al eliminar un tipo de documento.</li>
+                                    <li>Se guarda correctamente cualquier edición hecha en el nombre o descripción del documento.</li>
+                                    <li>Se informa al usuario si no se encuentran documentos con los criterios buscados.</li>
+                                </ul>
+
+                            </ul>
+                        </section>
+
+                        <section id="Criterios-Aceptación">
+                            <h3 class="fw-bold mt-4">16.5. Criterios de Aceptación</h3>
+
+                            <table class="table table-sm table-bordered align-middle tabla-personalizada">
+
+                                <thead>
+                                    <tr>
+                                        <th>Historia</th>
+                                        <th>Criterios de Aceptación</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><strong>Historia&nbsp;1</strong></td>
+                                        <td>
+                                            <ul>
+                                                <li> La barra de trámites debe mostrar los campos en el orden solicitado.</li>
+                                                <li>El estado urgente debe indicar "Sí" o "No". </li>
+                                                <li>Debe mostrarse el n.º de página actual.</li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Historia&nbsp;2</strong></td>
+                                        <td>
+                                            <ul>
+                                                <li>El campo de búsqueda debe filtrar por n.º expediente, área o estado..</li>
+                                                <li>Los resultados deben actualizarse al escribir.</li>
+                                                
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Historia&nbsp;3</strong></td>
+                                        <td>
+                                            <ul>
+                                                <li>El mensaje debe aparecer al cargar la vista.</li>
+                                                <li>Debe reflejar la cantidad real de trámites.</li>
+                                                
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Historia&nbsp;4</strong></td>
+                                        <td>
+                                            <ul>
+                                                <li>Deben mostrarse los campos: n.º expediente, hora, fecha, área origen, estado, destino</li>
+                                                <li>Se debe mostrar la página actual.</li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Historia&nbsp;5</strong></td>
+                                        <td>
+                                            <ul>
+                                                <li>El buscador debe permitir filtrar por campos clave.</li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td><strong>Historia&nbsp;6</strong></td>
+                                        <td>
+                                            <ul>
+                                                <li> El mensaje se muestra arriba de la lista.</li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td><strong>Historia&nbsp;7</strong></td>
+                                        <td>
+                                            <ul>
+                                                <li>La opción "Imprimir" debe estar visible.</li>
+                                                <li>Debe imprimirse con todos los campos de trámites por recibir.</li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td><strong>Historia&nbsp;8</strong></td>
+                                        <td>
+                                            <ul>
+                                                <li>Existen campos para filtrar por tipo de documento y por rango de fechas. </li>
+                                                <li>Los resultados de la tabla se actualizan automáticamente con los filtros aplicados.</li>
+                                                <li>Si no se encuentran registros coincidentes, se muestra un mensaje informativo.</li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td><strong>Historia&nbsp;9</strong></td>
+                                        <td>
+                                            <ul>
+                                                <li>El formulario debe contener todos los campos indicados.</li>
+                                                <li> El usuario debe poder ingresar datos sin errores.</li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td><strong>Historia&nbsp;10</strong></td>
+                                        <td>
+                                            <ul>
+                                                <li>El sistema valida que se completen campos como: N° de expediente, 
+                                                tipo de trámite, siguiente unidad orgánica, asunto y documento. </li>
+                                                <li>Si falta algún campo, se muestra una advertencia clara antes de guardar.</li>
+                                                <li> El formulario no se envía hasta que todos los campos requeridos estén llenos.</li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td><strong>Historia&nbsp;11</strong></td>
+                                        <td>
+                                            <ul>
+                                                <li>Tabla con opción de edición/eliminación.</li>
+                                                <li>Campo de búsqueda funcional.</li>
+                                                <li>Indicador de cantidad total.</li>
+                                                <li>Navegación entre páginas.</li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td><strong>Historia&nbsp;12</strong></td>
+                                        <td>
+                                            <ul>
+                                                <li>El listado tiene paginación funcional. </li>
+                                                <li>Se muestran botones para ir al inicio, anterior, siguiente y final.</li>
+                                                <li>Los filtros de búsqueda se mantienen al cambiar de página.</li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td><strong>Historia&nbsp;13</strong></td>
+                                        <td>
+                                            <ul>
+                                                <li>El listado debe tener acciones claras. </li>
+                                                <li>El buscador debe filtrar por nombre de documento.</li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td><strong>Historia&nbsp;14</strong></td>
+                                        <td>
+                                            <ul>
+                                                <li>Existe un campo de búsqueda visible y funcional.</li>
+                                                <li>Al escribir un término, la lista se filtra en tiempo real. </li>
+                                                <li>Si no hay resultados, se muestra un mensaje informativo.</li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </section>
+                        <!--Herramienta-->
+                        <h2 class="fw-bold mt-5 border-bottom pb-2" id="Herramientas">HERRAMIENTAS</h2>
+
+                        <!-- Reunión -->
+                        <section id="Reunion">
+                            <h3 class="fw-bold mt-4">16.6. Reunión de revisión del Sprint</h3>
+                            <div class="contenedor-img">
+                                <img src="../../asset/img/img_sprint1/Reunión de revisión.jpg" alt="Scrum Board"
+                                    class="img-fluid rounded mb-4 img-contenido-blog">
+                            </div>
+                        </section>
+
+                        <!--Proposito -->
+                        <section id="Proposito">
+                            <h3 class="fw-bold mt-4">16.7. Propósito</h3>
+                            <p>El propósito de esta reunión es asegurar que se obtenga la aprobación del Product Owner
+                                respecto a los entregables elaborados.</p>
+                        </section>
+
+                        <h2 class="fw-bold mt-5 border-bottom pb-2" id="Salidas">SALIDAS</h2>
+
+                        <!-- Entregables-aceptados -->
+                        <section id="Entregables-aceptados">
+                            <h3 class="fw-bold mt-4">16.8. Entregables aceptados</h3>
+                            <table class="table table-sm table-bordered align-middle tabla-personalizada">
+
+                                <thead>
+                                    <tr>
+                                        <th>Historia</th>
+                                        <th>Criterios de Aceptación</th>
+                                        <th>Aceptada</th>
+                                        <th>Rechazada</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><strong>Historia&nbsp;1</strong></td>
+                                        <td>
+                                            <ul>
+                                                <li> La barra de trámites debe mostrar los campos en el orden solicitado.</li>
+                                                <li>El estado urgente debe indicar "Sí" o "No". </li>
+                                                <li>Debe mostrarse el n.º de página actual.</li>
+                                            </ul>
+                                        </td>
+                                        <td>Si</td>
+                                        <td>No</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Historia&nbsp;2</strong></td>
+                                        <td>
+                                            <ul>
+                                                <li>El campo de búsqueda debe filtrar por n.º expediente, área o estado..</li>
+                                                <li>Los resultados deben actualizarse al escribir.</li>
+                                            </ul>
+                                        </td>
+                                        <td>Si</td>
+                                        <td>No</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Historia&nbsp;3</strong></td>
+                                        <td>
+                                            <ul>
+                                                <li>El mensaje debe aparecer al cargar la vista.</li>
+                                                <li>Debe reflejar la cantidad real de trámites.</li>
+                                                
+                                            </ul>
+                                        </td>
+                                        <td>Si</td>
+                                        <td>No</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Historia&nbsp;4</strong></td>
+                                        <td>
+                                            <ul>
+                                                <li>Deben mostrarse los campos: n.º expediente, hora, fecha, área origen, estado, destino</li>
+                                                <li>Se debe mostrar la página actual.</li>
+                                            </ul>
+                                        </td>
+                                        <td>Si</td>
+                                        <td>No</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Historia&nbsp;5</strong></td>
+                                        <td>
+                                            <ul>
+                                                <li>El buscador debe permitir filtrar por campos clave.</li>
+                                            </ul>
+                                        </td>
+                                        <td>Si</td>
+                                        <td>No</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td><strong>Historia&nbsp;6</strong></td>
+                                        <td>
+                                            <ul>
+                                                <li> El mensaje se muestra arriba de la lista.</li>
+                                            </ul>
+                                        </td>
+                                        <td>Si</td>
+                                        <td>No</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td><strong>Historia&nbsp;7</strong></td>
+                                        <td>
+                                            <ul>
+                                                <li>La opción "Imprimir" debe estar visible.</li>
+                                                <li>Debe imprimirse con todos los campos de trámites por recibir.</li>
+                                            </ul>
+                                        </td>
+                                        <td>Si</td>
+                                        <td>No</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td><strong>Historia&nbsp;8</strong></td>
+                                        <td>
+                                            <ul>
+                                                <li>Existen campos para filtrar por tipo de documento y por rango de fechas. </li>
+                                                <li>Los resultados de la tabla se actualizan automáticamente con los filtros aplicados.</li>
+                                                <li>Si no se encuentran registros coincidentes, se muestra un mensaje informativo.</li>
+                                            </ul>
+                                        </td>
+                                        <td>Si</td>
+                                        <td>No</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td><strong>Historia&nbsp;9</strong></td>
+                                        <td>
+                                            <ul>
+                                                <li>El formulario debe contener todos los campos indicados.</li>
+                                                <li> El usuario debe poder ingresar datos sin errores.</li>
+                                            </ul>
+                                        </td>
+                                        <td>Si</td>
+                                        <td>No</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td><strong>Historia&nbsp;10</strong></td>
+                                        <td>
+                                            <ul>
+                                                <li>El sistema valida que se completen campos como: N° de expediente, 
+                                                tipo de trámite, siguiente unidad orgánica, asunto y documento. </li>
+                                                <li>Si falta algún campo, se muestra una advertencia clara antes de guardar.</li>
+                                                <li> El formulario no se envía hasta que todos los campos requeridos estén llenos.</li>
+                                            </ul>
+                                        </td>
+                                        <td>Si</td>
+                                        <td>No</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td><strong>Historia&nbsp;11</strong></td>
+                                        <td>
+                                            <ul>
+                                                <li>Tabla con opción de edición/eliminación.</li>
+                                                <li>Campo de búsqueda funcional.</li>
+                                                <li>Indicador de cantidad total.</li>
+                                                <li>Navegación entre páginas.</li>
+                                            </ul>
+                                        </td>
+                                        <td>Si</td>
+                                        <td>No</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td><strong>Historia&nbsp;12</strong></td>
+                                        <td>
+                                            <ul>
+                                                <li>El listado tiene paginación funcional. </li>
+                                                <li>Se muestran botones para ir al inicio, anterior, siguiente y final.</li>
+                                                <li>Los filtros de búsqueda se mantienen al cambiar de página.</li>
+                                            </ul>
+                                        </td>
+                                        <td>Si</td>
+                                        <td>No</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td><strong>Historia&nbsp;13</strong></td>
+                                        <td>
+                                            <ul>
+                                                <li>El listado debe tener acciones claras. </li>
+                                                <li>El buscador debe filtrar por nombre de documento.</li>
+                                            </ul>
+                                        </td>
+                                        <td>Si</td>
+                                        <td>No</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td><strong>Historia&nbsp;14</strong></td>
+                                        <td>
+                                            <ul>
+                                                <li>Existe un campo de búsqueda visible y funcional.</li>
+                                                <li>Al escribir un término, la lista se filtra en tiempo real. </li>
+                                                <li>Si no hay resultados, se muestra un mensaje informativo.</li>
+                                            </ul>
+                                        </td>
+                                        <td>Si</td>
+                                        <td>No</td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </section>
+                    </article>
+                </div>
+            </div>
+
+
+
+            <!-- Barra lateral fija (sticky) -->
+            <div class="col-lg-4 mt-md-5">
+                <aside class="sidebar-sticky p-4 rounded-3 shadow-sm dark-bg overflow-auto" style="max-height: 70vh;">
+                    <!-- Índice -->
+                    <div class="mb-4">
+                        <h6 class="fw-bold dark-text">
+                            <i class="fas fa-circle me-2 txt-sidebar"></i>Índice
+                        </h6>
+                        <ul class="list-unstyled ms-4">
+                            <li><a href="#DemostrarSprint" class="sidebar-link">16. Demostrar y validar el sprint</a>
+                            </li>
+                            <li>
+                                <a href="#Entradas" class="sidebar-link">ENTRADAS</a>
+                                <ul class="list-unstyled ms-3">
+                                    <li>
+                                        <a href="#EquipoPrincipalScrum" class="sidebar-link">16.1. Equipo principal Scrum</a>
+                                        <ul class="list-unstyled ms-3">
+
+                                            <li><a href="#ProductOwner" class="sidebar-link">Product Owner</a></li>
+                                            <li><a href="#ScrumMaster" class="sidebar-link">Scrum Master</a></li>
+                                            <li><a href="#EquipoDesarrollo" class="sidebar-link">Equipo de desarrollo</a></li>
+                                        </ul>
+                                            <li><a href="#Entregables" class="sidebar-link">16.2. Entregables del Sprint</a></li>
+                                            <li><a href="#SprintBacklog" class="sidebar-link">16.3. Sprint Backlog</a></li>
+                                            <li><a href="#CriterioDeterminado" class="sidebar-link">16.4. Criterios terminados</a></li>
+                                            <li><a href="#Criterios-Aceptación" class="sidebar-link">16.5. Criterios de aceptación</a></li>
+                                        
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#Herramientas" class="sidebar-link">HERRAMIENTAS</a>
+                                <ul class="list-unstyled ms-3">
+                                    <li><a href="#Reunion" class="sidebar-link">16.6. Reunión de revisión del Sprint</a>
+                                    </li>
+                                    <li><a href="#Proposito" class="sidebar-link">16.7. Propósito</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#Salidas" class="sidebar-link">SALIDAS</a>
+                                <ul class="list-unstyled ms-3">
+                                    <li><a href="#Entregables-aceptados" class="sidebar-link">16.8. Entregables aceptados</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Entradas recientes -->
+                    <div>
+                        <h6 class="fw-bold dark-text mb-3">
+                            <i class="fas fa-circle me-2 txt-sidebar"></i>Entradas recientes
+                        </h6>
+                        <ul class="list-unstyled ms-4">
+                            <li><a href="../inicio.html" class="sidebar-link">- Inicio de Proyecto</a></li>
+                            <li><a href="../sprint_1.html" class="sidebar-link">- Sprint 1</a></li>
+                            <li><a href="../sprint_2.html" class="sidebar-link">- Sprint 2</a></li>
+                            <li><a href="#" class="sidebar-link">- Sprint 3</a></li>
+                        </ul>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </section>
+    <!-- FOOTER -->
+    <footer class="bg-dark text-white py-5 mt-5" id="mainFooter">
+        <div class="container">
+            <div class="row gy-4">
+                <div class="col-md-4">
+                    <h5 class="fw-bold mb-3">Ingeniería de Software</h5>
+                    <p class="text-white-50">
+                        Proyecto que busca desarrollar un sistema de gestión documental como parte de una mesa de partes
+                        virtual. La idea es facilitar el ingreso, registro, consulta y seguimiento de documentos
+                        vinculados a procesos arbitrales.
+                    </p>
+                    <form class="d-flex flex-column flex-sm-row">
+                        <input type="email" class="form-control me-sm-2 mb-2 mb-sm-0 rounded-pill px-3"
+                            placeholder="Ingresa tu correo electrónico">
+                        <button class="btn btn-primary rounded-pill px-4 fw-bold" type="submit">ENVIAR</button>
+                    </form>
+                </div>
+                <div class="col-md-2">
+                    <h6 class="fw-bold mb-3">Enlaces Rápidos</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="../../index.html#Integrantes"
+                                class="text-white-50 text-decoration-none d-block mb-1">Integrantes</a></li>
+                        <li><a href="#" class="text-white-50 text-decoration-none d-block mb-1">Consultoría</a></li>
+                        <li><a href="../../index.html#Blogs"
+                                class="text-white-50 text-decoration-none d-block mb-1">Blog</a></li>
+                        <li><a href="#" class="text-white-50 text-decoration-none d-block">Estudios de Caso</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h6 class="fw-bold mb-3">Proyecto</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="../inicio.html" class="text-white-50 text-decoration-none d-block mb-1">Inicio de
+                                proyecto</a></li>
+                        <li><a href="../sprint_1.html" class="text-white-50 text-decoration-none d-block mb-1">Sprint
+                                1</a></li>
+                        <li><a href="../sprint_2.html" class="text-white-50 text-decoration-none d-block mb-1">Sprint
+                                2</a></li>
+                        <li><a href="#" class="text-white-50 text-decoration-none d-block">Sprint 3</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h6 class="fw-bold mb-3">Contáctanos</h6>
+                    <p class="text-white-50 mb-1">Comunícate con uno de nuestros consultores del proyecto</p>
+                    <a href="mailto:hi@design.studio.com"
+                        class="fw-bold text-white text-decoration-underline">2113110142@untels.edu.pe</a>
+                </div>
+            </div>
+
+            <hr class="border-secondary my-4">
+
+            <div class="text-center text-white-50">
+                <small>&copy; 2025 - Todos los derechos reservados.</small><br>
+            </div>
+        </div>
+    </footer>
+    <script src="../../asset/js/modo-oscuro.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="../../asset/css/bootstrap-5.3.3/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>F

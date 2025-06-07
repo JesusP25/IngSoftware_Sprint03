@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Identificar tareas</title>
+    <!-- Estilos externos -->
+    <link rel="stylesheet" href="../../asset/css/bootstrap-5.3.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../asset/css/fontawesome-6/css/all.min.css">
+    <link rel="stylesheet" href="../../asset/css/vision.css">
+    <link rel="stylesheet" href="../../asset/css/btnTema.css">
+    <link rel="stylesheet" href="../../asset/css/navegador-blog.css">
+    <link rel="stylesheet" href="../../asset/css/footer.css">
+</head>
+
+<body>
+    <!-- Botón flotante de cambio de tema -->
+    <button class="theme-toggle-btn" onclick="toggleTheme()">
+        <i class="fa-solid fa-moon"></i>
+    </button>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg py-3">
+        <div class="container">
+            <a class="navbar-brand" href="../../index.html"><strong>INGENIERÍA DE SOFTWARE</strong></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav align-items-center">
+                    <li class="nav-item"><a class="nav-link active" href="../../index.html">Inicio</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button"
+                            data-bs-toggle="dropdown">Proyecto</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="../inicio.html">Inicio de proyecto</a></li>
+                            <li><a class="dropdown-item" href="../sprint_1.html">Sprint 1</a></li>
+                            <li><a class="dropdown-item" href="../sprint_2.html">Sprint 2</a></li>
+                            <li><a class="dropdown-item" href="#">Sprint 3</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="vision.html#Propuesta">Propuesta</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#mainFooter">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <section class="container my-5">
+        <div class="row pt-5">
+            <!-- Contenido principal del blog -->
+            <div class="col-lg-8">
+                <section class="position-relative blog-header" id="crearVision">
+                    <div class="container py-5">
+                        <!-- Breadcrumb -->
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb small text-muted mb-2">
+                                <li class="breadcrumb-item"><a href="../../index.html">Home</a></li>
+                                <li class="breadcrumb-item"><a href="../../index.html#InicioProyecto">Pages</a></li>
+                                <li class="breadcrumb-item"><a href="../inicio.html#blog-Crear">Inicio Proyecto</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Identificar tareas
+                                </li>
+                            </ol>
+                        </nav>
+
+                        <!-- Blog Title -->
+                        <h1 class="fw-bold display-5" id="Identificartareas">10. Identificar tareas</h1>
+                    </div>
+                </section>
+
+                <div class="blog-post">
+                    <div class="contenedor-img">
+                        <img src="../../asset/img/inicioProyecto/identificarTareas.jpg" alt="Visión del proyecto Scrum"
+                            class="img-fluid rounded mb-4 img-contenido-blog">
+                    </div>
+                    <hr>
+
+                    <div class="d-flex align-items-center mb-4 text-muted small">
+                        <span class="me-3"><i class="fas fa-tag me-1"></i>Gestión de Software</span>
+                        <span><i class="far fa-calendar-alt me-1"></i>17 / 05 al 07 / 06 - 2025</span>
+                    </div>
+
+                    <article class="blog-contenido">
+                        <p>
+                            La identificación de tareas es importante porque al momento de que el equipo se compromete a
+                            completar ciertas historias durante un sprint, es necesario dividirlas en tareas más
+                            pequeñas para facilitar la planificación, la asignación de responsabilidades y el
+                            seguimiento del progreso. Esta identificación permite al equipo trabajar de manera
+                            organizada y eficiente, asegurando que todos los miembros sepan exactamente qué deben hacer
+                            para alcanzar los objetivos del sprint y entregar valor al cliente dentro del tiempo
+                            establecido.
+
+                        </p>
+
+                        <h2 class="fw-bold mt-5 border-bottom pb-2" id="Entradas">ENTRADAS</h2>
+
+                        <h3 class="fw-bold mt-4" id="EquipoPrincipalScrum">10.1. Equipo principal de Scrum</h3>
+                        <h4 class="fw-semibold mt-4" id="ProductOwner">Product Owner</h4>
+                        <p>
+                            <i class="fas fa-circle me-2 txt-sidebar"></i>Pablo Pascual, Pedro Javier
+                        </p>
+
+                        <h4 class="fw-semibold mt-4" id="ScrumMaster">Scrum master</h4>
+                        <p>
+                            <i class="fas fa-circle me-2 txt-sidebar"></i>Paye Juarez, Jesús Baltazar
+                        </p>
+                        <h4 class="fw-semibold mt-4" id="EquipoDesarrollo">Equipo de desarrollo:</h4>
+                        <ul>
+                            <li>Velez de Villa Huacachi Manuel Silverio</li>
+                            <li>Huerta Vasquez Jimmy Alexander</li>
+                            <li>Barrios Quispe Jeampier Jhoel</li>
+                        </ul>
+                        <!--seccion chistoria de usuario-->
+                        <section id="historiaUsuario">
+                            <h3 class="fw-bold mt-4">10.2. Historias de usuario comprendidas</h3>
+                            <p>
+                                Historia de usuario 1: Como usuario, quiero ver en pantalla una lista de trámites por resolver con los campos: urgente, n.º expediente, hora, fecha, área de origen, estado y área de destino, para gestionar de manera organizada los trámites pendientes.<br><br>
+                                Historia de usuario 2: Como usuario, quiero contar con un buscador en la vista de trámites por resolver, para filtrar rápidamente el trámite que deseo revisar.<br><br>
+                                Historia de usuario 3: Como usuario, quiero ver un mensaje que me indique cuántos trámites tengo por resolver, para tener claridad sobre mi carga de trabajo.<br><br>
+                                Historia de usuario 4: Como usuario, quiero visualizar los trámites por recibir con todos los campos indicados, para gestionar las recepciones de documentos.<br><br>
+                                Historia de usuario 5: Como usuario, quiero tener un buscador funcional en la sección de trámites por recibir, para encontrar rápidamente un trámite específico.<br><br>
+                                Historia de usuario 6: Como usuario, quiero ver un mensaje con la cantidad de trámites que tengo por recibir, para mantenerme informado al momento.<br><br>
+                                Historia de usuario 7: Como usuario, quiero tener una opción para imprimir trámites de remitentes externos, para generar reportes físicos cuando se requiera.<br><br>
+                                Historia de usuario 8: Como usuario del sistema, quiero aplicar filtros por tipo de documento y fecha de recepción en los trámites remitentes externos, para facilitar la búsqueda de registros específicos y mejorar la gestión documental.<br><br>
+                                Historia de usuario 9: Como usuario, quiero registrar trámites internos con los campos requeridos, para documentar adecuadamente su origen y destino.<br><br>
+                                Historia de usuario 10: Como usuario remitente, quiero recibir alertas si dejo campos obligatorios vacíos al registrar un trámite interno, para asegurar que el registro sea correcto y completo.<br><br>
+                                Historia de usuario 11: Como administrador, quiero ver, buscar, editar y eliminar áreas, para gestionar eficientemente la estructura organizacional.<br><br>
+                                Historia de usuario 12: Como administrador, quiero navegar entre páginas en el listado de áreas, para revisar todas las áreas registradas sin sobrecargar la vista.<br><br>
+                                Historia de usuario 13: Como administrador, quiero buscar, editar y eliminar tipos de documentos, para mantener actualizada la clasificación documental.<br><br>
+                                Historia de usuario 14: Como administrador, quiero contar con una barra de búsqueda en la gestión de tipos de documentos, para encontrar rápidamente el documento que necesito editar o eliminar.
+                            </p>
+
+                        </section>
+
+                        <h2 class="fw-bold mt-5 border-bottom pb-2" id="Herramientas">HERRAMIENTAS</h2>
+
+                        <section id="reunion-sprint">
+                            <h3 class="fw-semibold mt-4">10.3. Reuniones de planificación del Sprint</h3>
+                            <p>
+                                En esta reunión, el equipo Scrum, junto con el Product Owner, define qué historias de
+                                usuario o elementos del backlog se priorizan y se comprometen a completarlas dentro del
+                                sprint. El equipo también desglosa estas historias en tareas más pequeñas, asigna
+                                responsabilidades y estima el esfuerzo necesario.
+                            </p>
+
+                            <div class="contenedor-img my-4">
+                                <img src="../../asset/img/img_sprint2/10.3_herramientas_sprint2.jpg"
+                                    alt="Imagen de reunión de sprint" class="img-fluid rounded" />
+                            </div>
+                        </section>
+
+                        <h2 class="fw-bold mt-5 border-bottom pb-2" id="Salidas">SALIDAS</h2>
+
+                        <section id="ListaTarea">
+                            <h3 class="fw-semibold mt-4">10.4. Lista de tareas</h3>
+                            <p>
+                                Como resultado de la planificación, se genera una lista detallada de tareas
+                                comprometidas, con responsables asignados y fechas estimadas para su entrega dentro del
+                                sprint.
+                            </p>
+
+                            <h4 class="fw-semibold mt-4">Historia 1:</h4>
+                            <p>Como usuario, quiero ver en pantalla una lista de trámites por resolver con los campos: urgente, n.º expediente, hora, fecha, área de origen, estado y área de destino, para gestionar de manera organizada los trámites pendientes.</p>
+                            <ul>
+                                <li>Tarea 1.1: Diseñar tabla con campos requeridos.</li>
+                                <li>Tarea 1.2: Implementar lógica para mostrar datos paginados.</li>
+                                <li>Tarea 1.3: Agregar indicador de página actual.</li>
+                            </ul>
+
+                            <h4 class="fw-semibold mt-4">Historia 2:</h4>
+                            <p>Como usuario, quiero contar con un buscador en la vista de trámites por resolver, para filtrar rápidamente el trámite que deseo revisar.</p>
+                            <ul>
+                                <li>Tarea 2.1: Implementar campo de búsqueda.</li>
+                            </ul>
+
+                            <h4 class="fw-semibold mt-4">Historia 3:</h4>
+                            <p>Como usuario, quiero ver un mensaje que me indique cuántos trámites tengo por resolver, para tener claridad sobre mi carga de trabajo.</p>
+                            <ul>
+                                <li>Tarea 3.1: Calcular trámites pendientes.</li>
+                                <li>Tarea 3.2: Mostrar mensaje con el conteo.</li>
+                            </ul>
+
+                            <h4 class="fw-semibold mt-4">Historia 4:</h4>
+                            <p>Como usuario, quiero visualizar los trámites por recibir con todos los campos indicados, para gestionar las recepciones de documentos.</p>
+                            <ul>
+                                <li>Tarea 4.1: Diseñar tabla.</li>
+                                <li>Tarea 4.2: Implementar paginación.</li>
+                            </ul>
+
+                            <h4 class="fw-semibold mt-4">Historia 5:</h4>
+                            <p>Como usuario, quiero tener un buscador funcional en la sección de trámites por recibir, para encontrar rápidamente un trámite específico.</p>
+                            <ul>
+                                <li>Tarea 5.1: Crear componente de búsqueda.</li>
+                                <li>Tarea 5.2: Integrar con tabla de resultados.</li>
+                            </ul>
+
+                            <h4 class="fw-semibold mt-4">Historia 6:</h4>
+                            <p>Como usuario, quiero ver un mensaje con la cantidad de trámites que tengo por recibir, para mantenerme informado al momento.</p>
+                            <ul>
+                                <li>Tarea 6.1: Obtener la cantidad de trámites por recibir.</li>
+                                <li>Tarea 6.2: Mostrar mensaje con esa cantidad.</li>
+                            </ul>
+
+                            <h4 class="fw-semibold mt-4">Historia 7:</h4>
+                            <p>Como usuario, quiero tener una opción para imprimir trámites de remitentes externos, para generar reportes físicos cuando se requiera.</p>
+                            <ul>
+                                <li>Tarea 7.1: Agregar botón "Imprimir".</li>
+                                <li>Tarea 7.2: Generar plantilla de impresión.</li>
+                            </ul>
+
+                            <h4 class="fw-semibold mt-4">Historia 8:</h4>
+                            <p>Como usuario del sistema, quiero aplicar filtros por tipo de documento y fecha de recepción en los trámites remitentes externos, para facilitar la búsqueda de registros específicos y mejorar la gestión documental.</p>
+                            <ul>
+                                <li>Tarea 8.1: Implementar lógica de filtrado en backend por tipo y fecha.</li>
+                                <li>Tarea 8.2: Mostrar mensaje si la búsqueda no arroja resultados.</li>
+                            </ul>
+
+                            <h4 class="fw-semibold mt-4">Historia 9:</h4>
+                            <p>Como usuario, quiero registrar trámites internos con los campos requeridos, para documentar adecuadamente su origen y destino.</p>
+                            <ul>
+                                <li>Tarea 9.1: Diseñar formulario con campos necesarios.</li>
+                                <li>Tarea 9.2: Validar datos antes de enviar.</li>
+                                <li>Tarea 9.3: Crear endpoint de registro de trámites.</li>
+                            </ul>
+
+                            <h4 class="fw-semibold mt-4">Historia 10:</h4>
+                            <p>Como usuario remitente, quiero recibir alertas si dejo campos obligatorios vacíos al registrar un trámite interno, para asegurar que el registro sea correcto y completo.</p>
+                            <ul>
+                                <li>Tarea 10.1: Definir campos obligatorios en el formulario.</li>
+                                <li>Tarea 10.2: Implementar validaciones en frontend (con mensajes de error).</li>
+                                <li>Tarea 10.3: Agregar validación también en backend para seguridad adicional.</li>
+                            </ul>
+
+                            <h4 class="fw-semibold mt-4">Historia 11:</h4>
+                            <p>Como administrador, quiero ver, buscar, editar y eliminar áreas, para gestionar eficientemente la estructura organizacional.</p>
+                            <ul>
+                                <li>Tarea 11.1: Diseñar tabla de áreas.</li>
+                                <li>Tarea 11.2: Crear buscador funcional.</li>
+                                <li>Tarea 11.3: Implementar botones de edición y eliminación.</li>
+                                <li>Tarea 11.4: Agregar contador de total de áreas.</li>
+                                <li>Tarea 11.5: Habilitar paginación.</li>
+                            </ul>
+
+                            <h4 class="fw-semibold mt-4">Historia 12:</h4>
+                            <p>Como administrador, quiero navegar entre páginas en el listado de áreas, para revisar todas las áreas registradas sin sobrecargar la vista.</p>
+                            <ul>
+                                <li>Tarea 12.1: Agregar componente de paginación en tabla de áreas.</li>
+                                <li>Tarea 12.2: Implementar lógica backend de paginado.</li>
+                                <li>Tarea 12.3: Mostrar cantidad total de páginas y resultados.</li>
+                            </ul>
+
+                            <h4 class="fw-semibold mt-4">Historia 13:</h4>
+                            <p>Como administrador, quiero buscar, editar y eliminar tipos de documentos, para mantener actualizada la clasificación documental.</p>
+                            <ul>
+                                <li>Tarea 13.1: Crear tabla de tipos documentales.</li>
+                                <li>Tarea 13.2: Agregar botones de edición y eliminación.</li>
+                                <li>Tarea 13.3: Implementar buscador por nombre.</li>
+                            </ul>
+
+                            <h4 class="fw-semibold mt-4">Historia 14:</h4>
+                            <p>Como administrador, quiero contar con una barra de búsqueda en la gestión de tipos de documentos, para encontrar rápidamente el documento que necesito editar o eliminar.</p>
+                            <ul>
+                                <li>Tarea 14.1: Crear campo de búsqueda en la interfaz.</li>
+                                <li>Tarea 14.2: Adaptar el backend para realizar consultas por nombre/tipo.</li>
+                                <li>Tarea 14.3: Manejar el caso de cero resultados con mensaje amigable.</li>
+                            </ul>
+
+                        </section>
+
+
+
+                    </article>
+                </div>
+            </div>
+
+
+            <!-- Barra lateral fija (sticky) -->
+            <div class="col-lg-4 mt-md-5">
+                <aside class="sidebar-sticky p-4 rounded-3 shadow-sm dark-bg overflow-auto" style="max-height: 70vh;">
+                    <!-- Índice -->
+                    <div class="mb-4">
+                        <h6 class="fw-bold dark-text">
+                            <i class="fas fa-circle me-2 txt-sidebar"></i>Índice
+                        </h6>
+                        <ul class="list-unstyled ms-4">
+                            <li><a href="#Identificartareas" class="sidebar-link">10. Identificar tareas</a></li>
+
+                            <li>
+                                <a href="#Entradas" class="sidebar-link">ENTRADAS</a>
+                                <ul class="list-unstyled ms-3">
+                                    <li>
+                                        <a href="#EquipoPrincipalScrum" class="sidebar-link">10.1. Equipo principal
+                                            Scrum</a>
+
+                                        <ul class="list-unstyled ms-3">
+                                            <li><a href="#ProductOwner" class="sidebar-link">Product Owner</a></li>
+                                            <li><a href="#ScrumMaster" class="sidebar-link">Scrum Master</a></li>
+                                            <li><a href="#EquipoDesarrollo" class="sidebar-link">Equipo de desarrollo</a></li>
+
+                                        </ul>
+                                            <a href="#historiaUsuario" class="sidebar-link">10.2. Historias de usuario comprendidas</a>
+                                        
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                <a href="#Herramientas" class="sidebar-link">HERRAMIENTAS</a>
+                                <ul class="list-unstyled ms-3">
+                                    <li><a href="#reunion-sprint" class="sidebar-link">10.3. Reuniones de planificación de Sprint</a></li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                <a href="#Salidas" class="sidebar-link">SALIDAS</a>
+                                <ul class="list-unstyled ms-3">
+                                    <li><a href="#ListaTarea" class="sidebar-link">10.4. Lista de tareas</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Entradas recientes -->
+                    <div>
+                        <h6 class="fw-bold dark-text mb-3">
+                            <i class="fas fa-circle me-2 txt-sidebar"></i>Entradas recientes
+                        </h6>
+                        <ul class="list-unstyled ms-4">
+                            <li><a href="../inicio.html" class="sidebar-link">- Inicio de Proyecto</a></li>
+                            <li><a href="../sprint_1.html" class="sidebar-link">- Sprint 1</a></li>
+                            <li><a href="../sprint_2.html" class="sidebar-link">- Sprint 2</a></li>
+                            <li><a href="#" class="sidebar-link">- Sprint 3</a></li>
+                        </ul>
+                    </div>
+                </aside>
+            </div>
+    </section>
+    <!-- FOOTER -->
+    <footer class="bg-dark text-white py-5 mt-5" id="mainFooter">
+        <div class="container">
+            <div class="row gy-4">
+                <div class="col-md-4">
+                    <h5 class="fw-bold mb-3">Ingeniería de Software</h5>
+                    <p class="text-white-50">
+                        Proyecto que busca desarrollar un sistema de gestión documental como parte de una mesa de partes
+                        virtual. La idea es facilitar el ingreso, registro, consulta y seguimiento de documentos
+                        vinculados a procesos arbitrales.
+                    </p>
+                    <form class="d-flex flex-column flex-sm-row">
+                        <input type="email" class="form-control me-sm-2 mb-2 mb-sm-0 rounded-pill px-3"
+                            placeholder="Ingresa tu correo electrónico">
+                        <button class="btn btn-primary rounded-pill px-4 fw-bold" type="submit">ENVIAR</button>
+                    </form>
+                </div>
+                <div class="col-md-2">
+                    <h6 class="fw-bold mb-3">Enlaces Rápidos</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="../../index.html#Integrantes"
+                                class="text-white-50 text-decoration-none d-block mb-1">Integrantes</a></li>
+                        <li><a href="#" class="text-white-50 text-decoration-none d-block mb-1">Consultoría</a></li>
+                        <li><a href="../../index.html#Blogs"
+                                class="text-white-50 text-decoration-none d-block mb-1">Blog</a></li>
+                        <li><a href="#" class="text-white-50 text-decoration-none d-block">Estudios de Caso</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h6 class="fw-bold mb-3">Proyecto</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="../inicio.html" class="text-white-50 text-decoration-none d-block mb-1">Inicio de
+                                proyecto</a></li>
+                        <li><a href="../sprint_1.html" class="text-white-50 text-decoration-none d-block mb-1">Sprint 1</a></li>
+                        <li><a href="../sprint_2.html" class="text-white-50 text-decoration-none d-block mb-1">Sprint 2</a></li>
+                        <li><a href="#" class="text-white-50 text-decoration-none d-block">Sprint 3</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h6 class="fw-bold mb-3">Contáctanos</h6>
+                    <p class="text-white-50 mb-1">Comunícate con uno de nuestros consultores del proyecto</p>
+                    <a href="mailto:hi@design.studio.com"
+                        class="fw-bold text-white text-decoration-underline">2113110142@untels.edu.pe</a>
+                </div>
+            </div>
+
+            <hr class="border-secondary my-4">
+
+            <div class="text-center text-white-50">
+                <small>&copy; 2025 - Todos los derechos reservados.</small><br>
+            </div>
+        </div>
+    </footer>
+    <script src="../../asset/js/modo-oscuro.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="../../asset/css/bootstrap-5.3.3/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
