@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>16 - Crear entregables </title>
+    <!-- Estilos externos -->
+    <link rel="stylesheet" href="../../asset/css/bootstrap-5.3.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../asset/css/fontawesome-6/css/all.min.css">
+    <link rel="stylesheet" href="../../asset/css/vision.css">
+    <link rel="stylesheet" href="../../asset/css/btnTema.css">
+    <link rel="stylesheet" href="../../asset/css/navegador-blog.css">
+    <link rel="stylesheet" href="../../asset/css/footer.css">
+
+    <style>
+    body {
+      font-family: Arial, sans-serif;
+      /* margin: 40px; */
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    th, td {
+      border: 1px solid black;
+      padding: 8px 12px;
+      text-align: left;
+    }
+    th {
+      background-color: #f2f2f2;
+    }
+    td:last-child {
+      text-align: center;
+    }
+  </style>
+
+</head>
+
+<body>
+    <!-- Botón flotante de cambio de tema -->
+    <button class="theme-toggle-btn" onclick="toggleTheme()">
+        <i class="fa-solid fa-moon"></i>
+    </button>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg py-3">
+        <div class="container">
+            <a class="navbar-brand" href="../../index.html"><strong>INGENIERÍA DE SOFTWARE</strong></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav align-items-center">
+                    <li class="nav-item"><a class="nav-link active" href="../../index.html">Inicio</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button"
+                            data-bs-toggle="dropdown">Proyecto</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="../inicio.html">Inicio de proyecto</a></li>
+                            <li><a class="dropdown-item" href="../sprint_1.html">Sprint 1</a></li>
+                            <li><a class="dropdown-item" href="../sprint_2.html">Sprint 2</a></li>
+                            <li><a class="dropdown-item" href="../sprint_3_XP.html">Sprint 3 - Iteración XP</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="vision.html#Propuesta">Propuesta</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#mainFooter">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <section class="container my-5">
+        <div class="row pt-5">
+            <!-- Contenido principal del blog -->
+            <div class="col-lg-8">
+                <section class="position-relative blog-header" id="crearVision">
+                    <div class="container py-5">
+                        <!-- Breadcrumb -->
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb small text-muted mb-2">
+                                <li class="breadcrumb-item"><a href="../../index.html">Home</a></li>
+                                <li class="breadcrumb-item"><a href="../../index.html#InicioProyecto">Pages</a></li>
+                                <li class="breadcrumb-item"><a href="../inicio.html#blog-Crear">Inicio Proyecto</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Crear entregables</li>
+                            </ol>
+                        </nav>
+
+                        <!-- Blog Title -->
+                        <h1 class="fw-bold display-5" id="RealizarPlanificacion">16. Crear entregables</h1>
+                    </div>
+                </section>
+
+                <div class="blog-post">
+                    <div class="contenedor-img">
+                        <img src="../../asset/img/img_sprint1/v16.jpg" alt="Visión del proyecto Scrum"
+                            class="img-fluid rounded mb-4 img-contenido-blog">
+                    </div>
+                    <hr>
+
+                    <div class="d-flex align-items-center mb-4 text-muted small">
+                        <span class="me-3"><i class="fas fa-tag me-1"></i>Ingeniería de Software</span>
+                        <span><i class="far fa-calendar-alt me-1"></i>14 de Junio al 05 de Julio del 2025</span>
+                    </div>
+
+                    <article class="blog-contenido">
+                        
+                        <h2 class="fw-bold mt-5 border-bottom pb-2" id="Entradas">ENTRADAS</h2>
+
+                        <h3 class="fw-bold mt-4" id="EquipoPrincipalScrum">16.1. Equipo principal XP</h3>
+
+                        <!---Coach-->
+                        <h4 class="fw-semibold mt-4" id="coach">Coach</h4>
+                        <p>
+                            <i class="fas fa-circle me-2 txt-sidebar"></i>Manuel Silverio Velez de Villa Huacachi
+                        </p>
+                        <p>
+                            Responsable de asegurar la adopción de XP, guiar al equipo en las mejores prácticas de desarrollo y garantizar la mejora continua.
+                        </p>
+
+                        <!-- Tracker-->
+                        <h4 class="fw-semibold mt-4" id="tracker">Encargado de Seguimiento (Tracker)</h4>
+                        <p>
+                            <i class="fas fa-circle me-2 txt-sidebar"></i>Jesus Baltazar Paye Juarez
+                        </p>
+
+                        <p>
+                            Encargado de la monitorización del progreso del equipo y el aseguramiento 
+                            de que el proyecto se mantenga en el camino correcto para cumplir con los objetivos.
+                        </p>
+
+                        <!-- Cliente-->
+                        <h4 class="fw-semibold mt-4" id="cliente">Cliente</h4>
+                        <p>
+                            <i class="fas fa-circle me-2 txt-sidebar"></i>Jhunior Pérez Gonzales
+                        </p>
+
+                        <p>
+                            Cargo en la Empresa: Socio Accionista
+                        </p>
+
+                        <!-- Programadores-->
+                        <h4 class="fw-semibold mt-4" id="EquipoDesarrollo">Programadores</h4>
+
+                        <p>
+                            <i class="fas fa-circle me-2 txt-sidebar"></i>Pedro Javier Pablo Pascual <br>
+                            <i class="fas fa-circle me-2 txt-sidebar"></i>Huerta Vasquez Jimmy Alexander
+                        </p>
+
+                        <!-- Encargado de pruebas-->
+                        <h4 class="fw-semibold mt-4" id="encargado_pruebas">Encargado de pruebas</h4>
+                        <p>
+                            <i class="fas fa-circle me-2 txt-sidebar"></i> Jeampier Jhoel Barrios Quispe ( QA tester ) 
+                        </p>
+
+                        <p>
+                            Encargado de la monitorización del progreso del equipo y el aseguramiento de que el proyecto 
+                            se mantenga en el camino correcto para cumplir con los objetivos.
+                        </p>
+
+                        <!---16.2. Sprint Backlog. ---------------------->
+                        <section id="SprintBacklog">
+
+                            <h3 class="fw-bold mt-4" id="SesionesPlanificacion">16.2. Sprint Backlog</h3>
+                            <div>
+                                <table>
+                                <thead>
+                                    <tr>
+                                    <th>Historia</th>
+                                    <th>Tareas</th>
+                                    <th>Esfuerzo</th>
+                                    <th>Responsable</th>
+                                    <th>Prioridad</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Historia 1</td>
+                                        <td>Tarea 1.1: Ajustar CSS con paleta oficial de colores TACIDH</td>
+                                        <td>1</td><td>Javier</td>
+                                        <td>Alta</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>Historia 1</td>
+                                        <td>Tarea 1.2: Insertar logo en header/footer y favicon</td>
+                                        <td>1</td>
+                                        <td>Javier</td>
+                                        <td>Alta</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>Historia 1</td>
+                                        <td>Tarea 1.3: Estilizar botones, formularios y tablas con identidad visual</td>
+                                        <td>2</td>
+                                        <td>Javier</td>
+                                        <td>Media</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>Historia 1</td>
+                                        <td>Tarea 1.4: Probar responsividad del diseño con técnicas de CSS</td>
+                                        <td>2</td>
+                                        <td>Javier</td>
+                                        <td>Media</td>
+                                    </tr>
+
+                                    <tr><td>Historia 1</td><td>Tarea 1.5: Validar accesibilidad mínima (contraste, legibilidad)</td><td>1</td><td>Javier</td><td>Baja</td></tr>
+                                    <tr><td>Historia 2</td><td>Tarea 2.1: Crear tabla mensajes en la base de datos</td><td>2</td><td>Jimmy</td><td>Alta</td></tr>
+                                    <tr><td>Historia 2</td><td>Tarea 2.2: Implementar formulario de envío con validación</td><td>2</td><td>Jimmy</td><td>Alta</td></tr>
+                                    <tr><td>Historia 2</td><td>Tarea 2.3: Mostrar mensajes tipo chat con orden cronológico</td><td>3</td><td>Jimmy</td><td>Media</td></tr>
+                                    <tr><td>Historia 2</td><td>Tarea 2.4: Usar AJAX o WebSocket para mensajes en tiempo real</td><td>3</td><td>Jimmy</td><td>Media</td></tr>
+                                    <tr><td>Historia 2</td><td>Tarea 2.5: Añadir autenticación y autorización para acceso a la vista</td><td>2</td><td>Jimmy</td><td>Alta</td></tr>
+                                    <tr><td>Historia 3</td><td>Tarea 3.1: Integrar reCAPTCHA o Captcha en el login principal</td><td>1</td><td>Javier</td><td>Media</td></tr>
+                                    <tr><td>Historia 3</td><td>Tarea 3.2: Configurar .htaccess o reglas de servidor para proteger directorios</td><td>2</td><td>Javier</td><td>Alta</td></tr>
+                                    <tr><td>Historia 3</td><td>Tarea 3.3: Revisar rutas públicas y privadas (proteger controladores o rutas sensibles)</td><td>5</td><td>Javier</td><td>Alta</td></tr>
+                                    <tr><td>Historia 3</td><td>Tarea 3.4: Implementar gestión de roles</td><td>3</td><td>Javier</td><td>Alta</td></tr>
+                                    <tr><td>Historia 3</td><td>Tarea 3.5: Verificar sesiones y tokens en acciones sensibles</td><td>3</td><td>Javier</td><td>Media</td></tr>
+                                    <tr><td>Historia 4</td><td>Tarea 4.1: Configurar entorno de producción en el servidor TACIDH</td><td>2</td><td>Javier - Jimmy</td><td>Alta</td></tr>
+                                    <tr><td>Historia 4</td><td>Tarea 4.2: Exportar base de datos desde desarrollo y restaurar en el servidor</td><td>3</td><td>Javier - Jimmy</td><td>Alta</td></tr>
+                                    <tr><td>Historia 4</td><td>Tarea 4.3: Configurar variables de entorno (credenciales, puertos, rutas)</td><td>2</td><td>Javier - Jimmy</td><td>Media</td></tr>
+                                    <tr><td>Historia 4</td><td>Tarea 4.4: Probar acceso desde IPs internas/externas autorizadas</td><td>3</td><td>Javier - Jimmy</td><td>Media</td></tr>
+                                    <tr><td>Historia 4</td><td>Tarea 4.5: Realizar pruebas funcionales completas post-migración</td><td>3</td><td>Javier - Jimmy</td><td>Alta</td></tr>
+                                </tbody>
+                                </table>
+                            </div>
+                        </section>
+
+                        <section id="ScrumBoard">
+                            <h3 class="fw-bold mt-4">16.3. Scrum Board</h3>
+
+                            <p>Aquí se vera como va el Scrum Board, lo cual presentara las tareas que tenemos en CURSO - POR HACER - REVISIÓN</p>
+
+                            <div class="contenedor-img my-4">
+                                <img src="../../asset/img/img_sprint3_XP/sprint03-XP_16.3_ScrumBoard.png"
+                                    alt="Experiencia en redacción de historias de usuario" class="img-fluid rounded" >
+                            </div>
+
+                        </section>
+
+                        <section id="Impediment">
+                            <h3 class="fw-bold mt-4">16.4. Impediment Log</h3>
+
+                            <p>
+                                Un impedimento es cualquier obstáculo o barrera que reduce la productividad del Equipo Scrum/ XP. 
+                                Los impedimentos deben identificarse, resolverse y eliminarse si el equipo sigue trabajando eficazmente.
+                                Los impedimentos pueden ser internos en un equipo, tales como un flujo de trabajo ineficiente o la falta
+                                de comunicación, o bien, pudieran ser externos.
+                            </p>
+
+                            <ul>
+                                <li>Prácticas Calificadas</li>
+                                <li>Feriados</li>
+                                <li>Trabajos fuera de la universidad por cada miembro del equipo</li>
+                                <li>Falta de disponibilidad de tiempo</li>
+                            </ul>
+                        </section>
+
+                        <!-- HERRAMIENTAS-->
+                        <h2 class="fw-bold mt-5 border-bottom pb-2" id="Herramientas">HERRAMIENTAS</h2>
+
+                        <section id="ExperienciaRedaccion">
+                            <h3 class="fw-bold mt-4" id="SesionesPlanificacion">16.5. Experiencia del equipo</h3>
+
+                            <p>
+                                Durante el desarrollo del sistema de gestión de trámites, la colaboración entre los distintos miembros del equipo ha
+                                sido fundamental para mantener la alineación del proyecto con los objetivos del cliente y asegurar un producto de calidad. 
+                                El Product Owner, Pedro Javier Pablo Pascual, ha sido el principal representante de los intereses de los usuarios, 
+                                comunicando con claridad los requerimientos y manteniendo informado al cliente sobre los avances. Además, ha contribuido 
+                                activamente al desarrollo del sistema como programador, trabajando en conjunto con Jimmy Alexander Huerta Vasquez, 
+                                también programador del equipo.
+                            </p>
+
+                            <p>
+                                La orientación técnica y metodológica ha estado a cargo del Coach, Manuel Silverio Velez de Villa Huacachi, 
+                                quien ha guiado al equipo en la adopción de la metodología Extreme Programming (XP), promoviendo las 
+                                mejores prácticas de desarrollo y asegurando la mejora continua del proceso.
+                            </p>
+
+                            <p>
+                                El Scrum Master, Jesus Baltazar Paye Juarez, ha desempeñado el rol de Tracker, siendo responsable 
+                                del seguimiento del proyecto, monitoreando el progreso del equipo y asegurando que se cumplan los 
+                                objetivos en los tiempos establecidos
+                            </p>
+
+                            <p>
+                                El aseguramiento de la calidad ha estado en manos de Jeampier Jhoel Barrios Quispe, QA Tester del 
+                                equipo, encargado de realizar pruebas rigurosas para garantizar que cada incremento del producto 
+                                cumpla con los criterios de calidad definidos.
+                            </p>
+
+                            <p>
+                                Por su parte, el cliente, Jhunior Pérez Gonzales, en su rol de Socio Accionista de la empresa, 
+                                ha participado activamente en la validación de los entregables, asegurando que el producto final 
+                                responda a las necesidades reales del negocio
+                            </p>
+
+                            <p>
+                                A pesar de algunos impedimentos menores, como la complejidad técnica en la validación de 
+                                formularios y la sincronización entre frontend y backend, el equipo ha superado los retos 
+                                con eficiencia gracias al uso de metodologías ágiles como Scrum y técnicas de estimación 
+                                como Planning Poker. Esta sinergia ha permitido entregar incrementos funcionales constantes y de calidad
+
+                            </p>
+                        </section>
+
+
+                        <h2 class="fw-bold mt-5 border-bottom pb-2" id="Salidas">SALIDAS</h2>
+
+                        <section id="entregables">
+                            <h3 class="fw-bold mt-4" id="SesionesPlanificacion">16.6. Entregables del Sprint</h3>
+
+                            <table border="1" cellspacing="0" cellpadding="5">
+                                <thead>
+                                    <tr>
+                                        <th>Historia de Usuario</th>
+                                        <th>Entregables</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Historia de Usuario 1: Visualización de trámites por resolver</td>
+                                        <td>Como usuario, quiero visualizar la plataforma con los colores institucionales, 
+                                            el logo y un diseño coherente para una experiencia alineada a la identidad de TACIDH</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td></td>
+                                        <td style="text-align: left;">1. Ajustar CSS con paleta oficial de colores TACIDH.</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td></td>
+                                        <td style="text-align: left;">2. Insertar logo en header/footer y favicon.</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td></td>
+                                        <td style="text-align: left;">3. Estilizar botones, formularios y tablas con identidad visual.</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td></td>
+                                        <td style="text-align: left;">4. Probar responsividad del diseño con técnicas de CSS.</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td></td>
+                                        <td style="text-align: left;">5. Validar accesibilidad mínima (contraste, legibilidad).</td>
+                                    </tr>
+
+
+                                    <tr>
+                                        <td>Historia de Usuario 2: Búsqueda de trámites por resolver</td>
+                                        <td>Como remitente, quiero tener una sección de consultas para comunicarme 
+                                            con el administrador, de modo que pueda hacer seguimiento o resolver dudas.</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td></td>
+                                        <td style="text-align: left;">1. Crear tabla mensajes en la base de datos.</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td></td>
+                                        <td style="text-align: left;">2. Implementar formulario de envío con validación.</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td></td>
+                                        <td style="text-align: left;"> 3. Mostrar mensajes tipo chat con orden cronológico.</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td></td>
+                                        <td style="text-align: left;">4. Usar AJAX o WebSocket para mensajes en tiempo real</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td></td>
+                                        <td style="text-align: left;">5. Añadir autenticación y autorización para acceso a la vista.</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>Historia de Usuario 3: Mensaje de trámites pendientes por resolver</td>
+                                        <td > Como administrador del sistema, quiero que se implementen medidas de 
+                                            seguridad para proteger el sistema de accesos no autorizados y vulnerabilidades.</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td></td>
+                                        <td style="text-align: left;">1. Integrar reCAPTCHA o Captcha en el login principal</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td></td>
+                                        <td style="text-align: left;">2. Configurar .htaccess o reglas de servidor para proteger directorios</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td></td>
+                                        <td style="text-align: left;">3. Revisar rutas públicas y privadas (proteger controladores o rutas sensibles).</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td></td>
+                                        <td style="text-align: left;">4. Implementar gestión de roles.</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td></td>
+                                        <td style="text-align: left;">5. Verificar sesiones y tokens en acciones sensibles.</td>
+                                    </tr>
+
+
+                                    <tr>
+                                        <td>Historia de Usuario 4: Visualización de trámites por recibir</td>
+                                        <td>Como desarrollador, quiero migrar el sistema al servidor de TACIDH para que funcione 
+                                            correctamente en el entorno institucional.</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td></td>
+                                        <td style="text-align: left;">1. Configurar el entorno de producción en el servidor TACIDH.</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td></td> <!-- TEXTO PARA ALINEAR A LA IZQUIERDA-->
+                                        <td style="text-align: left;">2. Exportar base de datos desde desarrollo y restaurar en el servidor</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td></td>
+                                        <td style="text-align: left;">3. Configurar variables de entorno (credenciales, puertos, rutas)</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td></td>
+                                        <td style="text-align: left;">4. Probar acceso desde IPs internas/externas autorizadas.</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td></td>
+                                        <td style="text-align: left;">5. Realizar pruebas funcionales completas post-migración.</td>
+                                    </tr>
+                                    
+                                </tbody>
+                            </table>
+                            
+                        </section>
+
+                        <section id="ScrumBoard_actualizado">
+                            <h3 class="fw-bold mt-4" id="ScrumBoard_actualizado">16.7. Scrum board actualizado</h3>
+
+                            <img src="../../asset/img/img_sprint3_XP/completar_Img.png" alt="Imagen de Sprint Burndown Chart" height="450px" width="525px">
+                        </section>
+                        
+
+                        <section id="Impedimet_actualizado">
+                            <h3 class="fw-bold mt-4" id="Impedimet_actualizado">16.8. Impediment Log actualizado</h3>
+
+                            <p>
+                                Un impedimento es cualquier obstáculo o barrera que reduce la productividad del Equipo Scrum. 
+                                Los impedimentos deben identificarse, resolverse y eliminarse si el equipo sigue trabajando eficazmente. 
+                                Los impedimentos pueden ser internos en un equipo, tales como un flujo de trabajo ineficiente o la 
+                                falta de comunicación, o bien, pudieran ser externos.
+                            </p>
+                            <ul>
+                                <li>Prácticas calificadas</li>
+                                <li>Trabajos fuera de la universidad por cada miembro del equipo</li>
+                            </ul>
+                        </section>
+
+
+                    </article>
+                </div>
+            </div>
+
+
+
+            <!-- Barra lateral fija (sticky) -->
+            <div class="col-lg-4 mt-md-5">
+                <aside class="sidebar-sticky p-4 rounded-3 shadow-sm dark-bg overflow-auto" style="max-height: 70vh;">
+                    <!-- Índice -->
+                    <div class="mb-4">
+                        <h6 class="fw-bold dark-text">
+                            <i class="fas fa-circle me-2 txt-sidebar"></i>Índice
+                        </h6>
+                        <ul class="list-unstyled ms-4">
+                            <li><a href="#RealizarPlanificacion" class="sidebar-link">16. Crear Entregables</a>
+                            </li>
+
+                            <li>
+                                <a href="#Entradas" class="sidebar-link">ENTRADAS</a>
+                                <ul class="list-unstyled ms-3">
+                                    <li>
+                                        <a href="#EquipoPrincipalScrum" class="sidebar-link">16.1 Equipo principal XP</a>
+                                        <ul class="list-unstyled ms-3">
+                                            <li><a href="#coach" class="sidebar-link">Coach</a></li>
+                                            <li><a href="#tracker" class="sidebar-link">Tracker</a></li>
+                                            <li><a href="#cliente" class="sidebar-link">Cliente</a></li>
+                                            <li><a href="#EquipoDesarrollo" class="sidebar-link">Equipo de desarrollo</a></li>
+                                            <li><a href="#encargado_pruebas" class="sidebar-link">Encargado de pruebas</a></li> 
+                                        </ul>                                     
+
+                                        <a href="#SprintBacklog" class="sidebar-link">16.2. Sprint Backlog</a>
+                                        
+                                        <a href="#ScrumBoard" class="sidebar-link">16.3. ScrumBoard</a>
+
+                                        <a href="#Impediment" class="sidebar-link">16.4. Impediment Log</a>
+                                       
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                <a href="#Herramientas" class="sidebar-link">HERRAMIENTAS</a>
+                                <ul class="list-unstyled ms-3">
+                                    <li><a href="#ExperienciaRedaccion" class="sidebar-link">16.5. Experiencia del equipo</a></li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                <a href="#Salidas" class="sidebar-link">SALIDAS</a>
+                                <ul class="list-unstyled ms-3">
+                                    <li>
+                                        <a href="#entregables" class="sidebar-link">16.6. Entregables del Sprint</a>
+                                        <a href="#ScrumBoard_actualizado" class="sidebar-link">16.7. Scrum board actualizado</a>
+                                        
+                                        <a href="#Impedimet_actualizado" class="sidebar-link">16.8. Impediment Log actualizado</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Entradas recientes -->
+                    <div>
+                        <h6 class="fw-bold dark-text mb-3">
+                            <i class="fas fa-circle me-2 txt-sidebar"></i>Entradas recientes
+                        </h6>
+                        <ul class="list-unstyled ms-4">
+                            <li><a href="../inicio.html" class="sidebar-link">- Inicio de Proyecto</a></li>
+                            <li><a href="../sprint_1.html" class="sidebar-link">- Sprint 1</a></li>
+                            <li><a href="../sprint_2.html" class="sidebar-link">- Sprint 2</a></li>
+                            <li><a href="../sprint_3_XP.html" class="sidebar-link">- Sprint 3 - Iteración XP</a></li>
+                        </ul>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </section>
+    <!-- FOOTER -->
+    <footer class="bg-dark text-white py-5 mt-5" id="mainFooter">
+        <div class="container">
+            <div class="row gy-4">
+                <div class="col-md-4">
+                    <h5 class="fw-bold mb-3">Ingeniería de Software</h5>
+                    <p class="text-white-50">
+                        Proyecto que busca desarrollar un sistema de gestión documental como parte de una mesa de partes
+                        virtual. La idea es facilitar el ingreso, registro, consulta y seguimiento de documentos
+                        vinculados a procesos arbitrales.
+                    </p>
+                    <form class="d-flex flex-column flex-sm-row">
+                        <input type="email" class="form-control me-sm-2 mb-2 mb-sm-0 rounded-pill px-3"
+                            placeholder="Ingresa tu correo electrónico">
+                        <button class="btn btn-primary rounded-pill px-4 fw-bold" type="submit">ENVIAR</button>
+                    </form>
+                </div>
+                <div class="col-md-2">
+                    <h6 class="fw-bold mb-3">Enlaces Rápidos</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="../../index.html#Integrantes"
+                                class="text-white-50 text-decoration-none d-block mb-1">Integrantes</a></li>
+                        <li><a href="#" class="text-white-50 text-decoration-none d-block mb-1">Consultoría</a></li>
+                        <li><a href="../../index.html#Blogs"
+                                class="text-white-50 text-decoration-none d-block mb-1">Blog</a></li>
+                        <li><a href="#" class="text-white-50 text-decoration-none d-block">Estudios de Caso</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h6 class="fw-bold mb-3">Proyecto</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="../inicio.html" class="text-white-50 text-decoration-none d-block mb-1">Inicio de proyecto</a></li>
+                        <li><a href="../sprint_1.html" class="text-white-50 text-decoration-none d-block mb-1">Sprint 1</a></li>
+                        <li><a href="../sprint_2.html" class="text-white-50 text-decoration-none d-block mb-1">Sprint 2</a></li>
+                        <li><a href="../sprint_3_XP.html" class="text-white-50 text-decoration-none d-block">Sprint 3 - XP</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h6 class="fw-bold mb-3">Contáctanos</h6>
+                    <p class="text-white-50 mb-1">Comunícate con uno de nuestros consultores del proyecto</p>
+                    <a href="mailto:hi@design.studio.com" class="fw-bold text-white text-decoration-underline">2113010211@untels.edu.pe</a>
+                    
+                </div>
+            </div>
+
+            <hr class="border-secondary my-4">
+
+            <div class="text-center text-white-50">
+                <small>&copy; 2025 - Todos los derechos reservados.</small><br>
+            </div>
+        </div>
+    </footer>
+    <script src="../../asset/js/modo-oscuro.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="../../asset/css/bootstrap-5.3.3/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
