@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>20 - Retrospectiva del Sprint 4</title>
+    <title>22. Análisis de Riesgos</title>
     <!-- Estilos externos -->
     <link rel="stylesheet" href="../../asset/css/bootstrap-5.3.3/css/bootstrap.min.css">
     <link rel="stylesheet" href="../../asset/css/fontawesome-6/css/all.min.css">
@@ -60,158 +60,145 @@
                                 <li class="breadcrumb-item"><a href="../../index.html">Home</a></li>
                                 <li class="breadcrumb-item"><a href="../../index.html#InicioProyecto">Pages</a></li>
                                 <li class="breadcrumb-item"><a href="../inicio.html#blog-Crear">Inicio Proyecto</a></li>
-                                <li class="breadcrumb-item active" aria-current="page">Retrospectiva del Sprint 4 - XP</li>
+                                <li class="breadcrumb-item active" aria-current="page">Análisis de Riesgos</li>
                             </ol>
                         </nav>
 
                         <!-- Blog Title -->
-                        <h1 class="fw-bold display-5" id="RealizarPlanificacion">20. Retrospectiva del Sprint 4 - XP</h1>
+                        <h1 class="fw-bold display-5" id="RealizarPlanificacion">22. Análisis de Riesgos</h1>
                     </div>
                 </section>
 
                 <div class="blog-post">
                     <div class="contenedor-img">
-                        <img src="../../asset/img/img_sprint3_XP/retrospectiva_20_BACK.png" alt="Visión del proyecto Scrum"
+                        <img src="../../asset/img/img_sprint3_XP/back_22.png"
                             class="img-fluid rounded mb-4 img-contenido-blog">
                     </div>
                     <hr>
 
                     <div class="d-flex align-items-center mb-4 text-muted small">
                         <span class="me-3"><i class="fas fa-tag me-1"></i>Ingeniería de Software</span>
-                        <span><i class="far fa-calendar-alt me-1"></i>14 de Junio al 05 de Julio del 2025</span>
+                        <span><i class="far fa-calendar-alt me-1"></i>14 de Junio al 12 de Julio del 2025</span>
                     </div>
 
                     <article class="blog-contenido">
                         <p>
-                           Es una reunión interna del equipo después de cerrar el Sprint. Se analiza qué salió bien, 
-                           qué se puede mejorar y qué acciones tomar para el siguiente sprint. Fomenta la mejora 
-                           continua y el trabajo en equipo.
+                           El análisis de riesgos en XP permite anticipar posibles fallos técnicos, organizativos o de 
+                           seguridad que puedan afectar negativamente el desarrollo del proyecto. Esta actividad es 
+                           clave para mitigar impactos, especialmente en proyectos ágiles donde los ciclos son cortos 
+                           y la entrega continua de valor es prioritaria.
                         </p>
 
                         <h2 class="fw-bold mt-5 border-bottom pb-2" id="Entradas">ENTRADAS</h2>
 
-                        <h3 class="fw-bold mt-4" id="EquipoPrincipalScrum">20.1. Equipo principal XP</h3>
+                        <section id="BacklogPriorizado">
+                            <h3 class="fw-bold mt-4">22.1. Historias de usuario comprometidas y sus criterios de aceptación</h3>
 
-                        <!---Coach-->
-                        <h4 class="fw-semibold mt-4" id="coach">Coach</h4>
-                        <p>
-                            <i class="fas fa-circle me-2 txt-sidebar"></i>Manuel Silverio Velez de Villa Huacachi
-                        </p>
-                        <p>
-                            Responsable de asegurar la adopción de XP, guiar al equipo en las mejores prácticas de desarrollo y garantizar la mejora continua.
-                        </p>
+                            <div class="contenedor-img my-4">
+                                <img src="../../asset/img/img_sprint3_XP/imagen_22.1.png"
+                                    alt="Experiencia en redacción de historias de usuario" class="img-fluid rounded">
 
-                        <!-- Tracker-->
-                        <h4 class="fw-semibold mt-4" id="tracker">Encargado de Seguimiento (Tracker)</h4>
-                        <p>
-                            <i class="fas fa-circle me-2 txt-sidebar"></i>Jesus Baltazar Paye Juarez
-                        </p>
+                                    <a href="https://docs.google.com/spreadsheets/d/1xCEM9dJSBZq3mxXOBMI901HKVh9JoRdDCQ1wRpZABrI/edit?gid=0#gid=0"
+                                        target="_blank"><h4><strong>Enlace de excel</strong></h4></a>
+                            </div>
+                            
+                        </section>
+                        <!--Criterios terminados -->
 
-                        <p>
-                            Encargado de la monitorización del progreso del equipo y el aseguramiento 
-                            de que el proyecto se mantenga en el camino correcto para cumplir con los objetivos.
-                        </p>
+                        <section id="CriteriosTerminados">
+                            <h3 class="fw-bold mt-4">22.2. Experiencia del equipo y eventos pasados</h3>
 
-                        <!-- Cliente-->
-                        <h4 class="fw-semibold mt-4" id="cliente">Cliente</h4>
-                        <p>
-                            <i class="fas fa-circle me-2 txt-sidebar"></i>Jhunior Pérez Gonzales
-                        </p>
+                            <p>
+                                Durante nuestras reuniones técnicas, el equipo compartió varios aprendizajes de iteraciones anteriores. 
+                                Por ejemplo, recordamos que en el sprint anterior, surgieron errores por no probar bien la integración 
+                                entre vistas del frontend y servicios del backend, especialmente en los formularios. 
+                            </p>
+                            <p>
+                                Otro punto que se discutió fue la importancia de tener control de versiones ordenado. En más de una 
+                                ocasión, hubo conflictos por subir código sin coordinar bien las ramas, lo cual generó pérdida de 
+                                avances o duplicación de trabajo. 
+                            </p>
+                            <p>
+                                En base a todo esto, el equipo decidió tomar precauciones desde el inicio del sprint. Se hicieron 
+                                pruebas de integración más tempranas, se definieron ramas claras por historia y se prestó especial 
+                                atención a la seguridad del login, considerando que en un proyecto anterior se detectaron 
+                                vulnerabilidades por no validar adecuadamente los campos de entrada. 
+                            </p>
+                            <p>
+                                Esta reflexión colectiva ayudó a que el análisis de riesgos no parta solo de lo teórico, 
+                                sino de vivencias concretas que ya nos afectaron antes y que no queremos repetir.
+                            </p>
 
-                        <p>
-                            Cargo en la Empresa: Socio Accionista
-                        </p>
-
-                        <!-- Programadores-->
-                        <h4 class="fw-semibold mt-4" id="EquipoDesarrollo">Programadores</h4>
-
-                        <p>
-                            <i class="fas fa-circle me-2 txt-sidebar"></i>Pedro Javier Pablo Pascual <br>
-                            <i class="fas fa-circle me-2 txt-sidebar"></i>Huerta Vasquez Jimmy Alexander
-                        </p>
-
-                        <!-- Encargado de pruebas-->
-                        <h4 class="fw-semibold mt-4" id="encargado_pruebas">Encargado de pruebas</h4>
-                        <p>
-                            <i class="fas fa-circle me-2 txt-sidebar"></i> Jeampier Jhoel Barrios Quispe ( QA tester ) 
-                        </p>
-
-                        <p>
-                            Encargado de la monitorización del progreso del equipo y el aseguramiento de que el proyecto 
-                            se mantenga en el camino correcto para cumplir con los objetivos.
-
-                        </p>
+                        </section>
 
                         <h2 class="fw-bold mt-5 border-bottom pb-2" id="Herramientas">HERRAMIENTAS</h2>
 
                         <section id="ExperienciaRedaccion">
-                            <h3 class="fw-bold mt-4" id="SesionesPlanificacion">20.2. Reunión de Retrospectiva del Sprint</h3>
-
-                            <p>
-                                Se realizaron las reuniones correspondiente
-                            </p>
+                            <h3 class="fw-bold mt-4" id="SesionesPlanificacion">22.3. Reuniones técnicas de reflexión</h3>
 
                             <div class="contenedor-img my-4">
-                                <img src="../../asset/img/img_sprint3_XP/identificar-tareas-10.4.png"
+                                <img src="../../asset/img/img_sprint3_XP/imagen_22.3.png"
                                     alt="Experiencia en redacción de historias de usuario" class="img-fluid rounded" >
                             </div>
                         </section>
 
                         <h2 class="fw-bold mt-5 border-bottom pb-2" id="Salidas">SALIDAS</h2>
 
-                        <section id="agreed">
-                            <h3 class="fw-bold mt-4">20.3. Agreed Actionable Improvements</h3>
-                            <table class="table table-bordered mt-3">
-                                <thead>
-                                    <tr>
-                                        <th>Categoría</th>
-                                        <th>Acción</th>
-                                        <th>Responsable</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>Seguir haciendo</td>
-                                        <td>Realizar integración frecuente al repositorio para evitar conflictos.</td>
-                                        <td>Javier-Jimmy</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Seguir haciendo</td>
-                                        <td>Aplicar revisiones cruzadas antes de integrar cambios al repositorio.</td>
-                                        <td>Todos</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Seguir haciendo</td>
-                                        <td>Usar ramas por funcionalidad con nombres claros para cada tarea.</td>
-                                        <td>Jimmy</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Mejorar</td>
-                                        <td>Probar funcionalidades en dispositivos móviles desde etapas tempranas.</td>
-                                        <td>Javier</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Mejorar</td>
-                                        <td>Documentar los criterios de prueba antes de comenzar la codificación.</td>
-                                        <td>Manuel</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Mejorar</td>
-                                        <td>Aumentar la automatización de validaciones básicas antes de integrar.</td>
-                                        <td>Javier</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Dejar de hacer</td>
-                                        <td>Integrar código sin validar previamente en entorno local.</td>
-                                        <td>Todos</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Dejar de hacer</td>
-                                        <td>Posponer la implementación de controles de seguridad hasta el final del sprint.</td>
-                                        <td>Todos</td>
-                                    </tr>                                    
-                                </tbody>
-                            </table>
+                        <section id="HistoriasUsuario">
+                            <h3 class="fw-bold mt-4" id="CronogramaLanzamiento">22.4. Tabla de riesgos identificados</h3>
+
+                            <div class="contenedor-img my-4">
+                                <img src="../../asset/img/img_sprint3_XP/imagen_22.4.png"
+                                    alt="Experiencia en redacción de historias de usuario" class="img-fluid rounded" >
+                            </div>
+
+                        </section>
+
+                        <section id="CriteriosAceptacion">
+                            <h3 class="fw-bold mt-4">22.5 Estrategias de mitigación para el corto y largo plazo</h3>
+                            
+                            <p>
+                                En base a los riesgos identificados durante el desarrollo del sprint, se han definido 
+                                estrategias de mitigación que se dividen en dos enfoques:
+                            </p>
+                            <p>
+                                <ul>
+                                    <li>
+                                        <strong>Corto plazo: </strong> <br>
+                                        Respuestas inmediatas para riesgos técnicos u operativos detectados 
+                                        en la actual iteración. Se busca asegurar la funcionalidad del sistema y la 
+                                        estabilidad de los entregables.
+                                    </li>
+                                    <li>
+                                        <strong>Largo plazo: </strong> <br>
+                                        Acciones preventivas que aseguren la sostenibilidad, mantenibilidad, 
+                                        seguridad y escalabilidad del sistema en futuras iteraciones o despliegues. Estos 
+                                        riesgos podrían no generar errores visibles en el corto plazo, pero afectan la 
+                                        calidad estructural del proyecto.
+                                    </li>
+                                </ul>
+                            </p>
+                            <p>
+                                A continuación, se resumen las estrategias diferenciadas para cada tipo de riesgo:
+                            </p>
+
+                            <p id="corto">
+                                <i class="fas fa-circle me-2 txt-sidebar"></i>22.5.1 Estrategias de mitigación a corto plazo
+
+                                <div class="contenedor-img my-4">
+                                <img src="../../asset/img/img_sprint3_XP/imagen_22.5.1.png"
+                                    alt="Experiencia en redacción de historias de usuario" class="img-fluid rounded">
+                                </div>
+                            </p>
+
+                            <p id="largo">
+                                <i class="fas fa-circle me-2 txt-sidebar"></i>22.5.2 Estrategias de mitigación a largo plazo
+
+                                <div class="contenedor-img my-4">
+                                <img src="../../asset/img/img_sprint3_XP/imagen_22.5.2.png"
+                                    alt="Experiencia en redacción de historias de usuario" class="img-fluid rounded" >
+                                </div>
+                            </p>
                         </section>
 
                     </article>
@@ -229,22 +216,16 @@
                             <i class="fas fa-circle me-2 txt-sidebar"></i>Índice
                         </h6>
                         <ul class="list-unstyled ms-4">
-                            <li><a href="#RealizarPlanificacion" class="sidebar-link">20. Retrospectiva del Sprint 4 - XP</a>
+                            <li><a href="#RealizarPlanificacion" class="sidebar-link">22. Análisis de Riesgos</a>
                             </li>
 
                             <li>
                                 <a href="#Entradas" class="sidebar-link">ENTRADAS</a>
                                 <ul class="list-unstyled ms-3">
-                                    <li>
-                                        <a href="#EquipoPrincipalScrum" class="sidebar-link">20.1 Equipo principal XP</a>
-                                        <ul class="list-unstyled ms-3">
-                                            <li><a href="#coach" class="sidebar-link">Coach</a></li>
-                                            <li><a href="#tracker" class="sidebar-link">Tracker</a></li>
-                                            <li><a href="#cliente" class="sidebar-link">Cliente</a></li>
-                                            <li><a href="#EquipoDesarrollo" class="sidebar-link">Equipo de desarrollo</a></li>
-                                            <li><a href="#encargado_pruebas" class="sidebar-link">Encargado de pruebas</a></li> 
-                                        </ul>                                     
-                                 
+                                    <li>                                    
+                                        <a href="#BacklogPriorizado" class="sidebar-link">22.1. Historias de usuario comprometidas</a>
+                                        <a href="#CriteriosTerminados" class="sidebar-link">22.2. Experiencia del equipo y eventos pasados</a>                                          
+                                        
                                     </li>
                                 </ul>
                             </li>
@@ -252,17 +233,23 @@
                             <li>
                                 <a href="#Herramientas" class="sidebar-link">HERRAMIENTAS</a>
                                 <ul class="list-unstyled ms-3">
-                                    <li><a href="#ExperienciaRedaccion" class="sidebar-link">20.2. Reunión de Retrospectiva del Sprint</a></li>
-                                    
+                                    <li><a href="#ExperienciaRedaccion" class="sidebar-link">22.3. Reuniones técnicas de reflexión</a></li>
                                 </ul>
                             </li>
 
                             <li>
                                 <a href="#Salidas" class="sidebar-link">SALIDAS</a>
                                 <ul class="list-unstyled ms-3">
-                                    <li><a href="#agreed" class="sidebar-link">20.3. Agreed Actionable Improvements</a>
+                                    <li>
+                                        <a href="#HistoriasUsuario" class="sidebar-link">22.4. Tabla de riesgos identificados</a>
                                     </li>
-                                  
+                                    <li>
+                                        <a href="#CriteriosAceptacion" class="sidebar-link">22.5 Estrategias de mitigación</a>
+                                        <ul>
+                                            <a href="#corto" class="sidebar-link">22.5.1 Estrategias de mitigación a corto plazo</a>
+                                            <a href="#largo" class="sidebar-link">22.5.2 Estrategias de mitigación a largo plazo</a>        
+                                        </ul>  
+                                    </li>
                                 </ul>
                             </li>
                         </ul>
